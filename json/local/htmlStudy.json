@@ -158,7 +158,7 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "옹어 줄임말(dl태그, dt태그, dd태그)",
-        "explain" : "※줄임말에 대해서는 description이라는 의견도 있고, definition이라는 의견도 있다.<br>dl = description list의 줄임말. <mark class='gray'>dl태그는 용어를 설명할 목록을 나타낼 때 사용</mark>한다.<br>dt = description term의 줄임말. <mark class='gray'>dt태그는 옹어를 설명할 내용의 제목을 나타낼 때 사용</mark>한다.<br>dd = description details 줄임말. <mark class='gray'>dd태그는 옹어 설명을 나타낼 때 사용한다.</mark>" ,
+        "explain" : "※줄임말에 대해서는 description이라는 의견도 있고, definition이라는 의견도 있다.<br>dl = description list의 줄임말. <mark class='gray'>dl태그는 용어를 설명할 목록을 나타낼 때 사용</mark>한다.<br>dt = description term의 줄임말. <mark class='gray'>dt태그는 용어를 설명할 내용의 제목을 나타낼 때 사용</mark>한다.<br>dd = description details 줄임말. <mark class='gray'>dd태그는 용어 설명을 나타낼 때 사용한다.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbPGKV" data-pen-title="용어" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbPGKV">  용어</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
     {
