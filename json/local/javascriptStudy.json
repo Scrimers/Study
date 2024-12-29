@@ -203,7 +203,7 @@ const localJson = [
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "length()",
+        "title" : "length",
         "explain" : "<mark class='gray'>문자열의 길이를 알려주는 속성</mark>이다.<br><mark class='gray'>문자열.length 로 사용한다.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZjMww" data-pen-title="문자열-length" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZjMww">    문자열-length</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
