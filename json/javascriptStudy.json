@@ -203,7 +203,7 @@
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "length()",
+        "title" : "length",
         "explain" : "<mark class='gray'>문자열의 길이를 알려주는 속성</mark>이다.<br><mark class='gray'>문자열.length 로 사용한다.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYZjMww" data-pen-title="문자열-length" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">    <span>See the Pen <a href="https://codepen.io/scrimer/pen/VYZjMww">    문자열-length</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)    on <a href="https://codepen.io">CodePen</a>.</span>  </p>  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>'       
     },
@@ -811,33 +811,33 @@
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
+        "title" : "객체.propertyIsEnumerable(속성)",
+        "explain" : "<mark class='gray'>해당 속성이 열거 가능한 속성인지 알려준다.<br>※열거 가능이란 for-in과 같은 반복문 안에서 쓸 수 있는지를 말한다.<br>상속받은 속성과 해당 객체의 속성이 아닌 것은 기본적으로 제외된다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="emOGoeV" data-pen-title="객체.propertyIsEnumerable(속성)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/emOGoeV">  객체.propertyIsEnumerable(속성)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
         "title" : "Object.create(prototype, 속성들)",
         "explain" : "<mark class='gray'>객체를 생성하는 방법 중 하나이다.<br>속성은 writable, configurable, enumerable, get, set ,value의 옵션이 있다.</mark>" ,
-        "howUse" : ''       
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jENGPqv" data-pen-title="Object.create(prototype, 속성들)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/jENGPqv">  Object.create(prototype, 속성들)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)",
-        "explain" : "<mark class='gray'>객체의 속성을 자세하게 정의할 때 사용한다.<br>속성에 대한 설명은 다음과 같다.<br>writable = 속성값을 변경할 수 있는지 여부<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못한다.<br>enumerable = for ... in 반복문 안에서 사용할 수 있는지 여부<br>configurable = 속성의 설명을 바꿀 수 있는지 여부<br>※false인 경우 delete 동작도 불가능하다.※기본적으로 writable, enumerable, configurable은 false이다.<br>value = 속성의 값<br>get = 속성의 값을 가져올 때<br>set은 속성의 값을 설정할 때</mark>" ,
-        "howUse" : ''       
+        "explain" : "<mark class='gray'>객체의 속성을 자세하게 정의할 때 사용한다.<br>속성에 대한 설명은 다음과 같다.<br>writable = 속성값을 변경할 수 있는지 여부<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못한다.<br>enumerable = for ... in 반복문 안에서 사용할 수 있는지 여부<br>configurable = 속성의 설명을 바꿀 수 있는지 여부<br>※false인 경우 delete 동작도 불가능하다.※기본적으로 writable, enumerable, configurable은 false이다.<br>value = 속성의 값<br>get = 속성의 값을 가져올 때<br>set은 속성의 값을 설정할 때<br>※get, set 키값은 writable, value 키값과 함께 선언될 수 없다.<br>※configurable이 false여도 writable이 true라면 속성 값을 변경할 수 있다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RNbLPZg" data-pen-title="Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/RNbLPZg">  Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "Object.freeze, Object.seal, Object.preventExtensions",
-        "explain" : "<mark class='gray'>Object.freeze = 객체 전체를 바꾸지 못하게 고정할 수 있다.<br>값도 못 바꿀뿐더러, 속성을 추가 또는 제거할 수도 없고, 속성의 설명을 바꿀 수도 없다.<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못하지만 Object.freeze를 쓰면 바꾸지 못하게 할 수 있다.<br>Object.seal = 속성의 추가, 제거를 막고, configurable을 false로 바꾼다.<br>대신 속성의 값은 writable이 true이기만 하면 바꿀 수 있다.<br>Object.preventExtensions = 속성의 추가만 막을 때 사용한다.<br>그 외의 속성 제거, 값 변경, 설정 변경은 가능하다.</mark>" ,
-        "howUse" : ''       
-    },
-    {
-        "type" : "groupIng",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "Object.isFrozen, Object.isSealed, Object.isExtensible",
-        "explain" : "<mark class='gray'>Object.isFrozen = 객체가 freeze 되었는지 여부<br>Object.isSealed = 객체가 sealed 되었는지 여부<br>Object.isExtensible = 객체가 preventExtension 되었는지 여부</mark>" ,
-        "howUse" : ''       
+        "title" : "Object.freeze, Object.seal, Object.preventExtensions, Object.isFrozen, Object.isSealed, Object.isExtensible",
+        "explain" : "<mark class='gray'>Object.freeze = 객체 전체를 바꾸지 못하게 고정할 수 있다.<br>값도 못 바꿀뿐더러, 속성을 추가 또는 제거할 수도 없고, 속성의 설명을 바꿀 수도 없다.<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못하지만 Object.freeze를 쓰면 바꾸지 못하게 할 수 있다.<br>Object.seal = 속성의 추가, 제거를 막고, configurable을 false로 바꾼다.<br>대신 속성의 값은 writable이 true이기만 하면 바꿀 수 있다.<br>Object.preventExtensions = 속성의 추가만 막을 때 사용한다.<br>그 외의 속성 제거, 값 변경, 설정 변경은 가능하다.</mark><br><br><mark class='gray'>Object.isFrozen = 객체가 freeze 되었는지 여부<br>Object.isSealed = 객체가 sealed 되었는지 여부<br>Object.isExtensible = 객체가 preventExtension 되었는지 여부</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vEBeMbO" data-pen-title="Object.freeze, Object.seal, Object.preventExtensions" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/vEBeMbO">  Object.freeze, Object.seal, Object.preventExtensions</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
     {
         "type" : "groupIng",
