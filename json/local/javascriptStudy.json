@@ -887,6 +887,68 @@ const localJson = [
         "explain" : "<mark class='gray'>객체 내의 속성을 지울 수 있다.<br>성공하면 true를 실패하면 false를 반환한다. configurable이 false거나 freeze된 상태면 실패한다.</mark>" ,
         "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mybqPgB" data-pen-title="delete" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/mybqPgB">  delete</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "함수의 범위(scope)",
+        "title" : "전역 변수와 지역 변수",
+        "explain" : "<mark class='gray'>전역변수 = 자바스크립트에서 제일 바깥 범위(함수 안에 포함되지 않은)에 있는 변수.<br>window 객체에 변수를 만드는 것이다.</mark><br>※전역(global)변수를 만드는 일은 최대한 지양해야한다.<br><mark class='gray'>지역 변수 = 함수 안에 들어있는 변수.<mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvzpJba" data-pen-title="전역 변수와 지역 변수" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/pvzpJba">  전역 변수와 지역 변수</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "스코프(Scope)",
+        "explain" : "<mark class='gray'>지역변수는 함수 스코프 때문에 전역변수에 영향을 미칠 수 없다.<br>지역변수는 함수 스코프에 속해있기 때문에 함수 안에서 선언된 변수는 해당 함수 안에서만 사용할 수 있다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GgKyJEj" data-pen-title="스코프(Scope)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/GgKyJEj">  스코프(Scope)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "스코프 체인(scope chain)",
+        "explain" : "<mark class='gray'>스코프 체인 = 변수의 범위를 호출한 함수의 지역 스코프부터 전역 변수들이 있는 전역 스코프까지 점차 넓혀가며 찾아가는 것처럼, 범위를 넓히면서 찾는 관계를 뜻한다.<br>이러한 스코프 체인으로 인해 내부 함수에서는 외부 함수의 변수에 접근 가능하지만 외부 함수에서는 내부 함수의 변수에 접근할 수 없다.<br>또한 모든 함수들은 전역 객체에 접근할 수 있다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gbYopog" data-pen-title="스코프 체인(scope chain)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/gbYopog">  스코프 체인(scope chain)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "렉시컬 스코핑(lexical scoping)",
+        "explain" : "<mark class='gray'>렉시컬 스코핑 = 함수를 처음 선언하는 순간, 함수 내부의 변수가 자기 스코프로부터 가장 가까운 곳(상위 범위에서)에 있는 변수를 계속 참조하게 되는 것.<br>※스코프는 함수를 호출할 때가 아니라 선언할 때 생긴다.</mark>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ''       
+    },
+
+
+
+
+
+
 
 
 
