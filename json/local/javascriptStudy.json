@@ -916,16 +916,16 @@ const localJson = [
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "렉시컬 스코핑(lexical scoping)",
-        "explain" : "<mark class='gray'>렉시컬 스코핑 = 함수를 처음 선언하는 순간, 함수 내부의 변수가 자기 스코프로부터 가장 가까운 곳(상위 범위에서)에 있는 변수를 계속 참조하게 되는 것.<br>※스코프는 함수를 호출할 때가 아니라 선언할 때 생긴다.</mark>" ,
-        "howUse" : ''       
+        "explain" : "<mark class='gray'>렉시컬 스코핑 = 함수를 처음 선언하는 순간, 선언한 곳을 기준으로 스코프를 정하는 것.<br>※스코프는 함수를 호출할 때가 아니라 선언할 때 생긴다.<br>※언뜻보면 스코프체인과 렉시컬스코프가 같은 거라고 생각할 수 있으나, 스코프체인은 함수 내에서 쓰인(선언한 것이 아닌 쓰인) 변수의 참조값을 찾아 필요 시 상위 스코프까지 가는 것이고<br>렉시컬 스코핑은 함수를 선언한(호출한 것이 아닌 선언한)곳을 기준으로 스코프를 결정하는 것이다.</mark>" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPbJGPe" data-pen-title="렉시컬 스코핑(lexical scoping)" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/dPbJGPe">  렉시컬 스코핑(lexical scoping)</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "<mark class='gray'></mark><br>" ,
-        "howUse" : ''       
+        "title" : "전역 변수명 겹침이슈 및 변경 방지 방법",
+        "explain" : "" ,
+        "howUse" : '<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ogvpxWv" data-pen-title="전역 변수명 겹침이슈 및 변경 방지 방법" data-user="scrimer" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">  <span>See the Pen <a href="https://codepen.io/scrimer/pen/ogvpxWv">  전역 변수명 겹침이슈 및 변경 방지 방법</a> by lsj (<a href="https://codepen.io/scrimer">@scrimer</a>)  on <a href="https://codepen.io">CodePen</a>.</span></p><script async src="https://public.codepenassets.com/embed/index.js"></script>'       
     },
     {
         "type" : "groupIng",
