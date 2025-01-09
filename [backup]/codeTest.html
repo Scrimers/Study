@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CODE TEST</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->		
+		<link id="styleCss" rel="stylesheet" href="./style.css">
+		<link id="mobileStyleCss" rel="stylesheet" href="./mobileStyle.css">
+		<!-- CSS 캐시 방지 (이걸 쓰면 바로 변경된 CSS가 적용되긴 하지만... 페이지 이동 시 마다 CSS입히기 전의 화면이 0.1초 정도 노출된다.) -->
+		<!-- <script src="./cachePreventionJS.js"></script> -->
+
+		<style>		
+			
+		</style>
+	</head>
+	<body>
+		<!-- header 시작 -->
+		<header></header>
+		<!-- header 끝 -->
+
+		<!-- navigation 시작 -->
+		<div class="nav_study_emptySpace"></div>
+		<nav class="nav_sticky">
+			<div class="bg_white b_c_gray indexTitle">
+				<div>
+					<h1 class="indexTitleText">
+						<a href="index.html" class="navA_gray indexATag">STUDY LIST</a><br>						
+					</h1>
+				</div>
+				<div class="indexTitleSubGrid">
+					<div id="wGMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="wGrMode" class="indexTitleColorGrid">
+						<div class="bg_white"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+
+					<div id="bGMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(176, 176, 176);"></div>
+					</div>
+
+					<div id="bGrMode" class="indexTitleColorGrid">
+						<div class="bg_black"></div>
+						<div style="background: rgb(125, 159, 95);"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bg_white b_c_gray indexStudyListGrid">
+				<div class="indexStudy rightB_gray">
+					<a href="htmlStudy.html?studyType=htmlStudy" class="navA_gray">HTML</a><br>		
+				</div>
+				<div class="indexStudy rightB_gray">
+					<a href="cssStudy.html?studyType=cssStudy" class="navA_gray">CSS</a>
+				</div>
+				<div class="indexStudy">
+					<a href="javascriptStudy.html?studyType=javascriptStudy" class="navA_gray">JAVASCRIPT</a>
+				</div>
+			</div>
+			<div class="bg_white b_c_gray indexETCGrid">		
+				<div class="indexStudy rightB_gray">
+					<a href="codeTest.html?studyType=codeTest" class="navA_gray aTagTarget">CODE TEST</a>
+				</div>
+				<div class="indexStudy">
+					<a href="remainStudy.html?studyType=remainStudy" class="navA_gray">REMAIN STUDY</a>
+				</div>
+			</div>			
+		</nav>
+		<div class="nav_study_emptySpace"></div>
+		<!-- navigation 끝 -->
+
+		
+
+		
+
+
+		
+		<!-- 색상 변경 js 불러오기 -->
+		<script src="./colorModeJS.js"></script>
+		<script>
+			//생성자들 선언 시작
+			function Const1() {
+				this.name = "Const1"; 
+				this.name2 = "Const1-2"; 
+			}
+			Const1.prototype.const1ProtoKey="const1ProtoVal";
+
+			var Const2 = function () {
+				this.name = "Const2"; 
+			};
+			Const2.prototype.const2ProtoKey="const2ProtoVal";
+
+			var Const3 = function () {
+				this.name = function name() {
+								return "Const3"; 
+							}
+			};
+			Const3.prototype.const3ProtoKey="const3ProtoVal";
+			//생성자들 선언 끝
+
+			//각 생성자 호출 객체 생성
+			var Const1Obj = new Const1();
+			var Const2Obj = new Const2();
+			var Const3Obj = new Const3();
+
+			//생성자들 선언한 결과 시작
+			document.write(
+				"함수 생성자-Const1====================",
+				"<br>Const1Obj.name : ",
+				Const1Obj.name,
+				"<br>Const1Obj.__proto__.const1ProtoKey : ",
+				Const1Obj.__proto__.const1ProtoKey,
+
+				"<br><br>함수표현식 생성자-Const2================",
+				"<br>Const2Obj.name : ",
+				Const2Obj.name,
+				"<br>Const2Obj.__proto__.const2ProtoKey : ",
+				Const2Obj.__proto__.const2ProtoKey,
+
+				"<br><br>함수표현식 생성자-Const3================",
+				"<br>Const3Obj.name : ",
+				Const3Obj.name(),
+				"<br>Const3Obj.__proto__.const3ProtoKey : ",
+				Const3Obj.__proto__.const3ProtoKey
+			);
+			//생성자들 선언한 결과 끝
+
+			//Const2가 Const1을 상속받음(apply) 시작
+			Const2 = function () {
+				Const1.apply(this, arguments);
+				this.name = "Const2-2"; 
+			};
+			Const2.prototype = Object.create(Const1.prototype);
+			Const2.prototype.const2ProtoKeyNew = "const2ProtoValNew";
+			Const2.prototype.constructor = Const2;
+
+			Const2Obj = new Const2();
+			//Const2가 Const1을 상속받음(apply) 끝
+
+			//Const2가 Const1을 상속받음(apply) 결과 시작
+			document.write(
+				"<br><br> Const2가 Const1을 상속받음(apply)",
+				"<br>Const2Obj.name : ",
+				Const2Obj.name,
+				"<br>Const2Obj.name2 : ",
+				Const2Obj.name2,
+				"<br>Const2Obj.__proto__ : ",
+				JSON.stringify(Const2Obj.__proto__),
+				"<br>Const2Obj.__proto__.const1ProtoKey : ",
+				Const2Obj.__proto__.const1ProtoKey,
+				"<br>Const2Obj.__proto__.const2ProtoKey : ",
+				Const2Obj.__proto__.const2ProtoKey,
+				"<br>Const2Obj.__proto__.const2ProtoKeyNew : ",
+				Const2Obj.__proto__.const2ProtoKeyNew
+			);
+			//Const2가 Const1을 상속받음(apply) 결과 끝
+
+			//Const2를 빈 생성자로 초기화 + 객체도 초기화 시작
+			Const2 = function () {
+				
+			};
+			Const2Obj = new Const2();
+			//Const2를 빈 생성자로 초기화 + 객체도 초기화 끝
+
+			//Const2를 빈 생성자로 초기화 + 객체도 초기화 결과 시작
+			document.write(
+				"<br><br> Const2를 빈 생성자로 초기화 + 객체도 초기화",
+				"<br>Const2Obj.name : ",
+				Const2Obj.name,
+				"<br>Const2Obj.name2 : ",
+				Const2Obj.name2,
+				"<br>Const2Obj.__proto__ : ",
+				JSON.stringify(Const2Obj.__proto__),
+				"<br>Const2Obj.__proto__.const1ProtoKey : ",
+				Const2Obj.__proto__.const1ProtoKey,
+				"<br>Const2Obj.__proto__.const2ProtoKey : ",
+				Const2Obj.__proto__.const2ProtoKey
+			);
+			//Const2를 빈 생성자로 초기화 + 객체도 초기화 결과 끝
+
+			
+
+			
+		</script>
+	</body>
+</html>

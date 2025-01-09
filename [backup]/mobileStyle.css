@@ -1,0 +1,11 @@
+@media (pointer: coarse) {
+    body {
+        padding: 0dvh 3dvh 0dvh 3dvh;
+    }
+    .indexATag {
+        padding-left: 32%;
+    }
+    .indexTitleText {
+        font-size: 20px;
+    }
+}
