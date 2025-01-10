@@ -4,7 +4,7 @@
     --side-bar-height: 90vh;
 }
 /*공통 시작*/
-#main {
+#navi, main {
     padding: 0dvh 10dvh 0dvh 10dvh;
     /* margin-left: var(--side-bar-width); */
 }
@@ -128,9 +128,15 @@ mark.green {
 #sidebar {
     position: fixed;                                            /* 스크롤을 따라오도록 지정 */
     width: var(--side-bar-width);
-    min-height: var(--side-bar-height);                         /* 사이드바의 높이를 전체 화면 높이의 90%로 지정 */
+    /* min-height: var(--side-bar-height);                         사이드바의 높이를 전체 화면 높이의 90%로 지정 */
     margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+    height: var(--side-bar-height);
     z-index: 1;
+    overflow-y: scroll;
+}
+/* 사이드바 스크롤 미노출 처리 */
+#sidebar::-webkit-scrollbar {
+    display: none;
 }
 /* 사이드바 하위 모든 a에 속성값 부여 */
 #sidebar ul > li > a {

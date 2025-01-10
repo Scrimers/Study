@@ -1,23 +1,24 @@
-let jsonData;
+$.ajax({
+    url: './json/'+studyType+'.json',
+    dataType: "json",
+    async: false,   // 동기적으로 로드
+})
+.done(function(data) {
+     //서버에서 실행 시 
+     jsonData = data;
+})
+.fail(function(jqXHR, textStatus, errorThrown) {
+     //로컬에서 실행 시 (CORS에러 때문에 작성)
+     jsonData = localJson;
+})
+.always(function() {
+    jsonData = JSON.parse(JSON.stringify(jsonData));
+    //메인 컨텐츠 그리기 호출
+    composeMainContents(jsonData);
+});
 
-//JSON을 못 읽어오는 이슈가 있어서 일단 serTimeout을 걸긴 했는데...
-//local에서는 이게 의미가 있겠지만... server에서는 어차피 동기로 읽어오는데.. 의미가 없지 않을까?
-//그런데 왜 처음 서버로 들어가서 누르면 작동을 안하고 그 이후엔 작동을 하는지 모르겠다..
-setTimeout(() => {
-    $.ajaxSetup({ async: false });	// 전역으로 동기화 설정
-    $.getJSON('./json/'+studyType+'.json', function(data){
-        //서버에서 실행 시 
-        jsonData = data;
-    })
-    .fail(function() {
-        //로컬에서 실행 시 (CORS에러 때문에 작성)
-        jsonData = localJson;
-    })
-    .always(function() {
-        jsonData = JSON.parse(JSON.stringify(jsonData));
-    });
-    $.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
-
+//메인 컨텐츠 그리기
+function composeMainContents(jsonData) {
     var html = [];
     $.each(jsonData, function(i, item){				
         if(item.title == undefined) {
@@ -145,4 +146,4 @@ setTimeout(() => {
         }
     });
     $('#mainSection').html(html.join(''));
-}, 100);
+}

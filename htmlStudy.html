@@ -18,96 +18,18 @@
 		<!-- header 끝 -->
 
 		<!-- 사이드바 시작 -->
-		<aside id="sidebar" class="bg_white b_c_gray">
-			<img id="sidebarImg" src="/image/drop_gray_right.png">
-			<ul>
-				<li>
-					<a href="#" class="navA_gray">menu1</a>
-					<div class="borderDiv"></div>
-					<ul class="bg_white b_c_gray">
-						<li><a href="#" class="navA_gray">text1</a></li>
-					</ul>					
-				</li>
-				<li>
-					<a href="#" class="navA_gray">menu1</a>
-					<div class="borderDiv"></div>
-					<ul class="bg_white b_c_gray">
-						<li><a href="#" class="navA_gray">text1</a></li>
-					</ul>					
-				</li>
-			</ul>
-		</aside>
+		<div id="sidebarDiv"></div>
 		<!-- 사이드바 끝 -->
-		<!-- 상단 공백용 -->
-		<div class="nav_study_emptySpace"></div>
-		<div id="main">
-			<!-- navigation 시작 -->
-			<nav class="nav_sticky">
-				<div class="bg_white b_c_gray indexTitle">
-					<div>
-						<h1 class="indexTitleText">
-							<a href="index.html" class="navA_gray indexATag">STUDY LIST</a><br>						
-						</h1>
-					</div>
-					<div class="indexTitleSubGrid">
-						<div id="wGMode" class="indexTitleColorGrid">
-							<div class="bg_white"></div>
-							<div style="background: rgb(176, 176, 176);"></div>
-						</div>
 
-						<div id="wGrMode" class="indexTitleColorGrid">
-							<div class="bg_white"></div>
-							<div style="background: rgb(125, 159, 95);"></div>
-						</div>
-
-						<div id="bGMode" class="indexTitleColorGrid">
-							<div class="bg_black"></div>
-							<div style="background: rgb(176, 176, 176);"></div>
-						</div>
-
-						<div id="bGrMode" class="indexTitleColorGrid">
-							<div class="bg_black"></div>
-							<div style="background: rgb(125, 159, 95);"></div>
-						</div>
-					</div>
-				</div>
-				<div class="bg_white b_c_gray nav_cate_Grid">		
-					<div id="DevelopmentDropdown" class="dropdown nav_cate_text rightB_gray">
-						<span class="nav_cate_text">Development</span>
-						<img id="DevelopmentDropdownImg" src="/image/drop_gray_right.png">
-						<div class="dropdown-content bg_white b_c_gray">
-							<a class="navA_gray" href="htmlStudy.html?studyType=htmlStudy">HTML</a>
-							<a class="navA_gray" href="cssStudy.html?studyType=cssStudy">CSS</a>
-							<a class="navA_gray" href="javascriptStudy.html?studyType=javascriptStudy">JAVASCRIPT</a>
-							<a class="navA_gray" href="codeTest.html?studyType=codeTest">CODE TEST</a>
-						</div>
-					</div>
-					<div class="nav_cate_text">
-						<a href="remainStudy.html?studyType=cooking" class="navA_gray">Cooking</a>
-					</div>
-				</div>
-			</nav>
-			<!-- navigation 끝 -->
-
-			<!-- 메인 시작 -->
-			<main>
-				<!-- 메인컨텐츠 시작 -->
-				<section id="mainSection">
-				</section>
-				<!-- 메인컨텐츠 끝 -->
-			</main>
-			<!-- 메인 끝 -->
-		</div>
+		<!-- 네비게이션 및 메인 시작 -->
+		<div id="navigationDiv"></div>
+		<!-- 네비게이션 및 메인 끝 -->
 
 		<!-- 푸터 시작 -->
 		<footer></footer>
 		<!-- 푸터 끝 -->
-		 
-		<!-- JSON데이터 불러오기 -->
-		<script src="./jsonLinkJS.js"></script>
-		<!-- sidebarJS js 불러오기 -->
-		<script src="./sidebarJS.js"></script>
-		<!-- dropdown js 불러오기 -->
-		<script src="./dropdownJS.js"></script>
+
+		<!-- 기본 js 모음 -->
+		<script src="./baseJS.js" ></script>
 	</body>
 </html>

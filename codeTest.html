@@ -13,7 +13,17 @@
 		<!-- <script src="./cachePreventionJS.js"></script> -->
 
 		<style>		
-			
+			.container {
+    display: flex;
+}
+
+.scrollable-div {
+    width: 200px; /* 원하는 너비 설정 */
+    height: 300px; /* 원하는 높이 설정 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    border: 1px solid #ccc; /* 경계선 추가 */
+    margin: 10px; /* 간격 추가 */
+}
 		</style>
 	</head>
 	<body>
@@ -76,8 +86,34 @@
 		<!-- navigation 끝 -->
 
 		
-
-		https://me-in-journey.com/entry/HTMLCSS-%EC%82%AC%EC%9D%B4%EB%93%9C%EB%B0%94-%EB%A9%94%EB%89%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%82%98%ED%83%80%EB%82%98%EB%8A%94-2%EC%B0%A8-%EB%A9%94%EB%89%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-feat-transform-translate
+		<div class="container">
+			<div class="scrollable-div" id="div1">
+				<!-- 내용이 많아야 스크롤이 생깁니다. -->
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+				<p>내용 1</p>
+			</div>
+			<div class="scrollable-div" id="div2">
+				<!-- 내용이 많아야 스크롤이 생깁니다. -->
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+				<p>내용 2</p>
+			</div>
+		</div>
 
 		
 		<!-- 색상 변경 js 불러오기 -->
