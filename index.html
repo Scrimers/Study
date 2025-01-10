@@ -48,27 +48,22 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg_white b_c_gray indexStudyListGrid">
-				<div class="indexStudy rightB_gray">
-					<a href="htmlStudy.html?studyType=htmlStudy" class="navA_gray">HTML</a><br>		
+			<div class="bg_white b_c_gray nav_cate_Grid">		
+				<div id="DevelopmentDropdown" class="dropdown nav_cate_text rightB_gray">
+					<span class="nav_cate_text">Development</span>
+					<img id="DevelopmentDropdownImg" src="/image/drop_gray_right.png" class="nav_cate_text">
+					<div class="dropdown-content bg_white b_c_gray">
+						<a class="navA_gray" href="htmlStudy.html?studyType=htmlStudy">HTML</a>
+						<a class="navA_gray" href="cssStudy.html?studyType=cssStudy">CSS</a>
+						<a class="navA_gray" href="javascriptStudy.html?studyType=javascriptStudy">JAVASCRIPT</a>
+						<a class="navA_gray" href="codeTest.html?studyType=codeTest">CODE TEST</a>
+					</div>
 				</div>
-				<div class="indexStudy rightB_gray">
-					<a href="cssStudy.html?studyType=cssStudy" class="navA_gray">CSS</a>
-				</div>
-				<div class="indexStudy">
-					<a href="javascriptStudy.html?studyType=javascriptStudy" class="navA_gray">JAVASCRIPT</a>
-				</div>
-			</div>
-			<div class="bg_white b_c_gray indexETCGrid">		
-				<div class="indexStudy rightB_gray">
-					<a href="codeTest.html?studyType=codeTest" class="navA_gray">CODE TEST</a>
-				</div>
-				<div class="indexStudy">
-					<a href="remainStudy.html?studyType=remainStudy" class="navA_gray">REMAIN STUDY</a>
+				<div class="nav_cate_text">
+					<a href="remainStudy.html?studyType=cooking" class="navA_gray">Cooking</a>
 				</div>
 			</div>			
 		</nav>
-		<div class="nav_study_emptySpace"></div>
 		<!-- navigation 끝 -->
 
 		<!-- 푸터 시작 -->
@@ -77,5 +72,7 @@
 
 		<!-- 색상 변경 js 불러오기 -->
 		<script src="./colorModeJS.js"></script>
+		<!-- dropdown js 불러오기 -->
+		<script src="./dropdownJS.js"></script>
 	</body>
 </html>

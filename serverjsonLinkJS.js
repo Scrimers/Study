@@ -4,7 +4,6 @@ let jsonData;
 //local에서는 이게 의미가 있겠지만... server에서는 어차피 동기로 읽어오는데.. 의미가 없지 않을까?
 //그런데 왜 처음 서버로 들어가서 누르면 작동을 안하고 그 이후엔 작동을 하는지 모르겠다..
 setTimeout(() => {
-    console.log("1");
     $.ajaxSetup({ async: false });	// 전역으로 동기화 설정
     $.getJSON('./json/'+studyType+'.json', function(data){
         //서버에서 실행 시 
