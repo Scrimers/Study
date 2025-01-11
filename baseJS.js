@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //json파일을 불러오기에 $.getJSON을 썼으나 정상적으로 동작하지 않음. 그래서 $.getScript 사용.
     $.getScript('./json/local/'+studyType+'.json', function() {
         console.log("local JSON load complete");
-    })
+    })    
     .done(function() {
         console.log("local JSON load success");
         //JSON 데이터 파싱 및 메인 컨텐츠 구성

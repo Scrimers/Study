@@ -1,8 +1,4 @@
-$.ajax({
-    url: './json/'+studyType+'.json',
-    dataType: "json",
-    async: false,   // 동기적으로 로드
-})
+$.getJSON('./json/'+studyType+'.json')
 .done(function(data) {
     console.log("=server active=");
      //서버에서 실행 시 
