@@ -4,10 +4,12 @@ $.ajax({
     async: false,   // 동기적으로 로드
 })
 .done(function(data) {
+    console.log("=server active=");
      //서버에서 실행 시 
      jsonData = data;
 })
 .fail(function(jqXHR, textStatus, errorThrown) {
+    console.log("=local active=");
      //로컬에서 실행 시 (CORS에러 때문에 작성)
      jsonData = localJson;
 })

@@ -16,6 +16,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //localJson 데이터 불러오기 (CORS에러 때문에 작성)
     //json파일을 불러오기에 $.getJSON을 썼으나 정상적으로 동작하지 않음. 그래서 $.getScript 사용.
+    $.getScript('./json/local/'+studyType+'.json', function() {
+        console.log("local JSON load complete");
+    })
+    .done(function() {
+        console.log("local JSON load success");
+        //JSON 데이터 파싱 및 메인 컨텐츠 구성
+        $.getScript("./composeMainJS.js", function(data){
+            console.log("main contents compose load complete");
+        })
+        .done(function() {
+            console.log("main contents compose success");
+            //사이드바 로드
+            $('#sidebarDiv').load("sidebar.html", function() {
+                //sidebarJS js 불러오기
+                $.getScript("./sidebarJS.js")
+                .fail(function() {
+                    console.log("sidebarJS load fail");
+                });
+            });
+
+            // 색상 변경 js 불러오기
+            $.getScript("./colorModeJS.js")
+            .fail(function() {
+                console.log("colorModeJS load fail");
+            });
+        })
+        .fail(function() {
+            console.log("main contents compose fail");
+        });
+    })
+    .fail(function() {
+        console.log("local JSON load fail");
+    })  
+    
+    
+        
+
+
+
+    /*
     $.getScript('./json/local/'+studyType+'.json', function(data){     
         //JSON 데이터 파싱 및 메인 컨텐츠 구성
         $.getScript("./composeMainJS.js", function(data){
@@ -37,5 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .fail(function() {
         console.log("local JSON 로드 실패");
-    });				
+    });
+    */
 });
