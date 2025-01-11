@@ -1,4 +1,21 @@
-$.getJSON('./json/'+studyType+'.json')
+$.ajaxSetup({ async: false });	// 전역으로 동기화 설정
+$.getJSON('./json/'+studyType+'.json', function(data){
+    console.log("=server active=");
+    //서버에서 실행 시 
+    jsonData = data;
+})
+.fail(function() {
+    console.log("=local active=");
+    //로컬에서 실행 시 (CORS에러 때문에 작성)
+    jsonData = localJson;
+})
+.always(function() {
+    jsonData = JSON.parse(JSON.stringify(jsonData));
+    //메인 컨텐츠 그리기 호출
+    composeMainContents(jsonData);
+});
+/*
+$.getScript('./json/'+studyType+'.json')
 .done(function(data) {
     console.log("=server active=");
      //서버에서 실행 시 
@@ -14,6 +31,8 @@ $.getJSON('./json/'+studyType+'.json')
     //메인 컨텐츠 그리기 호출
     composeMainContents(jsonData);
 });
+*/
+$.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
 
 //메인 컨텐츠 그리기
 function composeMainContents(jsonData) {
