@@ -133,10 +133,11 @@ mark.green {
     height: var(--side-bar-height);
     z-index: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 /* 사이드바 스크롤 미노출 처리 */
 #sidebar::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 /* 사이드바 하위 모든 a에 속성값 부여 */
 #sidebar ul > li > a {
