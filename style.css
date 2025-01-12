@@ -114,82 +114,144 @@ mark.green {
 /* 드롭다운 끝 ============================*/
 
 /* 사이드바 시작 ============================ */
-/* 사이드바 1depth */
-#sidebar ul, #sidebar li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-/* 사이드바 2depth */
-#sidebar > ul ul {
-    display: none;
-}
-/* 사이드바 영역 */
-#sidebar {
-    position: fixed;                                            /* 스크롤을 따라오도록 지정 */
+/* 1depth 사이드바 */
+#sidebarMain {
+    position: fixed;
     width: var(--side-bar-width);
     /* min-height: var(--side-bar-height);                         사이드바의 높이를 전체 화면 높이의 90%로 지정 */
     margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
     height: var(--side-bar-height);
     z-index: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior: contain none;
+
+    /* background: navy; */
+    /* color: white; */
+    /* top: 0; */
+    /* left: 0; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
 }
 /* 사이드바 스크롤 미노출 처리 */
-#sidebar::-webkit-scrollbar {
-    /* display: none; */
-}
-/* 사이드바 하위 모든 a에 속성값 부여 */
-#sidebar ul > li > a {
-    display: block;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+#sidebarMain::-webkit-scrollbar {
+    display: none;
 }
 /* 1depth용 하단 border */
 .borderDiv {
     margin: 0 10% 0 15%;
     border-bottom: 1px solid;
 }
-/* 자식의 position이 absolute일 때 자식을 영역 안에 가두어 준다 */
-#sidebar > ul > li {
+
+
+#sidebarSub {
+    /* position: relative; */
+    position: fixed;
+    width: var(--side-bar-width);
+    margin-top: calc((100vh - var(--side-bar-height)) / 2);
+    height: var(--side-bar-height);
+    left: 20%;
+    z-index: 1;
+	/* margin-left: -149px; */
+}
+
+.sidebarSubContainer {
+    position: relative;
+    height: 100%;
+    /* left: 244%; */
+}
+
+#sidebarMain > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* height: 7.6vh; */
+    /* width: 100%;
+    height: 200vh; */
+}
+
+.sidebarSubContainer > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* height: 100%; */
+    height: 7.6vh;
+    /* width: 100%;
+    height: 200vh; */
+}
+
+#sidebarMain a{
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 2rem;
+    display: block;
+    min-width: 150px;
+}
+
+.sidebarSubContainer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 2rem;
+    display: block;
+    min-width: 150px;
+}
+
+.sidebarSubContainer a {
+/* .groupStart { */
+    background: lightblue;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    /* visibility: hidden;
+    display: block; */
+    display : none;
+    width: fit-content;
+    /* pointer-events: none; */
+    position: relative;
+    /* left: 1rem; */
+    
+    /* &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: 1rem;
+        height: 1rem;
+        background: lightblue;
+        transform: translatey(-50%);
+        clip-path: polygon(100% 0, 100% 100%, 0 50%);
+    } */
+}
+
+.groupStart::before {
+    /* content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 1rem;
+    height: 1rem;
+    background: lightblue;
+    transform: translatey(-50%);
+    clip-path: polygon(100% 0, 100% 100%, 0 50%); */
+}
+
+#sidebarMain li, .sidebarSubContainer li {
     position: relative;
 }
-/* 모든 메뉴가 마우스 인식 시 반응 */
-#sidebar ul > li:hover > a {
-    background-color: #555;
-}
-/* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
-#sidebar > ul > li:hover > ul {
+
+/* body:has(#item_01:hover) [aria-describedby="item_01"] {
     display: block;
-    position: absolute;
-    top: 0;         /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
-    left: 100%;     /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
-    width: 100%;    /* 1차 메뉴의 너비를 상속 */
-    height: 90%;
+    visibility: visible;
 }
-/* 2depth a 배경색 이슈로 인해 선언 */
-#sidebar > ul > li > ul > li > a{
-    position: absolute;
-    top : -2px;
-    width: 100%;
+body:has(#item_02:hover) [aria-describedby="item_02"] {
+    display: block;
+    visibility: visible;
 }
-/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
-#sidebar {
-    border-radius: 20px;
-    transform: translate(calc(var(--side-bar-width) * -0.8), 0);  /* X축 이동, Y축 고정 */
-    transition: .5s;
-}
-/* 마우스 인식 시 원래의 위치로 이동 */
-#sidebar:hover {
-    transform: translate(-20px, 0);   /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
-}
-/* 사이드바 활성화 아이콘 */
-#sidebar img {
-    width : 6dvh;
-    margin: 5% 0 0 70%;
-}
+body:has(#item_03:hover) [aria-describedby="item_03"] {
+    display: block;
+    visibility: visible;
+}     */
 /* 사이드바 끝 ============================ */
 
 /* nav_Study 시작============================ */
