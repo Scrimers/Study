@@ -134,16 +134,12 @@ mark.green {
     /* overflow-y: auto; */
     /* overflow-x: hidden; */
 }
-/* 사이드바 스크롤 미노출 처리 */
-#sidebarMain::-webkit-scrollbar {
-    display: none;
-}
+
 /* 1depth용 하단 border */
 .borderDiv {
     margin: 0 10% 0 15%;
     border-bottom: 1px solid;
 }
-
 
 #sidebarSub {
     /* position: relative; */
@@ -154,6 +150,14 @@ mark.green {
     left: 20%;
     z-index: 1;
 	/* margin-left: -149px; */
+
+    /* 테스트용 */
+    overflow-y: auto;
+}
+
+/* 사이드바 스크롤 미노출 처리 */
+#sidebarMain::-webkit-scrollbar, #sidebarSub::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebarSubContainer {
@@ -180,6 +184,10 @@ mark.green {
     height: 7.6vh;
     /* width: 100%;
     height: 200vh; */
+
+
+    /* 테스트용 */
+    /* position: fixed; */
 }
 
 #sidebarMain a{
