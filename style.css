@@ -1,7 +1,11 @@
 /* 전체 변수 */
 :root {
-    --side-bar-width: 20vh;
+    --side-bar-width: 10vw;
     --side-bar-height: 90vh;
+}
+/* 디폴트 body제어 */
+body {
+    margin: 0;
 }
 /*공통 시작*/
 #navi, main {
@@ -114,66 +118,116 @@ mark.green {
 /* 드롭다운 끝 ============================*/
 
 /* 사이드바 시작 ============================ */
-/* 1depth 사이드바 */
-#sidebarMain {
+/* 1depth 사이드바와 2dpeth 사이드바를 동일하게 맞춤 */
+#sidebarMain, #sidebarSub {
     position: fixed;
     width: var(--side-bar-width);
-    /* min-height: var(--side-bar-height);                         사이드바의 높이를 전체 화면 높이의 90%로 지정 */
     margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
     height: var(--side-bar-height);
     z-index: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    overscroll-behavior: contain none;
-
-    /* background: navy; */
-    /* color: white; */
-    /* top: 0; */
-    /* left: 0; */
-    /* height: 100vh; */
-    /* overflow-y: auto; */
-    /* overflow-x: hidden; */
+    overscroll-behavior: contain none;  /*스크롤 범위 끝에서 스크롤을 해도 타 영역이 스크롤 안되게*/
 }
-
-/* 1depth용 하단 border */
-.borderDiv {
-    margin: 0 10% 0 15%;
-    border-bottom: 1px solid;
+/* 1depth 사이드바를 border radius 조정 */
+#sidebarMain {
+    border-radius: 20px;
 }
-
+/* 2depth 사이드바를 1depth 옆으로 이동 */
 #sidebarSub {
-    /* position: relative; */
-    position: fixed;
-    width: var(--side-bar-width);
-    margin-top: calc((100vh - var(--side-bar-height)) / 2);
-    height: var(--side-bar-height);
-    left: 20%;
-    z-index: 1;
-	/* margin-left: -149px; */
-
-    /* 테스트용 */
-    overflow-y: auto;
+    left: calc(var(--side-bar-width) + 0.2vw);
 }
+
+
+/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
+#sidebarMain, #sidebarSub {
+    transform: translate(calc(var(--side-bar-width) * -0.8), 0);
+    transition: .5s;
+}
+/* 마우스 인식 시 원래의 위치로 이동 */
+#sidebarMain:hover {
+    /* transform: translate(-20px, 0); */
+    /* transform: translate(0, 0); */
+}
+/* body:has(#sidebarMain:hover) #sidebarSub{
+    transform: translate(-20px, 0);
+}  */
+
 
 /* 사이드바 스크롤 미노출 처리 */
 #sidebarMain::-webkit-scrollbar, #sidebarSub::-webkit-scrollbar {
     display: none;
 }
-
-.sidebarSubContainer {
-    position: relative;
-    height: 100%;
-    /* left: 244%; */
-}
-
+/* 1depth ul의 높이를 부모와 동일하게 설정 */
 #sidebarMain > ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    height: 100%;    
+}
+/* 1depth li의 높이를 부모기준 특정 값으로 고정 */
+#sidebarMain > ul > li{
+    position: relative;
+    height: 8.2%;
+}
+/* 1depth a의 높이를 부모와 동일하게 설정하되 가운데로 위치 설정 */
+#sidebarMain > ul > li > a{
+    display: flex;
     height: 100%;
-    /* height: 7.6vh; */
-    /* width: 100%;
-    height: 200vh; */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: inherit;
+}
+/* 1depth li커서 올라갈 시 색상 변경 */
+#sidebarMain > ul > li:hover {
+    background-color: #555;
+}
+/* 1depth용 하단 border */
+.borderDiv {
+    margin: 0 15%;
+    border-bottom: 1px solid;
+}
+
+#sidebarSub > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* 2dpeth에서 on처리된 ul제외 나머지는 공간 설정 */
+#sidebarSub ul:not(.on) {
+    height : 8.2%;
+}
+#sidebarSub > ul > li {
+    /* height: 100%; */
+    /* height: calc(var(--side-bar-height)* 0.082); */
+}
+#sidebarSub > ul > li > a {
+    /* display: flex; 는 스크립트 상에서 처리*/
+    display : none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+/* 2dpeth시작 부분 상단 border 둥글게 */
+.groupStart {
+    border-radius: 20px 20px 0 0;
+}
+/* 2dpeth종료 부분 하단 border 둥글게 */
+.groupEnd {
+    border-radius:  0 0 20px 20px;
+}
+
+
+
+
+
+/* 아래는 사실상 필요x */
+/* 2depth */
+.sidebarSubContainer {
+    position: relative;
+    height: 100%;
 }
 
 .sidebarSubContainer > ul {
@@ -181,21 +235,16 @@ mark.green {
     padding: 0;
     margin: 0;
     /* height: 100%; */
-    height: 7.6vh;
+    /* height: 3.7dvh; */
+    height: 10%;
     /* width: 100%;
     height: 200vh; */
 
 
     /* 테스트용 */
     /* position: fixed; */
-}
 
-#sidebarMain a{
-    text-decoration: none;
-    color: inherit;
-    padding: 1rem 2rem;
-    display: block;
-    min-width: 150px;
+    /* background: red; opacity: 50%; */
 }
 
 .sidebarSubContainer a {
@@ -232,7 +281,7 @@ mark.green {
     } */
 }
 
-.groupStart::before {
+/* .groupStart::before { */
     /* content: '';
     position: absolute;
     top: 50%;
@@ -242,9 +291,11 @@ mark.green {
     background: lightblue;
     transform: translatey(-50%);
     clip-path: polygon(100% 0, 100% 100%, 0 50%); */
-}
+/* } */
 
-#sidebarMain li, .sidebarSubContainer li {
+
+
+.sidebarSubContainer li {
     position: relative;
 }
 

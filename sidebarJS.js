@@ -70,15 +70,28 @@ for(var i=0 ; i<jsonData.length ; i++) {
 //     console.log(this);
 // }
 
+
+//메인 사이드바 스크롤을 서브 사이드바가 따라오게 하기
+const aDiv = document.getElementById('sidebarMain');
+const bDiv = document.getElementById('sidebarSub');
+aDiv.addEventListener('scroll', () => {
+    bDiv.scrollTop = aDiv.scrollTop; //a div의 스크롤 위치를 b div에 동기화
+});
+
+
 var mouseTarget = "";
 //사이드바 영역에 커서 올렸을 때
 document.querySelector('#sidebar > #sidebarMain > ul').addEventListener('mouseover', function(event) {
+    console.log(1);
     const target = event.target;
 
     //경계선 건너뜀
     if(target.getAttribute('class') == "borderDiv") {
         return;
     }
+
+    //사이드바 1depth 원래 위치 -20px로 이동(css로 2depth는 제어가 어려워 선언)
+    document.querySelector('#sidebarMain').style.transform = 'translate(-20px, 0)';
 
     //기존에 mouseover한 2depth가 있을 때
     if(mouseTarget.length > 0) {
@@ -88,14 +101,20 @@ document.querySelector('#sidebar > #sidebarMain > ul').addEventListener('mouseov
 
     //새롭게 mouseover된 요소
     mouseTarget = document.querySelectorAll('[data-groupNm="'+event.target.id+'"]');
+    console.log("mouseTarget : ", mouseTarget);
 
     //요소에 2depth가 있을 때
     if(mouseTarget.length > 0) {
-        //mouseleave 체크를 위해 class on 추가
-        mouseTarget[0].parentElement.parentElement.setAttribute('class', 'on');
-        //2depth요소 노출 처리
-        mouseTarget.forEach(function(target, index) {        
-            target.style.display = 'block';
+        //사이드바 2depth 원래 위치 -20px로 이동(css로 2depth는 제어가 어려워 선언)
+        document.querySelector('#sidebarSub').style.transform = 'translate(-20px, 0)';
+        
+        //mouseover한 요소의 2depth ul태그 on추가로 노출 처리
+        mouseTarget[0].parentElement.parentElement.classList.add('on');
+
+        mouseTarget.forEach(function(target, index) {    
+            //li태그 영역확보(ul영역이 자식영역을 확보할 수 있도록)    
+            target.parentElement.style.height = 'calc(var(--side-bar-height)* 0.082)';
+            target.style.display = 'flex';
         });
 
         //addEventListener('mouseleave', sidebarMouseleave) = 함수의 참조를 전달한다. 그래서 mouseleave 이벤트가 발생할 때 sidebarMouseleave 함수가 호출된다.
@@ -106,23 +125,28 @@ document.querySelector('#sidebar > #sidebarMain > ul').addEventListener('mouseov
     }
 });
 
-//메인 사이드바 스크롤을 서브 사이드바가 따라오게 하기
-const aDiv = document.getElementById('sidebarMain');
-const bDiv = document.getElementById('sidebarSub');
-aDiv.addEventListener('scroll', () => {
-    bDiv.scrollTop = aDiv.scrollTop; //a div의 스크롤 위치를 b div에 동기화
+document.querySelector('#sidebar > #sidebarMain > ul').addEventListener('mouseleave', function() {
+    //요소에 2depth가 있을 때
+    // if(mouseTarget.length <= 0) {
+        // document.querySelector('#sidebarMain').style.transform = '';
+    // }
 });
 
 //사이드바 mouseleave 로직
 function sidebarMouseleave() {
+    //css통해 자동으로 돌아옴
+    // document.querySelector('#sidebarMain').style.transform = '';
+    document.querySelector('#sidebarSub').style.transform = '';
+
     let onClass = document.querySelector('.on');
-    
     //기존 mouseleave 이벤트 제거
     onClass.removeEventListener('mouseleave', sidebarMouseleave);
     //기존 class on 제거
-    onClass.setAttribute('class', '');
+    onClass.classList.remove('on');
+
     //2depth요소 미노출 처리
     mouseTarget.forEach(function(target, index) {
+        target.parentElement.style.height = '0';
         target.style.display = 'none';
     });
     //기존 mouseover 요소 초기화
