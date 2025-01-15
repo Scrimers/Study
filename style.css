@@ -124,7 +124,6 @@ mark.green {
     width: var(--side-bar-width);
     margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
     height: var(--side-bar-height);
-    z-index: 1;
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: contain none;  /*스크롤 범위 끝에서 스크롤을 해도 타 영역이 스크롤 안되게*/
@@ -132,10 +131,12 @@ mark.green {
 /* 1depth 사이드바를 border radius 조정 */
 #sidebarMain {
     border-radius: 20px;
+    z-index: 2;
 }
 /* 2depth 사이드바를 1depth 옆으로 이동 */
 #sidebarSub {
     left: calc(var(--side-bar-width) + 0.2vw);
+    z-index: 1;
 }
 
 
@@ -156,14 +157,14 @@ mark.green {
 
 /* 사이드바 스크롤 미노출 처리 */
 #sidebarMain::-webkit-scrollbar, #sidebarSub::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 /* 1depth ul의 높이를 부모와 동일하게 설정 */
 #sidebarMain > ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 100%;    
+    height: 100%;        
 }
 /* 1depth li의 높이를 부모기준 특정 값으로 고정 */
 #sidebarMain > ul > li{
@@ -193,6 +194,7 @@ mark.green {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 /* 2dpeth에서 on처리된 ul제외 나머지는 공간 설정 */
 #sidebarSub ul:not(.on) {
