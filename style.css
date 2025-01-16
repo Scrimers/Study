@@ -6,11 +6,11 @@
 /* 디폴트 body제어 */
 body {
     margin: 0;
+    font-size: calc(0.4vw + 1vh);
 }
 /*공통 시작*/
 #navi, main {
-    padding: 0dvh 10dvh 0dvh 10dvh;
-    /* margin-left: var(--side-bar-width); */
+    padding: 0vh 10vh;
 }
 /* 배경 색상(하얀색) */
 .bg_white {
@@ -90,13 +90,13 @@ mark.green {
     position : absolute;
     z-index : 1; /*다른 요소들보다 앞에 배치*/
     width : 100%;
-    left : -2px;
+    left : -1.5px;
 }
 /* 드롭다운 a태그 */
 .dropdown-content a{
     display : block;
-    padding : 1% 0 1% 0;
-    margin: 0 3% 0 3%;
+    padding : 1% 0;
+    margin: 0 3%;
     border-bottom: 1px dashed;
 }
 /* 드롭다운 a태그 커서 위치 시 */
@@ -109,11 +109,13 @@ mark.green {
 }
 /* 드롭다운 이미지 위치 설정 */
 .dropdown img {
-    width: 3%; 
-    vertical-align: middle;
+    height: 100%;
+    width: calc(0.5vw + 2vh);
     float: inline-end;
     padding-right: 3%;
     margin-left: -6%;
+    position: relative;
+    top: 6%;
 }
 /* 드롭다운 끝 ============================*/
 
@@ -124,40 +126,34 @@ mark.green {
     width: var(--side-bar-width);
     margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
     height: var(--side-bar-height);
-    overflow-y: auto;
-    overflow-x: hidden;
     overscroll-behavior: contain none;  /*스크롤 범위 끝에서 스크롤을 해도 타 영역이 스크롤 안되게*/
 }
 /* 1depth 사이드바를 border radius 조정 */
 #sidebarMain {
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     z-index: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 /* 2depth 사이드바를 1depth 옆으로 이동 */
 #sidebarSub {
     left: calc(var(--side-bar-width) + 0.2vw);
     z-index: 1;
+    overflow : hidden;
 }
-
-
-/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
+/* 2depth 노출되었을때만 2depth영역 스크롤 가능 */
+body:has(#sidebarSub > ul > li:hover) #sidebarSub{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* 사이드바 너비의 70%만큼 왼쪽으로 이동 */
 #sidebarMain, #sidebarSub {
-    transform: translate(calc(var(--side-bar-width) * -0.8), 0);
+    transform: translate(calc(var(--side-bar-width) * -0.7), 0);
     transition: .5s;
 }
-/* 마우스 인식 시 원래의 위치로 이동 */
-#sidebarMain:hover {
-    /* transform: translate(-20px, 0); */
-    /* transform: translate(0, 0); */
-}
-/* body:has(#sidebarMain:hover) #sidebarSub{
-    transform: translate(-20px, 0);
-}  */
-
-
 /* 사이드바 스크롤 미노출 처리 */
 #sidebarMain::-webkit-scrollbar, #sidebarSub::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
 /* 1depth ul의 높이를 부모와 동일하게 설정 */
 #sidebarMain > ul{
@@ -179,9 +175,11 @@ mark.green {
     justify-content: center;
     font-weight: bold;
     color: inherit;
+    padding: 0 14%;
+    text-align: center;
 }
-/* 1depth li커서 올라갈 시 색상 변경 */
-#sidebarMain > ul > li:hover {
+/* 1depth, 2depth li커서 올라갈 시 색상 변경 */
+#sidebarMain > ul > li:hover, #sidebarSub > ul > li:hover > a {
     background-color: #555;
 }
 /* 1depth용 하단 border */
@@ -189,7 +187,6 @@ mark.green {
     margin: 0 15%;
     border-bottom: 1px solid;
 }
-
 #sidebarSub > ul {
     list-style: none;
     margin: 0;
@@ -200,16 +197,14 @@ mark.green {
 #sidebarSub ul:not(.on) {
     height : 8.2%;
 }
-#sidebarSub > ul > li {
-    /* height: 100%; */
-    /* height: calc(var(--side-bar-height)* 0.082); */
-}
 #sidebarSub > ul > li > a {
     /* display: flex; 는 스크립트 상에서 처리*/
     display : none;
     height: 100%;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    text-align: center;
     /* position: relative; */
 }
 /* 2dpeth시작 부분 상단 border 둥글게 */
@@ -220,109 +215,16 @@ mark.green {
 .groupEnd {
     border-radius:  0 0 20px 20px;
 }
-
-
-
-
-
-/* 아래는 사실상 필요x */
-/* 2depth */
-.sidebarSubContainer {
-    position: relative;
-    height: 100%;
-}
-
-.sidebarSubContainer > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    /* height: 100%; */
-    /* height: 3.7dvh; */
-    height: 10%;
-    /* width: 100%;
-    height: 200vh; */
-
-
-    /* 테스트용 */
-    /* position: fixed; */
-
-    /* background: red; opacity: 50%; */
-}
-
-.sidebarSubContainer a {
-    text-decoration: none;
-    color: inherit;
-    padding: 1rem 2rem;
-    display: block;
-    min-width: 150px;
-}
-
-.sidebarSubContainer a {
-/* .groupStart { */
-    background: lightblue;
-    padding: 1rem;
-    border-radius: 0.4rem;
-    /* visibility: hidden;
-    display: block; */
-    display : none;
-    width: fit-content;
-    /* pointer-events: none; */
-    position: relative;
-    /* left: 1rem; */
-    
-    /* &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 100%;
-        width: 1rem;
-        height: 1rem;
-        background: lightblue;
-        transform: translatey(-50%);
-        clip-path: polygon(100% 0, 100% 100%, 0 50%);
-    } */
-}
-
-/* .groupStart::before { */
-    /* content: '';
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    width: 1rem;
-    height: 1rem;
-    background: lightblue;
-    transform: translatey(-50%);
-    clip-path: polygon(100% 0, 100% 100%, 0 50%); */
-/* } */
-
-
-
-.sidebarSubContainer li {
-    position: relative;
-}
-
-/* body:has(#item_01:hover) [aria-describedby="item_01"] {
-    display: block;
-    visibility: visible;
-}
-body:has(#item_02:hover) [aria-describedby="item_02"] {
-    display: block;
-    visibility: visible;
-}
-body:has(#item_03:hover) [aria-describedby="item_03"] {
-    display: block;
-    visibility: visible;
-}     */
 /* 사이드바 끝 ============================ */
 
 /* nav_Study 시작============================ */
 /* 인덱스 페이지 상단 빈 공간 */
 .indexTitleEmpty {
-    min-height: 30dvh;
+    min-height: 30vh;
 }
 /* 카테고리 하위 페이지 상단 빈 공간 */
 .nav_study_emptySpace {
-    min-height: 5dvh;
+    min-height: 5vh;
 }
 /* 카테고리 페이지 상단 sticky */
 .nav_sticky {
@@ -335,8 +237,8 @@ body:has(#item_03:hover) [aria-describedby="item_03"] {
     display: grid;
 	grid-template-columns: 3fr 1fr;
     border-bottom: none;
-    font-size: 4dvh;
-    padding: 1dvh 0dvh 1dvh 0dvh;
+    font-size: 4vh;
+    padding: 1vh 0vh;
 }
 .indexTitleText {
     text-align: center;
@@ -350,7 +252,7 @@ body:has(#item_03:hover) [aria-describedby="item_03"] {
 /* 네비게이션-카테고리 그리드 */
 .nav_cate_Grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .indexATag {
     padding-left: 32%;
@@ -364,7 +266,7 @@ body:has(#item_03:hover) [aria-describedby="item_03"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px solid;
-    margin-right: 1dvh;
+    margin-right: 1vh;
     width: 60%;
     height: 75%;
 }
@@ -372,25 +274,34 @@ body:has(#item_03:hover) [aria-describedby="item_03"] {
 
 /* Study 시작============================ */
 .subArticle {
-    margin: 50px 0px 50px 0px;
+    margin: calc(2vw + 3vh) 0px;
 }
 .subGroup {
-    padding: 10px;
-    /* border: 2px solid #7fd57f; */
-    border-top: 0px;
+    padding: calc(0.4vw + 0.4vh);
 }
 .subGroupC {
-    padding-top: 50px;
+    padding-top: 5.5vh;
 }
 .subGrid {
     display: grid;
-    grid-template-columns: 5dvh auto;
+    grid-template-columns: 5vh auto;
 }
 .subTitle {
     margin: 0px;
-    padding: 10px;
+    padding: calc(0.45vw + 0.45vh);
     align-content: center;
     text-align: left;
+    border-bottom: 2px solid;
+}
+.subExplain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 10% 20%;
+    border-bottom: 2px solid;
+    border-right: none;
 }
 .subText {
     padding: 5px 0px 5px 5px;
@@ -410,8 +321,5 @@ body:has(#item_03:hover) [aria-describedby="item_03"] {
 }
 h3.subTitle {
     border-bottom: none;
-}
-div.subTitle {
-    border-right: none;
 }
 /* Study 끝============================ */

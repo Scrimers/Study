@@ -5,7 +5,7 @@ $.ajax({
     method: "GET"
 })
 .done(function(data) {
-    //서버에서 실행 시 
+    //json데이터 불러오기
     jsonData = JSON.parse(JSON.stringify(data));
     //메인 컨텐츠 그리기 호출
     composeMainContents(jsonData);
@@ -24,12 +24,12 @@ function composeMainContents(jsonData) {
         }
 
         if(item.type == "groupStart") {
-            html.push('<article class="subArticle">');
-            html.push('	<h1 class="bg_white b_c_gray subTitle">');
+            html.push('<article class="subArticle b_c_gray">');
+            html.push('	<h1 class="bg_white subTitle">');
             html.push(item.mainTitle);
             html.push('	</h1>');
 
-            html.push('	<div class="bg_white b_c_gray subGroup">');		
+            html.push('	<div class="bg_white subGroup">');		
             if(item.reStudy == "y") {
                 html.push('		<h3 class="bg_white b_c_gray subTitle du">');
             }else {
@@ -39,7 +39,7 @@ function composeMainContents(jsonData) {
             html.push('		</h3>');
 
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);
@@ -58,9 +58,10 @@ function composeMainContents(jsonData) {
                 html.push('		</div>');
                 html.push('	</div>');
             }
+            html.push('</div>');
         }
         else if(item.type == "groupIng" || item.type == "groupEnd") {
-            html.push('	<div class="subGroupC">');		
+            html.push('	<div class="subGroup subGroupC">');		
             if(item.reStudy == "y") {
                 html.push('		<h3 class="bg_white b_c_gray subTitle du">');
             }else {
@@ -70,7 +71,7 @@ function composeMainContents(jsonData) {
             html.push('		</h3>');
 
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);
@@ -94,8 +95,9 @@ function composeMainContents(jsonData) {
                 html.push('	</div>');
             }
 
+            html.push('	</div>');
+
             if(item.type == "groupEnd") {
-                html.push('	</div>');
                 html.push('</article>');
                 
                 if((jsonData.length-1) != i) {
@@ -115,7 +117,7 @@ function composeMainContents(jsonData) {
             html.push('	</h3>');
             
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);

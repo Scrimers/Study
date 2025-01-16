@@ -778,7 +778,7 @@
     {
         "type" : "groupStart",
         "reStudy" : "",
-        "mainTitle" : "",
+        "mainTitle" : "Object",
         "title" : "Object 객체란",
         "explain" : "<mark class='gray'>Object는 모든 객체의 최종 prototype 이다.</mark>생성자를 생성 후 prototype을 추가한 뒤, 객체.__proto__를 하게 되면 추가한 prototype의 정보가 나오게 된다.<br>여기에서 만약 객체.__proto__.__proto__ 를 하게 된다면 Object가 나오게 된다.<br><mark class='gray'>즉, 생성자를 통해 만든 객체는 prototype의 prototype도 Object 객체이다.<br>Object 객체 자체의 prototype은 null이다.<br>이유는 위에서 언급했듯 Object는 모든 객체의 최종 prototype이기 떄문이다.<br>Object 객체의 생성자는 window객체에 저장되어 있다.<br>모든 객체가 Object 객체로부터 상속받기 떄문에 모든 객체는 Object 객체의 메소드들을 사용할 수 있다.</mark>" ,
         "howUse" : ""       
