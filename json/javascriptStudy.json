@@ -1015,8 +1015,8 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "script 동적 추가",
-        "explain" : "appendChild 를 이용해서 넣어야 한다." ,
-        "howUse" : "<xmp>let scriptElement = document.createElement('script'); scriptElement.src = './serverjsonLinkJS.js'; document.body.appendChild(scriptElement);</xmp>"       
+        "explain" : "appendChild 를 이용해서 넣어야 한다.let scriptElement = document.createElement('script'); scriptElement.src = './serverjsonLinkJS.js'; document.body.appendChild(scriptElement);" ,
+        "howUse" : ""       
     },
     
     {

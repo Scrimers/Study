@@ -237,8 +237,9 @@ body:has(#sidebarSub > ul > li:hover) #sidebarSub{
     display: grid;
 	grid-template-columns: 3fr 1fr;
     border-bottom: none;
-    font-size: 4vh;
     padding: 1vh 0vh;
+    font-size: calc(1vw + 1vh);
+    font-weight: bold;
 }
 .indexTitleText {
     text-align: center;
