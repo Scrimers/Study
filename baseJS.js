@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //JSON 데이터 파싱 및 메인 컨텐츠 구성
     $.getScript("./composeMainJS.js")
     .done(function() {
-        if(studyType != "" && studyType != "codeTest") {
+        if(studyType != null) {
             //사이드바 로드
             $('#sidebarDiv').load("sidebar.html", function() {
                 //sidebarJS js 불러오기
