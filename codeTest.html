@@ -34,16 +34,12 @@
 
 		<script>
 
-			var another = function () {
-			var x = 'local';            //바공개 변수
-			function y() {              //공개 변수
-				return x;
-			}
-			return { y: y };
-			}
-			var newScope = another();     //네임스페이스를 통해 y에 접근
+			// var asd = (function () {
+			// 	var x = 'local';
+			// 	return alert( x );
+			// })();
 
-			document.write("newScope : ", newScope.y());
+
 		</script>
 	</body>
 </html>

@@ -916,7 +916,7 @@
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "렉시컬 스코핑(lexical scoping)",
-        "explain" : "<mark class='gray'>함수를 처음 선언하는 순간, 함수 내부의 변수는 자기 스코프로부터 가장 가까운 곳(상위 범위에서)에 있는 변수를 계속 참조하게 되는 것.</mark><br><span class='du'>렉시컬 스코핑은 함수 내부의 변수가 자신이 선언된 곳의 스코프를 참고하는 것이고,<br>스코프 체인은 변수가 자신이 선언된 곳을 찾아 상위 범위로 점차 범위를 넓혀가는 개념이라면<br>애초에 렉시컬 스코프는 변수가 자기 자신이 있는 곳을 참조하고 있으니 스코프 체인이 필요없는게 아닐까?<br>개념을 좀 더 깊숙히 파악해봐야 겠다.</span>" ,
+        "explain" : "<mark class='gray'>함수를 처음 선언하는 순간, 함수 내부의 변수는 자기 스코프로부터 가장 가까운 곳(상위 범위에서)에 있는 변수를 계속 참조하게 되는 것.</mark><br><span class='du'>렉시컬 스코핑은 함수 내부의 변수가 자신이 선언된 곳의 스코프를 참고하는 것이고,<br>스코프 체인은 변수가 자신이 선언된 곳을 찾아 상위 범위로 점차 범위를 넓혀가는 개념이라면<br>애초에 렉시컬 스코프는 변수가 자기 자신이 있는 곳을 참조하고 있으니 스코프 체인이 필요없는게 아닐까?<br>+ 렉시컬 스코핑에 따라 스코프 체인이 어떤 식으로 이루어질 수 있는지가 결정되는 듯 하다.</span>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='dPbJGPe' data-pen-title='렉시컬 스코핑(lexical scoping)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/dPbJGPe'>    렉시컬 스코핑(lexical scoping)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
@@ -940,10 +940,49 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "IIFE(즉시 호출 함수 표현식)",
-        "explain" : "" ,
+        "explain" : "<mark class='gray'>IIFE(즉시 호출 함수 표현식)는 모듈 패턴이라고 하기도 하며<br>함수를 선언하자마자 바로 실행시켜버린다.<br>var 변수명 = (function() { 내용물 })(); 로 사용한다.<br>함수를 function() {}로 선언하면서 동시에 ()를 붙이니까 즉시 실행되는 것이다.<br></mark><br>※즉시 호출 함수 표현식은 라이브러리를 만들 때 기본적으로 쓰이며, 많은 라이브러리가 이 구문을 활용하고 있다.<br>※비공개 변수가 없는 자바스크립트에 비공개 변수 기능을 만들어주기 때문이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybGdLN' data-pen-title='IIFE(즉시 호출 함수 표현식)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybGdLN'>  IIFE(즉시 호출 함수 표현식)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "실행 컨텍스트",
+        "title" : "실행 컨텍스트",
+        "explain" : "<mark class='gray'>실행 컨텐스트란 코드의 실행 흐름이라고 생각하면 된다.<br>전역 컨텍스트 = 처음 코드를 실행(여기서 실행은 브라우저가 스크립트를 로딩해서 실행하는 걸 말한다)하는 순간 모든 것을 포함한 전역 컨텍스트가 생긴다.<br>함수 컨텍스트 = 함수를 호출할 때마다 함수 컨텍스트가 하나씩 더 생긴다.<br><br>컨텍스트의 원칙은 아래과 같다.<br>먼저 전역 컨텍스트 하나 생성 후, 함수 호출 시마다 컨텍스트가 생긴다.<br>컨텍스트 생성 시(전역, 함수 컨테스트 둘 다 포함) 컨텍스트 안에 변수객체(arguments, variable), scope chain, this가 생성된다.<br>컨텍스트 생성 후 함수가 실행되는데, 사용되는 변수들은 변수 객체 안에서 값을 찾고, 없다면 스코프 체인을 따라 올라가며 찾는다.<br>함수 실행이 마무리되면 해당 컨텍스트는 사라진다.(클로저 제외) 페이지가 종료되면 전역 컨텍스트가 사라진다.<br></mark>" ,
         "howUse" : ""       
     },
-
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "전역 컨텍스트",
+        "explain" : "<mark class='gray'>전역 컨텍스트가 생성된 후 두 번째 원칙에 따라 변수객체, scope chain, this가 들어온다. <br>전역 컨텍스트는 arguments(함수의 인자)가 없다.<br>variable은 해당 스코프의 변수들이다.<br>scope chain은 자기 자신인 전역 변수객체이다.<br>this는 따로 설정되어 있지 않으면 window다. <br>※this를 바꾸는 방법은 new를 호출하거나 함수에 다른 this 값을 bind 하는 것이다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBZaeZ' data-pen-title='전역 컨텍스트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBZaeZ'>  전역 컨텍스트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "함수 컨텍스트",
+        "explain" : "함수가 호출될 시 실행되는 컨텍스트이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKXgqZ' data-pen-title='함수 컨텍스트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKXgqZ'>  함수 컨텍스트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "호이스팅",
+        "explain" : "<mark class='gray'>변수를 선언하고 초기화했을 때 선언 부분이 최상단으로 끌어올려지는 현상.<br>※초기화 또는 대입 부분은 그대로 남아있다.<br>※함수 표현식(var 변수명 = function (){})이 아니라 함수 선언식(function 변수명(){})일 때는 식 자체가 통째로 끌어올려진다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLVwEq' data-pen-title='호이스팅' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLVwEq'>  호이스팅</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클로저",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOJxBM' data-pen-title='클로저' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOJxBM'>  클로저</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
 
 
 
