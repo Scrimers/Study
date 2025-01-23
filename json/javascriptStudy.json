@@ -60,7 +60,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "함수(Function)",
-        "explain" : "함수를 선언하는 방법은 크게 2가지가 있다.<br><mark class='gray'>1. 함수선언 방식 : function 함수명(){} 으로 만든다.</mark><br><mark class='gray'>※위 방식을 사용 시에는 함수 끝에 ;(세미콜론)을 쓰지 않는다.</mark><br><mark class='gray'>2. 함수 표현식 : var 변수명 = function(){}; 으로 만든다.</mark><br><mark class='gray'>함수 선언과 함수 표현식의 차이는 호이스팅이라는 현상</mark>이 있다. 이는 차후 다룰 예정이다.<br><mark class='gray'>객체안에서 속성의 값으로서 함수가 쓰이는 경우를 메소드라고 부른다.</mark><br><mark class='gray'>매개변수(Parameter) : 함수에 전달 할 변수이다.</mark><br>함수는 매개변수를 받아서 함수 안의 로직을 처리한다.<br><mark class='gray'>return : 함수 안의 로직을 처리 후 반환할 데이터를 정의하는 부분</mark>이다.<br>또한 <mark class='gray'>return은 함수의 종료를 의미한다. 즉, return이후의 코드는 전부 실행되지 않는다.</mark><br>※함수에 무조건 return을 적어야만 하는 것은 아니다. 반환값이 필요 없는 경우 return을 작성하지 않아도 된다.<br>※return이 작성되지 않은경우 함수는 자동으로 undefined를 반환한다.<br><mark class='gray'>함수 호출법 : 함수명(인자) 로 호출</mark>한다.<br><mark class='gray'>인자(Argument) : 함수의 매개변수로 전달해줄 값</mark>이다. 이 값을 매개변수로 전달받은 함수는 매개변수를 이용하여 안의 로직을 처리한다.<br>※즉, 함수를 선언할 때 괄호 안의 값은 매개변수(Parameter), 함수를 호출할 때의 괄호 안의 값은 인자(Argument)이다.<br><mark class='gray'>1급 함수 : 함수의 값으로 함수를 사용하는 것.</mark>" ,
+        "explain" : "함수를 선언하는 방법은 크게 2가지가 있다.<br><mark class='gray'>1. 함수선언 방식 : function 함수명(){} 으로 만든다.</mark><br><mark class='gray'>※위 방식을 사용 시에는 함수 끝에 ;(세미콜론)을 쓰지 않는다.</mark><br><mark class='gray'>2. 함수 표현식 : var 변수명 = function(){}; 으로 만든다.<br>※함수 표현식의 function(){} 이 부분은 익명 함수이다.</mark><br><mark class='gray'>함수 선언과 함수 표현식의 차이는 호이스팅이라는 현상</mark>이 있다. 이는 차후 다룰 예정이다.<br><mark class='gray'>객체안에서 속성의 값으로서 함수가 쓰이는 경우를 메소드라고 부른다.</mark><br><mark class='gray'>매개변수(Parameter) : 함수에 전달 할 변수이다.</mark><br>함수는 매개변수를 받아서 함수 안의 로직을 처리한다.<br><mark class='gray'>return : 함수 안의 로직을 처리 후 반환할 데이터를 정의하는 부분</mark>이다.<br>또한 <mark class='gray'>return은 함수의 종료를 의미한다. 즉, return이후의 코드는 전부 실행되지 않는다.</mark><br>※함수에 무조건 return을 적어야만 하는 것은 아니다. 반환값이 필요 없는 경우 return을 작성하지 않아도 된다.<br>※return이 작성되지 않은경우 함수는 자동으로 undefined를 반환한다.<br>※return 문 안에 var 키워드를 사용할 수 없다. return 문은 값을 반환해야 하며, 변수 선언(var, let, const)은 반환할 수 없다.<br><mark class='gray'>함수 호출법 : 함수명(인자) 로 호출</mark>한다.<br><mark class='gray'>인자(Argument) : 함수의 매개변수로 전달해줄 값</mark>이다. 이 값을 매개변수로 전달받은 함수는 매개변수를 이용하여 안의 로직을 처리한다.<br>※즉, 함수를 선언할 때 괄호 안의 값은 매개변수(Parameter), 함수를 호출할 때의 괄호 안의 값은 인자(Argument)이다.<br><mark class='gray'>1급 함수 : 함수의 값으로 함수를 사용하는 것.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOqKpm' data-pen-title='함수(Function)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOqKpm'>  함수(Function)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -1012,42 +1012,49 @@
         "reStudy" : "",
         "mainTitle" : "이벤트 리스너와 콜백",
         "title" : "이벤트 리스너",
-        "explain" : "" ,
-        "howUse" : ""       
+        "explain" : "<mark class='gray'>이벤트를 붙이는 방법은 크게 2가지가 있다.<br><br>1. on + '이벤트명' 으로 이벤트를 건다.<br>2. addEventListener 으로 이벤트를 건다.<br>※2번의 방식은 하나의 이벤트에 여러 이벤트리스너를 걸 수 있기도 하고, 특정 이벤트를 제거할 수도 있다.<br>※공통적으로 이벤트가 발생했을 때 등록했던 이벤트 리스너가 실행된다.<br>※이벤트 = 웹 페이지에서 발생하는 특정한 행동이나 상태 변화.<br>※이벤트 리스너 = 특정 이벤트가 발생했을 때 실행되는 함수. 이벤트가 발생할 때 호출되는 콜백 함수.<br><br>이벤트는 removeEventListener 를 사용해 제거할 수 있다.<br><br>※아래는 자수 쓰이는 이벤트 목록이다.<br>blur = 객체가 focus를 잃었을 때.<br>change = 객체의 내용이 바뀌고 focus를 잃었을 때.<br>click = 객체를 클릭했을 때.<br>dblclick = 더블클릭할 때.<br>error = 에러가 발생했을 때.<br>focus = 객체에 focus가 되었을 때.<br>keydown = 키를 눌렀을 때.<br>keypress = 키를 누르고 있을 때.<br>keyup = 키를 눌렀다 뗐을 때.<br>load = 문서나 객체가 로딩되었을 때.<br>mouseover = 마우스가 객체 위에 올라왔을 때.<br>mouseout = 마우스가 객체 바깥으로 나갔을 때.<br>reset = Reset 버튼을 눌렀을 때.<br>resize = 객체의 크기가 바뀌었을 때.<br>scroll = 스크롤바를 조작할 때.<br>submit = 폼이 전송될 때.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbeaNwV' data-pen-title='이벤트 리스너' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbeaNwV'>  이벤트 리스너</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "콜백",
-        "explain" : "" ,
-        "howUse" : ""       
+        "explain" : "<mark class='gray'>콜백이란 특정 작업이 완료된 후에 호출되는 함수를 의미한다.<br>즉, 함수 그 자체가 다른 함수의 인자로서 전달이 되어야 하는거다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENeOrO' data-pen-title='콜백' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENeOrO'>  콜백</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "이벤트 버블링",
-        "explain" : "" ,
-        "howUse" : ""       
+        "title" : "이벤트 버블링, 이벤트 캡처링",
+        "explain" : "<mark class='gray'>이벤트 버블링 = 자식의 이벤트가 부모에게도 전달되는 것이다.<br>이벤트 캡처링 = 부모의 이벤트가 자식에게도 전달되는 것이다.<br>※이벤트 버블링을 주로 쓴다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzxobJ' data-pen-title='이벤트 버블링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzxobJ'>  이벤트 버블링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "이벤트 객체",
-        "explain" : "" ,
-        "howUse" : ""       
+        "explain" : "<mark class='gray'>DOM에 대한 이벤트에 연결한 함수는 이벤트 객체를 매개변수로 사용할 수 있다.<br>이벤트 객체에는 이벤트에 대한 정보들과 이벤트를 조작하는 메소드들이 있다.<br><br>대표적인 메소드로 preventDefault, stopPropagation, stopImmediatePropagation이 있다.<br>preventDefault = 태그의 기본 동작(예를 들면, a 태그는 클릭 시 링크이동, form 태그은 폼 내용 전송)을 하지 않게 막아주는 역할을 한다.<br>stopPropagation = 이벤트 발생 시 상위 요소에게 이벤트가 전달(버블링)되지 않도록 한다.<br>※이벤트 버블링을 막는 거지 이벤트 캡처링을 막지는 못한다.<br>stopImmediatePropagation = 버블링을 막음과 동시에 같은 이벤트의 다른 리스너도 실행되지 않게 한다.<br>※같은 종류의 이벤트의 리스너들을 막는거지 다른 종류의 이벤트를 막을 수는 없다.<br><br>이벤트 정보의 종류 중엔 아래와 같은 것도 있다.<br>event.target = 이벤트가 발생한 태그의 정보를 알 수 있다.<br>event.pageX, event.pageY = 클릭한 좌표를 알 수 있다.<br>event.key = 어떤 키를 쳤는지 알 수 있다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPmjKr' data-pen-title='이벤트 객체' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPmjKr'>  이벤트 객체</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "groupEnd",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "주의사항",
+        "explain" : "<mark class='gray'>html 자체에 이벤트 리스너를 연결하는 것보다는 html과 javascript를 분리시키는게 유지보수가 쉬워지므로 가급적 나누는게 좋다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvaNLE' data-pen-title='주의사항' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvaNLE'>  주의사항</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "함수의 메소드와 arguments",
         "explain" : "" ,
         "howUse" : ""       
     },
-
 
 
     {
@@ -1251,7 +1258,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "익명 함수",
         "explain" : "<mark class='gray'></mark><br>" ,
         "howUse" : ""       
     },
