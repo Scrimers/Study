@@ -160,7 +160,6 @@ function syncScroll() {
 var mouseTarget = "";
 //사이드바 영역에 커서 올렸을 때
 document.querySelector('#sidebar > #sidebarMain > ul').addEventListener('mouseover', function(event) {
-    // debugger;
     const target = event.target;
 
     //경계선 건너뜀

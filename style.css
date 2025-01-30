@@ -319,13 +319,15 @@ body:has(#sidebarSub > ul > li:hover) #sidebarSub{
     align-content: center;
     text-align: center;
     border-top: none;
-    padding: 0px;
+    padding: 0px;    
 }
 .subTextHowUse {
     align-content: center;
     text-align: center;
     border-top: none;
-    padding: 1px;
+    /* padding: 1px; */
+    padding: 0vh 8vh;
+    background: #3d3d3e;
 }
 h3.subTitle {
     border-bottom: none;
