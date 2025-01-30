@@ -52,7 +52,10 @@ function composeMainContents(jsonData) {
 
             if(item.howUse != undefined && item.howUse != "") {
                 html.push('	<div class="subHowUse">');
-                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                html.push('		</div>');
                 html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
@@ -88,7 +91,10 @@ function composeMainContents(jsonData) {
                 }else {
                     html.push('	<div>');
                 }
-                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                html.push('		</div>');
                 html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
@@ -130,7 +136,10 @@ function composeMainContents(jsonData) {
 
             if(item.howUse != undefined && item.howUse != "") {
                     html.push('	<div>');
-                    html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                    // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                    html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                    html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                    html.push('		</div>');
                     html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
@@ -145,4 +154,26 @@ function composeMainContents(jsonData) {
         }
     });
     $('#mainSection').html(html.join(''));
+
+    //이벤트 호출
+    eventLoad();
+}
+
+//이벤트 호출
+function eventLoad() {
+    //코드펜 새로고침
+    document.querySelectorAll('.codePenReload').forEach(function(x) {
+        x.addEventListener('click', function() {
+            //iframe영역
+            const iframe = this.parentElement?.nextElementSibling?.querySelector('iframe');
+            if (iframe) {
+                //주소 변경으로 인한 새로고침
+                const iframeSrc = iframe.getAttribute('src');
+                iframe.setAttribute('src', iframeSrc);
+            }
+            else {
+                console.log("reload fail");
+            }
+        });
+    })
 }
