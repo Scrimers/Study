@@ -339,6 +339,14 @@
         "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
+        "title" : "Math",
+        "explain" : "Math는 Number와는 달리 Math()라는 함수를 제공하지 않는다.<br>이유는 Math는 생성자로서 기능하지 않는 단순 객체이기 때문이다.<br>그래서 엄밀히 말하자면 Math라는 표기는 틀렸다. 명칭의 앞 글자가 대문자인 경우는 암묵적으로 생성자를 명시하기 떄문이다.<br>이론적으로 올바른 표현은 math이다. 하지만 실제로는 Math로 쓰인다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
         "title" : "Math.random()",
         "explain" : "<mark class='gray'>0부터 1 사이의 랜덤 값을 뽑아주며, 1은 포함되지 않는다.<br>Math.random() 으로 사용한다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBLgEE' data-pen-title='숫자-Math.random()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBLgEE'>    숫자-Math.random()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
@@ -404,7 +412,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "배열.reverse()",
-        "explain" : "<mark class='gray'>기존의 배열의 내용을 뒤집는다.<br>배열.reverse() 로 사용한다.</mark>" ,
+        "explain" : "<mark class='gray'>기존의 배열의 내용을 뒤집는다.<br>배열.reverse() 로 사용한다.<br>※새 배열을 반환하지 않는다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='NPKrZXo' data-pen-title='배열-배열.reverse()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/NPKrZXo'>    배열-배열.reverse()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -436,7 +444,7 @@
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "배열.map(function() {}), 배열.forEach(function() {})",
-        "explain" : "<mark class='gray'>배열의 항목들을 반복하면서 조작하는 함수들이다.<br>map(function() {}) 로 사용한다.<br>foreach(function() {}) 로 사용한다.<br>map(), foreach() 둘 다 매개변수를 3개 입력할 수 있으며, 1번째는 현재 처리할 요소, 2번째는 현재 처리할 요소의 인덱스, 3번째는 함수를 호출한 배열 그 자체를 불러온다.<br>3번째 매개변수를 이용해서 원본 배열에 접근할 수 있다.<br>※1번째 매개변수만 필수값이며 2,3번째 매개변수는 옵션이다.<br>map과 forEach의 차이점은 map은 바뀐 새 배열을 반환하지만, forEach는 반환하지 않는다.</mark><br>※forEach보다는 map이 활용성이 더 높다." ,
+        "explain" : "<mark class='gray'>배열의 항목들을 반복하면서 조작하는 함수들이다.<br>map(function() {}) 로 사용한다.<br>foreach(function() {}) 로 사용한다.<br>map(), foreach() 둘 다 매개변수를 3개 입력할 수 있으며, 1번째는 현재 처리할 요소, 2번째는 현재 처리할 요소의 인덱스, 3번째는 함수를 호출한 배열 그 자체를 불러온다.<br>3번째 매개변수를 이용해서 원본 배열에 접근할 수 있다.<br>※1번째 매개변수만 필수값이며 2,3번째 매개변수는 옵션이다.<br>map과 forEach의 차이점은 map은 바뀐 새 배열을 반환하지만, forEach는 반환하지 않는다.<br>※map의 경우 원래 배열의 길이와 같은 길이를 가진 새로운 배열을 반환한다.</mark><br>※forEach보다는 map이 활용성이 더 높다.<br><mark class='gray'>※결론적으로 map과 foreach의 차이점은 반환값이 있냐, 없냐이다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWaOPR' data-pen-title='배열-배열.map(), 배열.forEach()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWaOPR'>    배열-배열.map(), 배열.forEach()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -444,7 +452,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "배열.reduce(function() {}), 배열.reduceRight(function() {})",
-        "explain" : "<mark class='gray'>배열.reduce(function() {}) = 배열을 왼쪽부터 조건을 적용해 하나의 값으로 만든다.<br>배열.reduce(function(이전값, 현재, 인덱스, 원본배열) 로 사용한다.<br>매개변수 중 인덱스, 원본배열은 옵션이다.<br>배열.reduceRight(function() {}) = reduce()와 완전히 같은 기능이지만 오른쪽 값부터 연산을 진행한다.</mark>" ,
+        "explain" : "<mark class='gray'>배열.reduce(function() {}) = 배열을 왼쪽부터 조건을 적용해 하나의 값으로 만든다.<br>배열.reduce(function(이전값, 현재, 인덱스, 원본배열) 로 사용한다.<br>매개변수 중 인덱스, 원본배열은 옵션이다.<br>배열.reduceRight(function() {}) = reduce()와 완전히 같은 기능이지만 오른쪽 값부터 연산을 진행한다.</mark><br>※foreach로도 reduce와 같은 기능을 만들 수 있지만 foreach는 foreach메서드를 담은 변수에 반환값이 전달되지 않으므로, 외부 변수를 선언한뒤 그곳에 값을 담아줘야 한다." ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPgyNJ' data-pen-title='배열-배열.reduce(function() {}), 배열.reduceRight(function() {})' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPgyNJ'>    배열-배열.reduce(function() {}), 배열.reduceRight(function() {})</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -452,7 +460,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "배열.filter(function() {})",
-        "explain" : "<mark class='gray'>기존 배열에서 특정 조건을 만족한 값들만 걸러내어 새 배열로 만든다.<br>배열.filter(function(항목) { 조건 }) 로 사용한다.</mark>" ,
+        "explain" : "<mark class='gray'>기존 배열에서 특정 조건을 만족한 값들만 걸러내어 새 배열로 만든다.<br>배열.filter(function(항목) { 조건 }) 로 사용한다.<br>※원래 배열의 길이보다 짧거나 같은 길이를 가진 새로운 배열을 반환한다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzpaLd' data-pen-title='배열-배열.filter()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzpaLd'>    배열-배열.filter()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -1433,6 +1441,10 @@
     },
 
 
+
+
+
+
     {
         "type" : "",
         "reStudy" : "",
@@ -1454,6 +1466,38 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "메서드 체이닝",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "원시 래퍼",
         "explain" : "" ,
         "howUse" : ""       
     },    
@@ -1465,8 +1509,6 @@
         "explain" : "" ,
         "howUse" : ""       
     },    
-
-    
     {
         "type" : "",
         "reStudy" : "",
