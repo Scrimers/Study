@@ -500,7 +500,7 @@
         "reStudy" : "",
         "mainTitle" : "Window 객체의 메소드 및 속성",
         "title" : "Window 객체란",
-        "explain" : "Window 객체란 브라우저의 요소들과 자바스크립트 엔진, 그리고 모든 변수를 담고 있는 객체이다.<br><mark class='gray'>브라우저 전체를 담당하는 게 Window 객체이고, 웹사이트만 담당하는게 Document 객체이다.<br>당연히 브라우저 안에 웹사이트가 있으니, windoe객체 안에 document객체가 들어있다.<br>window객체는 모든 객체의 조상이므로 전역객체이다.<br>모든 객체를 포함하고 있으므로 window라는 문구는 생략 가능하다.</mark><br>또한 지역변수가 아닌 전역변수로서 선언한 모든 변수들은 window객체 안에 등록된다." ,
+        "explain" : "Window 객체란 브라우저의 요소들과 자바스크립트 엔진, 그리고 모든 변수를 담고 있는 객체이다.<br><mark class='gray'>브라우저 전체를 담당하는 게 Window 객체이고, 웹사이트만 담당하는게 Document 객체이다.<br>당연히 브라우저 안에 웹사이트가 있으니, windoe객체 안에 document객체가 들어있다.<br>window객체는 모든 객체의 조상이므로 전역객체이다.<br>모든 객체를 포함하고 있으므로 window라는 문구는 생략 가능하다.</mark><br>또한 지역변수가 아닌 전역변수로서 선언한 모든 변수들은 window객체 안에 등록된다.<br>※window.document.write()등을 document.write()로 바꿔쓸 수 있다.<br>※전역변수로 선언한 모든 변수들은 window객체 안에 등록되므로 만약 asd라는 전역변수를 선언했다면 window.asd로 호출해도 asd로 호출해도 된다. " ,
         "howUse" : ""       
     },
     {
@@ -516,7 +516,7 @@
         "reStudy" : "y",
         "mainTitle" : "",
         "title" : "window.open()",
-        "explain" : "<mark class='gray'>새 창을 열 때 사용한다.<br>첫 번째 인자로 주소를 받고, 두 번째 인자로 새 탭으로 열지, 현재 탭에 열지를 설정할 수 있다. 세 번째 인자로 새 창에 대한 각종 설정을 전달할 수 있다.<br>또한 window.open()을 변수에 저장하여 부모창에서 자식창을 컨트롤 할 수 있다.<br부모창 -> 자식창 컨트롤 : 변수.document.write(내용)<br>자식창 -> 부모창 컨트롤 : 변수.opener.document.write(내용)</mark>" ,
+        "explain" : "<mark class='gray'>새 창을 열 때 사용한다.<br>첫 번째 인자로 주소를 받고, 두 번째 인자로 새 탭으로 열지, 현재 탭에 열지를 설정할 수 있다. 세 번째 인자로 새 창에 대한 각종 설정을 전달할 수 있다.<br>또한 window.open()을 변수에 저장하여 부모창에서 자식창을 컨트롤 할 수 있다.<br부모창 -> 자식창 컨트롤 : 변수.document.write(내용)<br>자식창 -> 부모창 컨트롤 : window.opener.document.write(내용)</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbwaKd' data-pen-title='window.open()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbwaKd'>    window.open()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -548,7 +548,7 @@
         "reStudy" : "",
         "mainTitle" : "Window 객체",
         "title" : "BOM이란",
-        "explain" : "Browser object model의 줄임말.<br><mark class='gray'>브라우저에 대한 정보를 나타낸다.</mark>" ,
+        "explain" : "Browser object model의 줄임말.<br><mark class='gray'>브라우저에 대한 정보를 나타낸다.</mark><br>※메서드나 함수가 아닌 객체인데도 나름의 로직이 실행되는 이유는 예를 들어 screen의 경우 screen객체 내에 get width(){}, get height(){} 이런식으로 설정되어 있을것으로 추측된다." ,
         "howUse" : ""       
     },
     {
@@ -1076,7 +1076,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "arguments, 유사배열",
-        "explain" : "<mark class='gray'>arguments = 각 컨텍스트에 디폴트로 존재하는 객체.<br>유사배열 = 배열처럼 인덱스를 가지고 있고 length 속성을 가지지만, 배열 메서드를 사용할 수 없다.<br>※arguments 객체나 DOM 메서드에서 반환되는 NodeList가 유사 배열이다.<br></mark>" ,
+        "explain" : "<mark class='gray'>arguments = 각 컨텍스트에 디폴트로 존재하는 객체.<br>유사배열 = 배열처럼 인덱스를 가지고 있고 length 속성을 가지지만, 배열 메서드를 사용할 수 없다.<br>※arguments 객체나 DOM 메서드에서 반환되는 NodeList가 유사 배열이다.<br>NodeList는 기본적으로 forEach메서드만 제공되며, length 속성을 가지고 있어 요소의 개수를 확인할 수 있다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLZmKe' data-pen-title='arguments, 유사배열' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLZmKe'>  arguments, 유사배열</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
