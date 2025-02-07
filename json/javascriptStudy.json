@@ -740,7 +740,7 @@
         "reStudy" : "",
         "mainTitle" : "객체 지향 프로그래밍",
         "title" : "생성자 함수",
-        "explain" : "<mark class='gray'>객체를 생성하는 함수</mark>이다.<br>#다른 언어에서는 class가 있지만 Javascript에는 없다. 대신 생성자 함수가 그 역할을 한다.<br><mark class='gray'>생성자 함수를 만들기 = function 생성자명() {}<br>#생성자 함수 명은 대문자로 시작하게 만들어야 한다.</mark>(그냥 규칙이다.)<br>※생성자 함수를 만드는 것이기에 당연히 <mark class='gray'>함수표현식으로도 만들 수 있다.<br> var 생성자명 = function() {}으로 만들면 된다.</mark><br><mark class='gray'>생성자 함수 호출 = new 생성자함수명(인자);<br>this = 생성자 함수 자기자신<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.</mark><br>#따로 변수를 선언하지 않고 this.asd 이렇게 해도 적용이 되는 걸까?" ,
+        "explain" : "<mark class='gray'>생성자는 함수의 한 종류이다.<br>이유는 생성자와 함수의 코드가 함수선언식으로 표현하자면 function 함수명() {} 으로 동일하기 때문이다.<br>그래서 생성자가 호출되기 전에는 일반 함수와 마찬가지로 this는 window(전역객체)를 가리키게 된다.<br><br>이러한 함수와 생성자의 차이는 크게 2가지가 있는데<br>1. 함수는 명칭이 소문자이지만, 생성자의 경우 명칭의 앞글자가 대문자로 시작한다.<br>(ex : 함수 => function asd() {} / 생성자 => function Asd() {})<br>2. 호출 방식이 다르다.<br>(ex : 함수 => asd() / 생성자 => new Asd())<br><br>여기에서 1번 대문자 명칭의 경우 암묵적인 룰이기 떄문에 생성자 함수가 일반 함수처럼 소문자로 시작해도 코드상의 문제는 전혀 없다.<br><br>2번의 경우를 상세히 살펴보면 new키워드 Asd생성자호출로 나눌 수 있다.<br>new 키워드 = 새로운 객체를 생성한다.<br>Asd 생성자 호출 = 생성자 역시 함수이므로 함수컨텍스트가 실행된다.<br>생성자의 함수컨텍스트가 실행됨에 따라 생성자의 this는 더이상 window가 아닌 새로 생성된 객체를 가리키게 된다.<br>이후 생성자의 로직이 끝나는 시점에 생성자 내부에 return으로 객체가 있으면 해당 객체를 반환하지만<br>반환할 객체가 없다면 새로운 객체를 반환한다.<br>※return으로 객체가 아닌 원시값(String, Number)이 반환되면 무시되고, 새로운 객체가 반환된다.<br>※여기서 반환한다라는 것이 중요하다. 생성이 아닌 반환이라 값이 덮어씌워진다라고 보면 된다.<br><br>만약 var a = new Asd() 이 실행되었을때 변수 a = {} 상태가 되는 것이다.<br><br>이러한 생성자 호출에 따른 this의 바인딩은 매 호출시마다 이뤄지게 된다.<br>즉, 변수 a, 변수 b 각각에 생성자를 호출하게 되면 a, b 변수가 참조하고 있는 객체의 this는 각각 독립적으로 움직이게 된다.<br><br>또한 생성자의 prototype.constructor는 생성자 자신이며<br>새로운 객체의 __proto__는 생성자의 prototype을 참조하기 때문에 __proto__.constructor 역시 생성자를 가리킨다.<br><br>설명이 길었는데 결국 생성자는 객체를 생성하는 함수라고 보면 된다.<br><br>간단한 사용법은 아래와 같다.<br>생성자 함수 호출 = new 생성자함수명(인자);<br>this =  생성자 함수가 호출될 때 생성된 새로운 객체<br>※생성자 함수가 호출되지 않았으면 window(전역객체)를 가리킴<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.<br></mark><br>※생성자 함수 역시 함수의 일종이기에 함수표현식으로 선언할 수 있다. ( var 생성자명 = function() {} )" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgpQOJ' data-pen-title='생성자 함수' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgpQOJ'>    생성자 함수</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
     },
     {
@@ -1481,7 +1481,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "strict mode",
         "explain" : "" ,
         "howUse" : ""       
     },
