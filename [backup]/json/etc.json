@@ -1,0 +1,202 @@
+[    
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "디자인 패턴",
+        "title" : "모듈 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoRYMq' data-pen-title='모듈 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoRYMq'>  모듈 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "싱글턴 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWJovK' data-pen-title='싱글턴 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWJovK'>  싱글턴 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "생성자 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZEXRV' data-pen-title='생성자 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZEXRV'>  생성자 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "추상 팩토리 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbqdze' data-pen-title='추상 팩토리 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbqdze'>  추상 팩토리 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "빌더 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzQYMg' data-pen-title='빌더 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzQYMg'>  빌더 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "적응자 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbKQBvX' data-pen-title='적응자 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/xbKQBvX'>  적응자 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "복합체 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZVRod' data-pen-title='복합체 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZVRod'>  복합체 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "플라이급 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENQRNP' data-pen-title='플라이급 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENQRNP'>  플라이급 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "퍼사드 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgzRgj' data-pen-title='퍼사드 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgzRgj'>  퍼사드 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "프록시 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPeVPM' data-pen-title='프록시 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPeVPM'>  프록시 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "명령 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbQJGb' data-pen-title='명령 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbQJGb'>  명령 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "책임 연쇄 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyBQrLJ' data-pen-title='책임 연쇄 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyBQrLJ'>  책임 연쇄 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "반복자 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='EaYOJxv' data-pen-title='반복자 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/EaYOJxv'>  반복자 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "중재자 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='YPKRMzO' data-pen-title='중재자 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/YPKRMzO'>  중재자 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "옵저버 패턴(관찰자 패턴)",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPrYwV' data-pen-title='옵저버 패턴(관찰자 패턴)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPrYwV'>  옵저버 패턴(관찰자 패턴)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "전략 패턴",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBQbay' data-pen-title='전략 패턴' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBQbay'>  전략 패턴</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },    
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Partial application",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbQZJP' data-pen-title='Partial application' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbQZJP'>  Partial application</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "함수형 프로그래밍",
+        "title" : "함수형 프로그래밍",
+        "explain" : "<mark class='gray'>함수형 프로그래밍은 함수를 기반으로 프로그래밍 하는 것이다.<br><br>함수형 프로그래밍은 다음과 같은 원칙이 있다. <br>1. 입출력이 순수해야한다. (순수함수)<br>-> 하나 이상의 인자를 받고, 받은 인자를 처리하여 반드시 결과물을 돌려주어야한다.<br>-> 인자를 제외한 다른 변수는 사용하면 안된다.<br>-> 받은 인자만으로 결과물을 내어야 한다.<br>※자바스크립트는 this라는 개념 때문에 (this를 어쩔 수 없이 사용해야하는 상황) 순수함수를 사용하기 힘들다.<br>2. 부작용(부산물)이 없어야한다.<br>-> 원본 데이터는 변경되서는 안된다.<br>3. 함수와 데이터를 중점으로 생각한다.<br><br>이러한 함수형 프로그래밍은 인자를 통해 결과물이 나오기 때문에 쉽게 에러를 추적할 수 있다.<br>또한 코드의 재사용성이 매우 높아진다.<br></mark><br>대표적인 함수형 프로그래밍 함수에는 map, filter, reduce 등이 있다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='NPKEJJQ' data-pen-title='함수형 프로그래밍' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/NPKEJJQ'>  함수형 프로그래밍</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Currying",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENQJoE' data-pen-title='Currying' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENQJoE'>  Currying</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "ESLint",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvQOgd' data-pen-title='ESLint' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvQOgd'>  ESLint</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "오버로딩과 오버라이딩",
+        "title" : "오버로딩",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOMXvd' data-pen-title='오버로딩' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOMXvd'>  오버로딩</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "오버라이딩",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWQwOo' data-pen-title='오버라이딩' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWQwOo'>  오버라이딩</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "AMD, CommonJS, UMD 모듈",
+        "title" : "AMD",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbQJwN' data-pen-title='AMD' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbQJwN'>  AMD</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "CommonJS",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPrYgM' data-pen-title='CommonJS' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPrYgM'>  CommonJS</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "UMD",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgzRjJ' data-pen-title='UMD' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgzRjJ'>  UMD</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    }
+]

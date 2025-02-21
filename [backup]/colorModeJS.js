@@ -11,7 +11,6 @@ $('.indexTitleColorGrid').click(function() {
 });
 
 function setColorMode(colorMode) {
-    console.log("2");
     let tarBgColor, tarBCColor, tarnavAColor, tarRBColor, tarMarkColor, tarBLColor;
     let chBgColor, chBCColor, chNavAColor, chRBColor, chMarkColor, chBLColor;
 
@@ -74,11 +73,13 @@ function setColorMode(colorMode) {
             break;
     }
 
+    // var bgColor = $('.'+tarBgColor).not('.indexTitleSubGrid *, #sidebar, #sidebar *');
     var bgColor = $('.'+tarBgColor).not('.indexTitleSubGrid *');
     for(var i=0; i<bgColor.length ; i++) {
         $(bgColor[i]).removeClass(tarBgColor).addClass(chBgColor);
     }
 
+    // var bCColor = $('.'+tarBCColor).not('.indexTitleSubGrid *, #sidebar *, #sidebar *');
     var bCColor = $('.'+tarBCColor).not('.indexTitleSubGrid *');
     for(var i=0; i<bCColor.length ; i++) {
         $(bCColor[i]).removeClass(tarBCColor).addClass(chBCColor);

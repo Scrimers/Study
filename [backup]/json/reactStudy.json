@@ -1,0 +1,434 @@
+[
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "리액트란",
+        "explain" : "<mark class='gray'>React는 페이스북이 만든, MVC 패턴 중 V를 담당하는  라이브러리이다.<br>뷰만 담당하기 때문에 M이나 C는 다른 라이브러리나 패키지로 보완해줘야 한다.<br>(리액트는 라이브러리이기는 하지만 Redux나 MobX, react-router와 함께 프레임워크처럼 사용된다.)<br>컴포넌트 시스템을 구현했기 때문에 매우 효율적으로 코딩할 수 있다.<br>※컴포넌트 = 웹 사이트를 조각낸 것이며, 그 조각 하나 하나가 각자 기능하는 완성품이라고 생각하면 된다.<br>※컴포넌트는 독립적으로 기능해야하며, 재사용 가능해야 한다.<br>업데이트 빈도가 높아도 그렇게 무리가 가지 않는데, React는 가상 DOM을 사용해 브라우저의 부담을 줄였기 때문이다.<br>(DOM 조작이 브라우저에 엄청 무리를 주기 때문에 가상 DOM을 만들어 달라진 부분만 비교해 업데이트한다.)<br>리액트는 모바일과 데스크탑 애플리케이션에서도 사용 가능하다.</mark>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "리액트 설치 방법",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    }
+]

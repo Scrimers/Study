@@ -1,24 +1,21 @@
-let jsonData;
+$.ajax({
+    url: "./json/"+studyType+".json",
+    dataType: "json",
+    async: false,
+    method: "GET"
+})
+.done(function(data) {
+    //json데이터 불러오기
+    jsonData = JSON.parse(JSON.stringify(data));
+    //메인 컨텐츠 그리기 호출
+    composeMainContents(jsonData);
+})
+.fail(function() {
+    console.log("main contents JSON load fail");
+})
 
-//JSON을 못 읽어오는 이슈가 있어서 일단 serTimeout을 걸긴 했는데...
-//local에서는 이게 의미가 있겠지만... server에서는 어차피 동기로 읽어오는데.. 의미가 없지 않을까?
-//그런데 왜 처음 서버로 들어가서 누르면 작동을 안하고 그 이후엔 작동을 하는지 모르겠다..
-setTimeout(() => {
-    console.log("1");
-    $.ajaxSetup({ async: false });	// 전역으로 동기화 설정
-    $.getJSON('./json/'+studyType+'.json', function(data){
-        //서버에서 실행 시 
-        jsonData = data;
-    })
-    .fail(function() {
-        //로컬에서 실행 시 (CORS에러 때문에 작성)
-        jsonData = localJson;
-    })
-    .always(function() {
-        jsonData = JSON.parse(JSON.stringify(jsonData));
-    });
-    $.ajaxSetup({ async: true });	// 전역으로 비동기화 설정
-
+//메인 컨텐츠 그리기
+function composeMainContents(jsonData) {
     var html = [];
     $.each(jsonData, function(i, item){				
         if(item.title == undefined) {
@@ -27,12 +24,12 @@ setTimeout(() => {
         }
 
         if(item.type == "groupStart") {
-            html.push('<article class="subArticle">');
-            html.push('	<h1 class="bg_white b_c_gray subTitle">');
+            html.push('<article class="subArticle b_c_gray">');
+            html.push('	<h1 class="bg_white subTitle">');
             html.push(item.mainTitle);
             html.push('	</h1>');
 
-            html.push('	<div class="bg_white b_c_gray subGroup">');		
+            html.push('	<div class="bg_white subGroup">');		
             if(item.reStudy == "y") {
                 html.push('		<h3 class="bg_white b_c_gray subTitle du">');
             }else {
@@ -42,7 +39,7 @@ setTimeout(() => {
             html.push('		</h3>');
 
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);
@@ -55,15 +52,19 @@ setTimeout(() => {
 
             if(item.howUse != undefined && item.howUse != "") {
                 html.push('	<div class="subHowUse">');
-                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                html.push('		</div>');
                 html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
                 html.push('	</div>');
             }
+            html.push('</div>');
         }
         else if(item.type == "groupIng" || item.type == "groupEnd") {
-            html.push('	<div class="subGroupC">');		
+            html.push('	<div class="subGroup subGroupC">');		
             if(item.reStudy == "y") {
                 html.push('		<h3 class="bg_white b_c_gray subTitle du">');
             }else {
@@ -73,7 +74,7 @@ setTimeout(() => {
             html.push('		</h3>');
 
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);
@@ -90,15 +91,19 @@ setTimeout(() => {
                 }else {
                     html.push('	<div>');
                 }
-                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                html.push('		</div>');
                 html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
                 html.push('	</div>');
             }
 
+            html.push('	</div>');
+
             if(item.type == "groupEnd") {
-                html.push('	</div>');
                 html.push('</article>');
                 
                 if((jsonData.length-1) != i) {
@@ -118,7 +123,7 @@ setTimeout(() => {
             html.push('	</h3>');
             
             html.push('	<div class="subGrid">');
-            html.push('		<div class="bg_white b_c_gray subTitle">설명</div>');
+            html.push('		<div class="bg_white b_c_gray subExplain">설명</div>');
             html.push('		<div class="bg_white b_c_gray subText">');
             if(item.explain != undefined && item.explain != "") {
                 html.push(item.explain);
@@ -131,7 +136,10 @@ setTimeout(() => {
 
             if(item.howUse != undefined && item.howUse != "") {
                     html.push('	<div>');
-                    html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                    // html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법</div>');
+                    html.push('		<div class="bg_white b_c_gray subTitleHowUse">사용법');
+                    html.push('		<span class="codePenReload" type="button">새로고침</span>');
+                    html.push('		</div>');
                     html.push('		<div class="bg_white b_c_gray bg_white b_c_gray subTextHowUse">');
                 html.push(item.howUse);
                 html.push('		</div>');
@@ -146,4 +154,26 @@ setTimeout(() => {
         }
     });
     $('#mainSection').html(html.join(''));
-}, 100);
+
+    //이벤트 호출
+    eventLoad();
+}
+
+//이벤트 호출
+function eventLoad() {
+    //코드펜 새로고침
+    document.querySelectorAll('.codePenReload').forEach(function(x) {
+        x.addEventListener('click', function() {
+            //iframe영역
+            const iframe = this.parentElement?.nextElementSibling?.querySelector('iframe');
+            if (iframe) {
+                //주소 변경으로 인한 새로고침
+                const iframeSrc = iframe.getAttribute('src');
+                iframe.setAttribute('src', iframeSrc);
+            }
+            else {
+                console.log("reload fail");
+            }
+        });
+    })
+}
