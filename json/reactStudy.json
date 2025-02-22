@@ -24,10 +24,26 @@
         "howUse" : ""       
     },
     {
-        "type" : "",
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "리액트 설치 방법",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "리액트 설치 방법",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
         "explain" : "" ,
         "howUse" : ""       
     },
