@@ -59,7 +59,15 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "컴포넌트",
+        "explain" : "<mark class='gray'>리액트는 컴포넌트로 구성된다.</mark><br>※컴포넌트 = 고유한 로직과 모양을 가진 UI.<br>※컴포넌트는 그 용도에 따라 아주 작은 버튼이 될 수도 있고, 전체 페이지만큼 클 수도 있다.<br><br>리액트 컴포넌트는 최종적으로 HTML로 변환되는 JSX를 반환하는 자바스크립트 함수를 뜻한다.<br><mark class='gray'>리액트 컴포넌트 선언 = function 함수명() { return (JSX문법); }<br>리액트 컴포넌트 호출 = <함수명 /><br>※리액트 컴포넌트는 마치 생성자와 같이 대문자로 시작해야 하며, JSX문법에서 쓰이는 html태그는 소문자로 시작해야 한다.<br>※리액트 컴포넌트는 중첩이 가능하다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByaRQyj' data-pen-title='컴포넌트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/ByaRQyj'><br>컴포넌트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JSX",
         "explain" : "" ,
         "howUse" : ""       
     },
@@ -67,15 +75,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
+        "title" : "export",
         "explain" : "" ,
         "howUse" : ""       
     },
