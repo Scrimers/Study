@@ -76,7 +76,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "JSX 사용법",
-        "explain" : "<mark class='gray'>JSX에서는 &lt;br /&gt;같이 태그를 닫아야한다.<br>또한 컴포넌트는 여러 개의 JSX 태그를 반환할 수 없으며,<br>&lt;div&gt;...&lt;/div&gt; 또는 빈 <>...&lt;/&gt; 래퍼와 같이 전체 JSX가 공유하는 부모로 감싸야 한다.<br><br>※아래의 예시에는 return( JSX문법 ) 이런식으로 사용했지만, JSX문법을 return문 안에서만 쓸 수 있는건 아니다.<br>※return() 은 순수 javascript에서도 쓸 수 있다. 주로 가독성을 위해 여러 줄의 값을 반환할 때 사용된다.</mark>" ,
+        "explain" : "<mark class='gray'>JSX에서는 &lt;br /&gt;같이 태그를 닫아야한다.<br>또한 컴포넌트는 여러 개의 JSX 태그를 반환할 수 없으며,<br>&lt;div&gt;...&lt;/div&gt; 또는 빈 <>...&lt;/&gt; 래퍼와 같이 전체 JSX가 공유하는 부모로 감싸야 한다.<br><br>※아래의 예시에는 return( JSX문법 ) 이런식으로 사용했지만, JSX문법을 return문 안에서만 쓸 수 있는건 아니다.<br>※return() 은 순수 javascript에서도 쓸 수 있다. 주로 가독성을 위해 여러 줄의 값을 반환할 때 사용된다.※JSX 내에서 JavaScript 표현식(예를 들어 map)을 사용할 때는 항상 중괄호 {}로 감싸야 한다.<br>JSX 문법 내에서는 for문 사용이 불가능하다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mydmOpV' data-pen-title='JSX' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/mydmOpV'><br>JSX</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
@@ -93,13 +93,37 @@
         "mainTitle" : "",
         "title" : "class 속성",
         "explain" : "<mark class='gray'>리액트에서는 태그의 클래스 속성을 명시할 때 class로 쓰지 않고, className으로 쓴다.<br>※만약 class로 쓰게되면 에러가 발생하게 된다.<br>※className으로 코드를 작성 후 결과를 개발자도구로 보게되면 class로 변환되어 있는 걸 확인할 수 있다.</mark>" ,
-        "howUse" : ""       
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='YPzVOdR' data-pen-title='class 속성' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/YPzVOdR'><br>class 속성</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "JSX문법 내 변수 값 노출 및 객체 정의",
+        "explain" : "<mark class='gray'>JSX문법 내에 중괄호를 사용하여 변수를 삽입할 수 있다.<br>이러한 사용은 단순한 태그 사이의 문자열 노출부터 태그 속성의 값으로도 사용 가능하다.<br><br>JSX문법 내 변수 사용법 : {변수명} 또는 {객체변수명.속성키}<br><br>주의할 점은 style 속성과 같이 여러개의 속성 값이 정의 될 수 있는 경우 중괄호를 두 번 써야한다는 것이다.<br><br>JSX문법 내 style 속성 값으로 변수 사용법 : {{속성키 : 속성값, 속성키 : 속성값}}<br>※위 예시를 상세히 파악하자면 다음과 같다.<br>※첫 번째 중괄호 {}: JSX에서 JavaScript 표현식을 사용하기 위해 필요하다. 이 중괄호는 JSX가 JavaScript 코드를 인식하도록 한다.<br>※두 번째 중괄호 {}: 이 부분은 실제 JavaScript 객체를 나타낸다. 객체는 {}로 감싸진 속성과 값을 키:값 으로 정의한 것이다.</mark><br><br>결론적으로 단순히 변수 값을 노출할 때는 중괄호를 한 쌍만 쓰면 되지만,<br>객체를 선언해야 할 때는 중괄호를 두 쌍을 써야 한다.<br>※오해하면 안되는게 JSX문법 내에서만 {객체변수명.속성키}를 쓰는 거지, JSX문법이 없는 곳에서는 javascript와 같이 객체변수명.속성키를 쓰면 된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEBmJpv' data-pen-title='Untitled' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/qEBmJpv'><br>Untitled</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "조건부 렌더링",
+        "explain" : "<mark class='gray'>if 또는 삼항연산자 등을 통하여 조건에 따라 렌더링이 가능하게 할 수 있다.<br>JSX문법 밖에서는 if, 삼항연산자 전부 쓸 수 있지만<br>JSX문법 내에서는 if는 쓸 수 없다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emYWoWz' data-pen-title='조건부 렌더링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/emYWoWz'><br>조건부 렌더링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "리스트 렌더링",
+        "explain" : "<mark class='gray'>컴포넌트 리스트를 렌더링하기 위해서는 for 문 및 map() 함수와 같은 자바스크립트 기능을 사용해야 한다.<br>여기서 주의할 점은 map()은 JSX 문법내에서 사용이 가능하지만 for문은 JSX문법 내에서는 사용이 불가능하다는 것이다.<br><br>JSX 내에서 map() 사용 : {변수.map((item, index) => (로직))}<br>※(item, index) 라고 적힌 부분은 그 명칭을 달리 할 수 있다.<br>※만약 item만 쓰고 싶은 경우에는 {변수.map(item => (로직))} 으로 사용할 수 있다.<br>※반드시 JSX 내에서 map() 사용에 적은 것처럼 중괄호가 있어야 한다.<br>※그 이유는 JSX 내에서 JavaScript 표현식(예를 들어 map)을 사용할 때는 항상 중괄호 {}로 감싸야 하기 떄문이다.<br><br>리액트에서는 key속성이 있다.<br>key속성은 임의의 명칭이 아닌 고정된 명칭이다.<br>key속성은 리스트를 렌더링할 때 각 요소를 고유하게 식별하기 위해 사용된다.<br>key속성은 필수가 아닌 선택이지만, 만약 key속성을 넣지 않는다면 성능 저하가 있어나거나, UI 버그가 일어나기 쉽다.<br>key속성은 리액트 내부 알고리즘에서 사용되며, 실제 DOM요소에는 나타나지 않는다. 따라서 key속성을 입력했으나 개발자 도구에서 해당 태그에 key 속성이 보이지 않는 것은 정상적인 동작이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxYwQOp' data-pen-title='리스트 렌더링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/zxYwQOp'><br>리스트 렌더링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "이벤트에 응답",
         "explain" : "" ,
         "howUse" : ""       
     },
@@ -107,7 +131,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "화면 업데이트",
         "explain" : "" ,
         "howUse" : ""       
     },
@@ -115,7 +139,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
+        "title" : "Hook",
         "explain" : "" ,
         "howUse" : ""       
     },
@@ -123,31 +147,7 @@
         "type" : "",
         "reStudy" : "",
         "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
+        "title" : "컴포넌트 간 데이터 공유",
         "explain" : "" ,
         "howUse" : ""       
     },
