@@ -132,8 +132,8 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "상태(state)",
-        "explain" : "" ,
-        "howUse" : ""       
+        "explain" : "<mark class='gray'>컴포넌트가 특정 정보를 기억하여 표시하고자 할 때 사용한다.<br>예를 들어 버튼이 클릭된 횟수를 세고 싶은 경우를 들 수 있다.<br><br>state를 사용하기 위해선 다음과 같이 하면 된다.<br>import { useState } from 'react';<br>const [명칭, set명칭] = useState(초기값);<br><br>const [명칭, set명칭]에서 첫번째 명칭 = 상태값(처음에는 초기값)이 세팅되는 변수. 이후 set명칭을 통해 업데이트 된 값이 들어가게 된다.<br>const [명칭, set명칭]에서 두번째 set명칭 = 상태를 업데이트 하는 함수. 안의 로직에 의해 변경된 값에 따라 상태를 변경하고 컴포넌트를 다시 렌더링하여 UI를 업데이트한다.<br><br>※명칭은 반드시 [명칭, set명칭]으로 할 필요는 없다. 예를 들어 [a, b] 이런식으로 해도 상관없다.<br>※하지만 일반적으로 [명칭, set명칭]으로 작성한다.<br>※useState의 초기값은 반드시 Number일 필요는 없다.<br>※초기값으로 문자열, 객체, 배열 등 어떤 데이터 타입도 사용할 수 있다. <br><br>※set명칭(3)과 명칭 = 3 의 차이<br>※set명칭(3)는 React의 상태 업데이트 함수로, 상태를 변경하고 컴포넌트를 다시 렌더링한다. 즉, 명칭의 값을 3으로 설정하고, 그에 따라 UI가 업데이트된다.<br>※반면에 명칭 = 3은 단순히 변수 명칭의 값을 변경하는 것이며, React의 상태 관리 시스템과는 관계가 없다. 즉 명칭=3은 React가 상태 변경을 인식하지 못하므로 UI가 업데이트되지 않는다. 따라서 setCount를 사용해야 한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbxrmdg' data-pen-title='상태(state)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/xbxrmdg'><br>상태(state)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "",
@@ -141,7 +141,7 @@
         "mainTitle" : "",
         "title" : "Hook",
         "explain" : "" ,
-        "howUse" : ""       
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JojJxmw' data-pen-title='Hook' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/JojJxmw'><br>Hook</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
         "type" : "",
