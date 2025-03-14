@@ -76,7 +76,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "JSX 사용법",
-        "explain" : "<mark class='gray'>JSX에서는 &lt;br /&gt;같이 태그를 닫아야한다.<br>또한 컴포넌트는 여러 개의 JSX 태그를 반환할 수 없으며,<br>&lt;div&gt;...&lt;/div&gt; 또는 빈 <>...&lt;/&gt; 래퍼와 같이 전체 JSX가 공유하는 부모로 감싸야 한다.<br><br>※아래의 예시에는 return( JSX문법 ) 이런식으로 사용했지만, JSX문법을 return문 안에서만 쓸 수 있는건 아니다.<br>※return() 은 순수 javascript에서도 쓸 수 있다. 주로 가독성을 위해 여러 줄의 값을 반환할 때 사용된다.※JSX 내에서 JavaScript 표현식(예를 들어 map)을 사용할 때는 항상 중괄호 {}로 감싸야 한다.<br>JSX 문법 내에서는 for문 사용이 불가능하다.</mark>" ,
+        "explain" : "<mark class='gray'>JSX에서는 &lt;br /&gt;같이 태그를 닫아야한다.<br>또한 컴포넌트는 여러 개의 JSX 태그를 반환할 수 없으며,<br>&lt;div&gt;...&lt;/div&gt; 또는 빈 &lt;&gt;...&lt;/&gt; 래퍼와 같이 전체 JSX가 공유하는 부모로 감싸야 한다.<br>※이러한 것을 루트 엘리먼트로 감싼다고 하다.<br>빈 &lt;&gt;...&lt;/&gt; 을 Fragment라고 한다.<br>※Fragment는 브라우저상의 HTML 트리 구조에서 흔적을 남기지 않고 그룹화해준다.<br><br>※아래의 예시에는 return( JSX문법 ) 이런식으로 사용했지만, JSX문법을 return문 안에서만 쓸 수 있는건 아니다.<br>※return() 은 순수 javascript에서도 쓸 수 있다. 주로 가독성을 위해 여러 줄의 값을 반환할 때 사용된다.※JSX 내에서 JavaScript 표현식(예를 들어 map)을 사용할 때는 항상 중괄호 {}로 감싸야 한다.<br>JSX 문법 내에서는 for문 사용이 불가능하다.</mark>" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mydmOpV' data-pen-title='JSX' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/mydmOpV'><br>JSX</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
