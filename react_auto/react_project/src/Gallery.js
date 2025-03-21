@@ -1,12 +1,8 @@
-import { Profile } from './Profile.js';
-
-export default function Gallery() {
+export function getImageUrl(person, size = 's') {
   return (
-    <section>
-      <h1>Amazing scientists</h1>
-      <Profile />
-      <Profile />
-      <Profile />
-    </section>
+    'https://i.imgur.com/' +
+    person.imageId +
+    size +
+    '.jpg'
   );
 }

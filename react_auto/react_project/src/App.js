@@ -1,14 +1,18 @@
-export default function Bio() {
+function Comp({test, children }) {
   return (
     <>
-    <div className="intro">
-      <h1>Welcome to my website!</h1>
+    <div className="card">
+      {children}
     </div>
-    <p className="summary">
-      You can find my thoughts here.
-      <br/><br/>
-      <b>And <i>pictures</i></b> of scientists!
-    </p>
+    <span>{test}</span>
     </>
+  );
+}
+
+export default function Main() {
+  return (
+    <Comp test={"777"}>
+      ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    </Comp>
   );
 }
