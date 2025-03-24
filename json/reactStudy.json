@@ -124,7 +124,7 @@
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "리스트 렌더링",
-        "explain" : "<mark class='gray'>컴포넌트 리스트를 렌더링하기 위해서는 for 문 및 map() 함수와 같은 자바스크립트 기능을 사용해야 한다.<br>여기서 주의할 점은 map()은 JSX 문법내에서 사용이 가능하지만 for문은 JSX문법 내에서는 사용이 불가능하다는 것이다.<br><br>JSX 내에서 map() 사용 : {변수.map((item, index) => (로직))}<br>※(item, index) 라고 적힌 부분은 그 명칭을 달리 할 수 있다.<br>※만약 item만 쓰고 싶은 경우에는 {변수.map(item => (로직))} 으로 사용할 수 있다.<br>※반드시 JSX 내에서 map() 사용에 적은 것처럼 중괄호가 있어야 한다.<br>※그 이유는 JSX 내에서 JavaScript 표현식(예를 들어 map)을 사용할 때는 항상 중괄호 {}로 감싸야 하기 떄문이다.<br><br>리액트에서는 key속성이 있다.<br>key속성은 임의의 명칭이 아닌 고정된 명칭이다.<br>key속성은 리스트를 렌더링할 때 각 요소를 고유하게 식별하기 위해 사용된다.<br>key속성은 필수가 아닌 선택이지만, 만약 key속성을 넣지 않는다면 성능 저하가 있어나거나, UI 버그가 일어나기 쉽다.<br>key속성은 리액트 내부 알고리즘에서 사용되며, 실제 DOM요소에는 나타나지 않는다. 따라서 key속성을 입력했으나 개발자 도구에서 해당 태그에 key 속성이 보이지 않는 것은 정상적인 동작이다.</mark>" ,
+        "explain" : "" ,
         "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxYwQOp' data-pen-title='리스트 렌더링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'><br><span>See the Pen <a href='https://codepen.io/scrimer/pen/zxYwQOp'><br>리스트 렌더링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)<br>on <a href='https://codepen.io'>CodePen</a>.</span><br></p><br><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
     },
     {
