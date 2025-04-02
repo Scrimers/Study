@@ -1,0 +1,1368 @@
+[
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JavaScript란",
+        "explain" : "<mark class='gray'>정적인 요소만을 지닌 HTML에 사용자와 상호작용 가능한 동적인 요소를 추가하기 위해 사용</mark>한다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JavaScript 이용방법",
+        "explain" : "웹브라우저가 JavaScript를 인식할 수 있도록 HTML코드로 알려줘야 한다.<br><mark class='gray'>body태그안에 script태그를 쓰면 된다.</mark>",
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbebKpj' data-pen-title='JavaScript 이용방법' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbebKpj'>  JavaScript 이용방법</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "write",
+        "explain" : "웹페이지에 <mark class='gray'>글씨를 출력할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbebKjO' data-pen-title='write' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbebKjO'>  write</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "변수",
+        "explain" : "var = variable의 줄임말.<br><mark class='gray'>변수를 선언할 때 사용</mark>한다.<br><mark class='gray'>변수는 데이터를 저장하는 공간</mark>이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='XJrJBax' data-pen-title='변수와 사용법' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/XJrJBax'>  변수와 사용법</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "데이터의 종류",
+        "title" : "데이터의 종류",
+        "explain" : "<mark class='gray'>문자열(String) : 변수에 문자를 저장한다.</mark><br>※문자열 입력 시 큰따옴표 안에 큰따옴표를 넣을 순 없다. 큰따옴표 안에는 작은따옴표를, 작은따옴표 안에는 큰따옴표를 넣을 수 있다.<br>만약 한가지 따옴표만 쓰고 싶을떄는 \\따옴표 이렇게 해주면 된다.<br>※위와 같이 \\를 붙이는 것을 이스케이핑이라고 한다.<br><mark class='gray'>숫자(Number) : Java와 달리 int, float이런 타입을 명시할 필요 없이 그냥 숫자만 넣으면 된다.</mark><br>불린(Boolean) : true, false만을 값으로 지니고 있는 데이터 유형이다. ※따옴표가 없다. 따옴표가 들어가는 순간 문자열이다.<br><mark class='gray'>Null : 변수에 빈 값을 의도적으로 넣어 기존 값을 지울 때 사용</mark>한다.<br><mark class='gray'>Undefined : 변수 선언 후 아무 값도 집어넣지 않았을 때 자동으로 설정되는 값</mark>이다. 데이터 명 그대로 정의되지 않은 값이다.<br>객체(Object) / 배열(Array) / 함수(Function)는 그 양이 많고 중요하므로 아래에서 다룰 예정이다.<br>※아래의 문구 중 var a = '안녕하세요.' 와 같이 <mark class='gray'>=은 변수에 어떠한 값을 대입할 때 쓰이며, 이러한 것을 초기화한다 라고 표현</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLNErb' data-pen-title='데이터의 종류' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLNErb'>  데이터의 종류</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체(Object)",
+        "explain" : "변수에 대입한 값으로 <mark class='gray'>{}로 감싼 문구를 객체라고 한다.</mark><br>객체에는 속성(Property)이 있으며, <mark class='gray'>속성은 키(Key)와 값(Value)으로 이루어져 있다.</mark><br>※키는 따옴표가 없이도 선언할 수 있으나, 있어도 상관없다.<br>※다만 키 값에 띄어쓰기가 들어가게 된다면 반드시 따옴표로 감싸줘야 한다.<br><mark class='gray'>값에 들어가는 데이터는 어떤 것이든 상관없다.</mark> (객체, 함수도 값에 들어갈 수 있다. 즉, <mark class='gray'>객체안에 객체가 존재할 수 있다.</mark>)<br>변수에 대입한 <mark class='gray'>객체 값에 접근을 하기 위해선 변수명.속성키 이렇게 접근하면 된다. 또는 변수명[속성키]로 접근할 수 있다.</mark><br>※일반적으로는 변수명.속성키로 접근을 하며, []를 쓰이는 경우는 속성키에 띄어쓰기가 포함된 경우에 쓰인다.<br>※만약 <mark class='gray'>객체안에 객체에 접근을 하고자 할 때는 변수명.속성키.속성키로 접근</mark>하면 된다.<br><mark class='gray'>객체의 속성을 지우기 위해선 delete키워드를 사용하면 된다. delete 변수명.속성키 이렇게 사용</mark>한다.<br><mark class='gray'>객체를 생성하는 방법으로 new 키워드를 사용하는 방법이 있다.</mark> 이 방법에 대해선 차후 다룰 예정이다.<br>{}를 사용해서 만든 객체를 객체 리터럴이라고 한다.<br>※new키워드를 쓰는 것보다 {}를 사용하는게 권장사항이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoNZgY' data-pen-title='객체(Object)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoNZgY'>  객체(Object)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열(Array)",
+        "explain" : "변수에 대입한 값으로 <mark class='gray'>[]로 감싼 문구를 배열이라고 한다.</mark><br>객체와 마찬가지로 <mark class='gray'>어떤 값이든 들어갈 수 있다.</mark><br>※배열 안에 들어간 것들을 요소(item)라고 한다.<br>※Javascript에서의 배열은 Java와는 달리 <mark class='gray'>배열의 길이를 미리 정할 필요가 없다. 안의 요소에 따라 자동으로 늘어나거나 줄어든다.</mark><br>배열은 객체와는 달리 <mark class='gray'>키가 없고, 값만 순서대로 나열되어 있다.</mark><br><mark class='gray'>배열 안의 요소를 선택하려면 변수명[숫자] 를 입력하면 된다.</mark><br>배열 역시 <mark class='gray'>new 키워드를 사용해서 생성할 수 있다.</mark><br>※new를 사용하지 않고 []만 사용해서 만든 배열을 배열 리터럴이라고 한다.<br><br>※new키워드를 쓰는 것보다 []를 사용하는게 권장사항이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvxzeR' data-pen-title='배열(Array)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvxzeR'>  배열(Array)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "함수(Function)",
+        "explain" : "함수를 선언하는 방법은 크게 2가지가 있다.<br><mark class='gray'>1. 함수선언 방식 : function 함수명(){} 으로 만든다.</mark><br><mark class='gray'>※위 방식을 사용 시에는 함수 끝에 ;(세미콜론)을 쓰지 않는다.</mark><br><mark class='gray'>2. 함수 표현식 : var 변수명 = function(){}; 으로 만든다.<br>※함수 표현식의 function(){} 이 부분은 익명 함수이다.</mark><br><mark class='gray'>함수 선언과 함수 표현식의 차이는 호이스팅이라는 현상</mark>이 있다. 이는 차후 다룰 예정이다.<br><mark class='gray'>객체안에서 속성의 값으로서 함수가 쓰이는 경우를 메소드라고 부른다.</mark><br><mark class='gray'>매개변수(Parameter) : 함수에 전달 할 변수이다.</mark><br>함수는 매개변수를 받아서 함수 안의 로직을 처리한다.<br><mark class='gray'>return : 함수 안의 로직을 처리 후 반환할 데이터를 정의하는 부분</mark>이다.<br>또한 <mark class='gray'>return은 함수의 종료를 의미한다. 즉, return이후의 코드는 전부 실행되지 않는다.</mark><br>※함수에 무조건 return을 적어야만 하는 것은 아니다. 반환값이 필요 없는 경우 return을 작성하지 않아도 된다.<br>※return이 작성되지 않은경우 함수는 자동으로 undefined를 반환한다.<br>※return 문 안에 var 키워드를 사용할 수 없다. return 문은 값을 반환해야 하며, 변수 선언(var, let, const)은 반환할 수 없다.<br><mark class='gray'>함수 호출법 : 함수명(인자) 로 호출</mark>한다.<br><mark class='gray'>인자(Argument) : 함수의 매개변수로 전달해줄 값</mark>이다. 이 값을 매개변수로 전달받은 함수는 매개변수를 이용하여 안의 로직을 처리한다.<br>※즉, 함수를 선언할 때 괄호 안의 값은 매개변수(Parameter), 함수를 호출할 때의 괄호 안의 값은 인자(Argument)이다.<br><mark class='gray'>1급 함수 : 함수의 값으로 함수를 사용하는 것.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOqKpm' data-pen-title='함수(Function)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOqKpm'>  함수(Function)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "연산자",
+        "title" : "연산자",
+        "explain" : "<mark class='gray'>연산자란 프로그래밍에서 쓰이는 기호</mark>들이다.<br>산술, 증감, 비교, 대입, 삼항, 논리, 비트연산자 등이 있다.<br>이 중 비트연산자는 정말 특수한 경우에만 쓰이기에 제외했다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "산술연산자",
+        "explain" : "<mark class='gray'>+ : 덧셈<br>- : 뺼셈<br>* : 곱셈<br>/ : 나누기<br>※나머지는 노출되지 않고 몫만 노출된다.<br>% : 나머지<br>※몫은 노출되지 않고 나머지만 노출된다.<br>※+를 제외한 나머지 산술연산자들은 숫자와 문자열이 연산되는 경우 숫자로 인식되어 정상적으로 계산이 된다. +의 경우 숫자와 문자열이 함께 연산될 떄 문자열로 변경되게 된다.</mark> " ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='NPKNdzW' data-pen-title='산술연산자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/NPKNdzW'>  산술연산자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "증감연산자",
+        "explain" : "<mark class='gray'>++변수 : 다음 코드가 실행되기 전에 1을 더한다.<br>변수++ : 현재 라인의 코드가 끝난 후 1을 더한다.<br>--변수 : 다음 코드가 실행되기 전에 1을 뺀다.<br>변수-- : 현재 라인의 코드가 끝난 후 1을 뺀다.</mark><br>※++또는 --가 변수 앞에 붙으면 전위증감연산자, 뒤에 붙으면 후위증감연산자 라고 부튼다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYrgdy' data-pen-title='증감연산자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYrgdy'>  증감연산자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "대입연산자",
+        "explain" : "<mark class='gray'>변수에 값을 대입하는 연산자(=)</mark> 이다. <br>연사자를 줄여쓰는 것은 <mark class='gray'>복합대입연산자</mark> 라고 하며, <mark class='gray'>+=, -=, /=, *=, %=</mark> 등이 있다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZaQBp' data-pen-title='대입연산자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZaQBp'>    대입연산자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "비교연산자",
+        "explain" : "<mark class='gray'>같음 : ==<br>같지 않음 : !=<br>큼 : ><br>작음 : <<br>크거나같음 : >=<br>작거나같음 : <=</mark> " ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoNqav' data-pen-title='비교연산자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoNqav'>    비교연산자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "비교연산자2",
+        "explain" : "Javascript에서는 <mark class='gray'>== 비교연산을 할 때 자동으로 자료형을 바꿔버리고 값만 비교하기에 0 == false 등이 true로 인식된다.</mark><br>이를 방지 하기 위해 ===을 쓴다.<br><mark class='gray'>===을 쓰게 된다면 값 + 자료형까지 같아야 true가 된다.</mark><br><mark class='gray'>또한 !==을 쓰게 된다면 값 + 자료형까지 달라야 true가 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZaQRW' data-pen-title='비교연산자2' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZaQRW'>    비교연산자2</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "삼항연산자",
+        "explain" : "<mark class='gray'>삼항 연산자는 (조건 ? 참 : 거짓)으로 구성되어 있다.</mark> " ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPXpmK' data-pen-title='Untitled' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPXpmK'>    Untitled</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "논리연산자",
+        "explain" : "<mark class='gray'>그리고 : &&</mark><br>※앞의 조건이 참일때 다음 조건으로 넘어간다.<br><mark class='gray'>또는 : ||</mark><br>※앞의 조건이 거짓일때 다음 조건으로 넘어간다.<br><mark class='gray'>아닌 : !</mark><br>※참이면 false(거짓), 거짓이면 true(참)를 반환한다.<br><br><mark class='gray'>※거짓에 해당하는 값은 '', 0, false, NaN, undefined, null, document.all 이 있다.</mark> " ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKZQwy' data-pen-title='논리연산자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKZQwy'>    논리연산자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "조건문",
+        "title" : "if",
+        "explain" : "<mark class='gray'>조건문이란 특정한 조건 아래서만 코드가 실행되게 하는 구문이다.</mark><br><mark class='gray'>if문은 if(조건){내용} 으로 사용한다.<br>조건이 true면 내용이 실행된다.<br>if의 조건이 거짓일 경우 else의 조건이 실행되게 된다.<br>하나의 if문에 if, else는 각각 하나씩만 사용 가능하며 if와 else사이에 else if 구문을 두어 여러개의 조건을 설정 할 수 있다.</mark>※else if, else는 필수적으로 사용해야 하는 것은 아니므로 상황에 따라 쓰면된다.<br>※간단한 if문의 경우 삼항연산자로 변경할 수 있다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='XJrdEWX' data-pen-title='if' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/XJrdEWX'>    if</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Switch",
+        "explain" : "<mark class='gray'>Switch문은 switch(비교할 값){case : 조건 break; default;} 으로 사용한다.<br>만약 break가 없다면 다음 그 아래 문구 중 break가 나올 때까지 계속 실행된다.<br>default는 case의 어떤 조건도 해당되지 않을때 실행되는 것이다. 필수값은 아니므로 상황에 따라 쓰면 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbaMNQ' data-pen-title='Switch' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbaMNQ'>    Switch</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "반복문",
+        "title" : "For",
+        "explain" : "<mark class='gray'>반복문이란 코드를 반복해야 하는 상황에 쓰인다.<br>for문은 for(최초값 ; 조건 ; 증감연산자){반복실행 될 문구} 으로 사용된다.</mark><br>반복문 안에서 분기에 따른 조건이 필요한 경우, 일반적으로 if문을 많이 쓴다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='PwYNRPd' data-pen-title='For' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/PwYNRPd'>    For</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "While",
+        "explain" : "<mark class='gray'>while문은 while(조건){ 내용 } 으로 사용된다.<br>※while은 for와는 달리 조건이 만족되는 동안 계속해서 실행이 된다.</mark><br>while은 조건밖에 없기 때문에 몇 번 반복될 지 모를 때 주로 사용되고, for문은 반복 횟수를 정할 수 있기 때문에 몇 번 반복될 지 알 때 주로 사용된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPNdZj' data-pen-title='While' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPNdZj'>    While</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Do ~ While",
+        "explain" : "<mark class='gray'>do ~ while문은 do{내용}while(조건) 으로 사용된다.<br>※while과의 차이는 while은 조건이 만족되는 한 계속해서 실행되지만, do ~ while은 일단 코드를 한번 실행하고, 이후 조건이 만족되면 마저 반복하여 코드를 실행한다.</mark><br>for, while에 비해 그리 자주 사용되는 반복문은 아니다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByBKrpM' data-pen-title='Do ~ While' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByBKrpM'>    Do ~ While</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "break와 continue",
+        "explain" : "<mark class='gray'>break, continue 둘 다 일반적으로 if문과 함께 쓰이며</mark> 각각의 용도는 다음과 같다.<br><mark class='gray'>break : 반복문을 벗어나게 한다.<br>continue : 다음 반복문을 실행한다.</mark><br>※break, continue 둘 다 해당 문구가 선언되면 그 아래에 있는 코드는 실행하지 않는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKZxZB' data-pen-title='break, continue' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKZxZB'>    break, continue</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "야구게임",
+        "explain" : "야구게임을 만들어봤다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbpJYw' data-pen-title='야구 게임' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbpJYw'>  야구 게임</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "문자열",
+        "title" : "문자열",
+        "explain" : "<mark class='gray'>문자열도 객체다.(정확히는 원시 래퍼).</mark><br>콘솔에 new String()이라고 치면 어떤 객체가 나오는 걸 확인할 수 있다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "개행",
+        "explain" : "<mark class='gray'>문자열에서 줄바꿈하는 방법</mark>이다.<br><mark class='gray'>줄을 바꾸려면 \\n이라는 문자</mark>를 넣어주면 된다.<br>...라고는 하는데 안된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbRLbP' data-pen-title='문자열-개행' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbRLbP'>    문자열-개행</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "length",
+        "explain" : "<mark class='gray'>문자열의 길이를 알려주는 속성</mark>이다.<br><mark class='gray'>문자열.length 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZjMww' data-pen-title='문자열-length' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZjMww'>    문자열-length</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "charAt()",
+        "explain" : "<mark class='gray'>문자열의 특정 자릿수의 문자를 알려준다.<br>문자열.charAt(자릿수) 로 사용한다.<br>※자릿수는 0부터 시작한다.</mark><br>※[자릿수]를 해도 동일한 결과를 얻을 수 있다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPMXpZ' data-pen-title='문자열-charAt' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPMXpZ'>    문자열-charAt</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "split()",
+        "explain" : "<mark class='gray'>구분자를 기준으로 문자열을 나누어 새 배열로 만들어준다.<br>문자열.split(구분자) 으로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoZLvM' data-pen-title='문자열-split' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoZLvM'>    문자열-split</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "concat()",
+        "explain" : "<mark class='gray'>두 문자열을 합쳐 새로문 문자열을 반환하는 함수이다.<br>문자열.concat(문자열) 로 사용한다.</mark><br>※string + string2 를 해도 동일한 결과를 얻을 수 있다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emOzeWN' data-pen-title='문자열-concat' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/emOzeWN'>    문자열-concat</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "trim()",
+        "explain" : "<mark class='gray'>문자열의 좌우 공백을 제거한 새 문자열을 반환한다.<br>문자열.trim() 으로 사용한다.<br>※문자 사이의 공백은 제거되지 않는다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLEOMR' data-pen-title='문자열-trim' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLEOMR'>    문자열-trim</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "toUpperCase(), toLowerCase()",
+        "explain" : "<mark class='gray'>toUpperCase = 문자열을 대문자로 바꾼다.<br>문자열.toUpperCase() 로 사용한다.<br>문자열을 소문자로 바꾼다.<br>문자열.toLowerCase() 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='XJrKzzK' data-pen-title='문자열-toUpperCase, toLowerCase' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/XJrKzzK'>    문자열-toUpperCase, toLowerCase</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "substr()",
+        "explain" : "<mark class='gray'>문자열을 시작점부터 길이만큼 자른 새 문자열을 반환한다.<br>문자열.substr(시작점, 길이) 로 사용한다.<br>※시작점은 0부터 시작한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPZOdz' data-pen-title='문자열-substr' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPZOdz'>    문자열-substr</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "substring()",
+        "explain" : "<mark class='gray'>문자열을 시작점부터 끝점만큼 자른 새 문자열을 반환한다.<br>문자열.substring(시작점, 끝점) 로 사용한다.<br>자를 때 시작점은 포함되지만 끝점은 포함되지 않는다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPKOmy' data-pen-title='문자열-substring' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPKOmy'>    문자열-substring</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "slice()",
+        "explain" : "substring과 동일하지만 약간의 차이가 있다.<br>바로 마이너스 값을 쓸 수 있다는 것인데, <mark class='gray'>마이너스 값을 넣으면 끝부터 대상이 지정된다.<br>문자열.slice(시작점, 끝점) 로 사용한다.</mark><br>※substring보다 활용도가 더 많다고 할 수 있다.<br><mark class='gray'>※slice()는 문자열과 배열에서 사용할 수 있다.<br>즉, 문자열에 사용하면 새 문자열을 반환하고, 배열에 사용하면 새 배열을 반환한다.<br>이러한 점을 응용하여 기존 배열을 복사하고 싶을때 var 새로운변수 = 기존배열.slice()를 써서 복사하기도 한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKqOPw' data-pen-title='문자열-slice' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKqOPw'>    문자열-slice</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "replace()",
+        "explain" : "<mark class='gray'>대상이 되는 문자를 문자열에서 찾아 변경 될 값으로 교체 후 새로운 문자열을 반환한다.<br>문자열.replace(찾을값, 교체값) 로 사용한다.※relace는 처음에 찾은 값만 교체값으로 변경해준다. 대상이 되는 값을 전부 교체값으로 변경하기 위해서는 replaceAll을 쓰면 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKqyKz' data-pen-title='문자열-replace' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKqyKz'>    문자열-replace</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "indexOf(), lastIndexOf()",
+        "explain" : "<mark class='gray'>indexOf = 문자열에서 찾을 값의 위치를 알려준다.<br>문자열.indexOf(찾을값) 로 사용한다.<br>lastIndexOf = 끝에서부터 문자열에서 찾을 값의 위치를 알려준다.<br>문자열.lastIndexOf(찾을값) 로 사용한다.<br>indexOf, lastIndexOf 둘 다 찾으려는 값이 여러 개 있어도 처음 찾은 것의 위치만 알려준다.</mark><br>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByBzJyX' data-pen-title='문자열-indexOf, lastIndexOf' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByBzJyX'>    문자열-indexOf, lastIndexOf</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "숫자",
+        "title" : "숫자",
+        "explain" : "<mark class='gray'>숫자도 원시 래퍼 객체(new Number())가 있다.</mark><br>몇몇 프로그래밍 언어들은 소수점을 계산하지 못하는 치명적인 단점을 가지고 있다.<br>컴퓨터는 소수를 2진법으로 바꿔서 계산하는데 2진법으로 바꾸면 몇몇 소수(위와 같은 경우)는 무한소수가 된다.<br>저장공간이 정해져있는 컴퓨터는 무한소수의 값을 다 저장하지 못하고 끝부분을 버려 유한소수로 만든다.<br>그 버린 부분 때문에 오차가 발생한다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "toFixed(), toPrecision()",
+        "explain" : "<mark class='gray'>toFixed = 지정된 소수자릿수까지 반올림해서 나타낸다.<br>숫자.toFixed(소수자릿수) 로 사용한다.<br>toPrecision = 지정된 자릿수만큼만 표현해 문자열로 반환한다. 만약 소수일 경우 앞의 0들은 무시한다. 또한 소수의 경우 반올림이 되는 듯 하다.(확실치는 않다.)<br>숫자.toPrecision(자릿수) 로 사용한다.<br>※toFixed, toPrecision 둘 다 문자열로 반환되기 떄문에 숫자로 바꿔주는 작업이 필요하다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYMvQx' data-pen-title='숫자-toFixed, toPrecision' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYMvQx'>    숫자-toFixed, toPrecision</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "isNaN()",
+        "explain" : "<mark class='gray'>NaN = Not a Number의 줄임말.<br>isNaN은 숫자가 아닌 값들에 대해 true/NaN(false)로 알려준다.</mark><br>예를 들어 3/'가' 처럼 숫자가 아닌 계산을 하면 NaN이 나온다.<br><mark class='gray'>※isNaN은 문제가 있는 함수로 알려져있기에 가급적 사용을 안하는게 나을 것 같다.<br>※대신 Number.isNaN(NaN)은 안전하다고 하니 이렇게 사용하면 될 듯 하다.</mark><br>※NaN의 특별한 성질 중 하나는 자바스크립트에서 유일하게 자기 자신과 같지 않은 값이라는 것이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwWmKx' data-pen-title='숫자-isNaN' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwWmKx'>    숫자-isNaN</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Infinity",
+        "explain" : "Infinity는 어떤 기능이 아닌 값(?) 인 것 같다.<br><mark class='gray'>0으로 나누었을 경우 Infinity 값이 나온다. 또한 음의 무한일 경우에는 -Infinity가 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbeyzv' data-pen-title='숫자-Infinity' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbeyzv'>    숫자-Infinity</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "parseInt(), parseFloat()",
+        "explain" : "<mark class='gray'>parseInt = 값을 정수로 바꿔준다.<br>parseInt(숫자, 진법)으로 사용한다.<br>※굳이 진법을 쓰지 않아도 디폴트는 10진법인 듯 하다.<br>parseFloat = 값을 실수로 바꿔준다.<br>parseFloat(숫자) 로 사용한다.</mark><br>※문자열이라도 숫자로 시작하면 뒤에 글자들은 없애고 숫자로 바꿔준다.<br>※만약 숫자로 시작하지 않으면 NaN이 된다.<br>※위에서 언급한 toFixed, toPrecision은 모두 문자열을 반환하기에 parseInt 또는 parseFloat을 사용해서 숫자로 만들어줘야 한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYMJJG' data-pen-title='숫자-parseInt, parseFloat' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYMJJG'>    숫자-parseInt, parseFloat</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Number()",
+        "explain" : "Number객체 자체가 함수로 쓰일 수 있습니다(위에서 말한 원시 래퍼 객체와는 조금 다르다).<mark class='gray'>parseInt, parseFloat와 같이 숫자로 변환해주지만, 문자열에 문자가 들어있으면 처리하지 못하고 NaN이 된다.<br>Number(아무거나) 로 사용한다.</mark><br>숫자는 2진법, 8진법, 16진법을 표시할 수 있습니다. 2진법은 숫자 앞에 0b를, 8진법은 0을, 16진법은 0x를 붙이면 된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPKqQY' data-pen-title='숫자-Number' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPKqQY'>    숫자-Number</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math",
+        "explain" : "Math는 Number와는 달리 Math()라는 함수를 제공하지 않는다.<br>이유는 Math는 생성자로서 기능하지 않는 단순 객체이기 때문이다.<br>그래서 엄밀히 말하자면 Math라는 표기는 틀렸다. 명칭의 앞 글자가 대문자인 경우는 암묵적으로 생성자를 명시하기 떄문이다.<br>이론적으로 올바른 표현은 math이다. 하지만 실제로는 Math로 쓰인다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math.random()",
+        "explain" : "<mark class='gray'>0부터 1 사이의 랜덤 값을 뽑아주며, 1은 포함되지 않는다.<br>Math.random() 으로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBLgEE' data-pen-title='숫자-Math.random()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBLgEE'>    숫자-Math.random()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math.floor(), Math.ceil(), Math.round()",
+        "explain" : "<mark class='gray'>Math.floor = 숫자를 정수값으로 내림한다.<br>Math.floor(값) 로 사용한다.<br>Math.ceil = 숫자를 정수값으로 올림한다.<br>Math.ceil(값) 로 사용한다.<br>Math.round = 숫자를 정수값으로 반올림한다.<br>Math.round(값) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENrjOQ' data-pen-title='숫자-Math.floor(), Math.ceil(), Math.round()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENrjOQ'>    숫자-Math.floor(), Math.ceil(), Math.round()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math.abs()",
+        "explain" : "<mark class='gray'>절대값을 알려준다.<br>Math.abs(값) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbRzNg' data-pen-title='숫자-Math.abs()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbRzNg'>    숫자-Math.abs()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math.pow(), Math.sqrt()",
+        "explain" : "<mark class='gray'>Math.pow = 거듭제곱이다.<br>Math.pow(값, 지수) 로 사용한다.<br>Math.sqrt = 제곱근이다.<br>Math.sqrt(값) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPZKpR' data-pen-title='숫자-Math.pow(), Math.sqrt()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPZKpR'>    숫자-Math.pow(), Math.sqrt()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Math.max(), Math.min()",
+        "explain" : "<mark class='gray'>Math.max = 여러 값들 중에서 최대값을 찾는다.<br>Math.max(값, 값, ...) 로 사용한다.<br>Math.min = 여러 값들 중에서 최소값을 찾는다.<br>Math.min(값, 값, ...) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyBJdYr' data-pen-title='숫자-Math.max(), Math.min()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyBJdYr'>    숫자-Math.max(), Math.min()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "배열",
+        "title" : "배열.length",
+        "explain" : "<mark class='gray'>배열의 길이를 알려준다.<br>배열의 길이는 배열에 요소가 추가되고 제거됨에 따라 자동으로 바뀐다.<br>배열.length 으로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbKOoVV' data-pen-title='배열-배열.length' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/xbKOoVV'>    배열-배열.length</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.join()",
+        "explain" : "<mark class='gray'>배열의 항목들을 구분자를 기준으로 합친 새 문자열을 반환한다.<br>구분자를 입력하지 않으면 자동으로 쉼표다.<br>배열.join('구분자') 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwWLzx' data-pen-title='배열-배열.join()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwWLzx'>    배열-배열.join()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.concat()",
+        "explain" : "<mark class='gray'>배열을 합친 새 배열을 반환한다.<br>배열.concat(합칠 내용) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbePRQ' data-pen-title='배열-배열.concat()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbePRQ'>    배열-배열.concat()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.reverse()",
+        "explain" : "<mark class='gray'>기존의 배열의 내용을 뒤집는다.<br>배열.reverse() 로 사용한다.<br>※새 배열을 반환하지 않는다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='NPKrZXo' data-pen-title='배열-배열.reverse()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/NPKrZXo'>    배열-배열.reverse()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.push(), 배열.pop()",
+        "explain" : "<mark class='gray'>배열.push = 배열의 뒤에 값을 추가한다.<br>배열.push(값) 으로 사용한다.<br>※push를 한 후 변한 배열의 길이를 반환한다.<br>배열.pop = 배열의 가장 마지막 값을 뺀다.<br>배열.pop() 으로 사용한다.<br>※마지막 요소를 제거한 후 제거한 요소를 반환한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPMjOp' data-pen-title='배열-배열.push(), 배열.pop()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPMjOp'>    배열-배열.push(), 배열.pop()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.unshift(), 배열.shift()",
+        "explain" : "push(), pop() 이 배열의 뒤에 추가하거나 빼는 역할을 했다면, unshift(), shift()는 배열의 앞에서 그 역할을 한다.<br><mark class='gray'>배열.unshift() = 배열의 앞에 값을 추가한다.<br>배열.unshift(값) 로 사용한다.<br>※push()와 마찬가지로 unshift()를 한 후 변한 배열의 길이를 반환한다.<br>배열.shift() = 배열의 가장 앞의 값을 뺀다.<br>배열.shift() 로 사용한다.<br>※pop()과 마찬가지로 맨 앞의 요소를 제거한 후 제거한 요소를 반환한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPMOKd' data-pen-title='배열-배열.unshift(), 배열.shift()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPMOKd'>    배열-배열.unshift(), 배열.shift()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.splice()",
+        "explain" : "pop(), shift() 는 양 끝의 값을 뺄 수 있지만, <mark class='gray'>배열.splice()는 중간의 값을 뺼 수도, 값을 추가할 수도 있다.<br>없애지는 않고 추가만 하고 싶으면 splice(시작점, 0, 넣을 것) 하면 아무것도 없어지진 않고 추가만 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybENyQ' data-pen-title='배열-배열.splice()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybENyQ'>    배열-배열.splice()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "배열.map(function() {}), 배열.forEach(function() {})",
+        "explain" : "<mark class='gray'>배열의 항목들을 반복하면서 조작하는 함수들이다.<br>map(function() {}) 로 사용한다.<br>foreach(function() {}) 로 사용한다.<br>map(), foreach() 둘 다 매개변수를 3개 입력할 수 있으며, 1번째는 현재 처리할 요소, 2번째는 현재 처리할 요소의 인덱스, 3번째는 함수를 호출한 배열 그 자체를 불러온다.<br>3번째 매개변수를 이용해서 원본 배열에 접근할 수 있다.<br>※1번째 매개변수만 필수값이며 2,3번째 매개변수는 옵션이다.<br>map과 forEach의 차이점은 map은 바뀐 새 배열을 반환하지만, forEach는 반환하지 않는다.<br>※map의 경우 원래 배열의 길이와 같은 길이를 가진 새로운 배열을 반환한다.</mark><br>※forEach보다는 map이 활용성이 더 높다.<br><mark class='gray'>※결론적으로 map과 foreach의 차이점은 반환값이 있냐, 없냐이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWaOPR' data-pen-title='배열-배열.map(), 배열.forEach()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWaOPR'>    배열-배열.map(), 배열.forEach()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.reduce(function() {}), 배열.reduceRight(function() {})",
+        "explain" : "<mark class='gray'>배열.reduce(function() {}) = 배열을 왼쪽부터 조건을 적용해 하나의 값으로 만든다.<br>배열.reduce(function(이전값, 현재, 인덱스, 원본배열) 로 사용한다.<br>매개변수 중 인덱스, 원본배열은 옵션이다.<br>배열.reduceRight(function() {}) = reduce()와 완전히 같은 기능이지만 오른쪽 값부터 연산을 진행한다.</mark><br>※foreach로도 reduce와 같은 기능을 만들 수 있지만 foreach는 foreach메서드를 담은 변수에 반환값이 전달되지 않으므로, 외부 변수를 선언한뒤 그곳에 값을 담아줘야 한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPgyNJ' data-pen-title='배열-배열.reduce(function() {}), 배열.reduceRight(function() {})' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPgyNJ'>    배열-배열.reduce(function() {}), 배열.reduceRight(function() {})</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.filter(function() {})",
+        "explain" : "<mark class='gray'>기존 배열에서 특정 조건을 만족한 값들만 걸러내어 새 배열로 만든다.<br>배열.filter(function(항목) { 조건 }) 로 사용한다.<br>※원래 배열의 길이보다 짧거나 같은 길이를 가진 새로운 배열을 반환한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzpaLd' data-pen-title='배열-배열.filter()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzpaLd'>    배열-배열.filter()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "배열.sort(function() {})",
+        "explain" : "<mark class='gray'>배열을 특정 조건에 따라 정렬한다.<br>배열.sort(function(이전 값, 다음 값) { 조건 }) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWaVXa' data-pen-title='배열-배열.sort()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWaVXa'>    배열-배열.sort()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.indexOf(), 배열.lastIndexOf()",
+        "explain" : "문자열에서 사용한 indexOf(), lastIndexOf()와 완전히 같다.<br>다만 배열에도 적용시킬 수 있을 뿐이다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열.every(function() {}), 배열.some(function() {})",
+        "explain" : "<mark class='gray'>every() = 모든 항목이 조건을 만족하면 true를 반환한다.<br>배열.every(function(항목) { 조건 }) 로 사용한다.<br>some() =  하나의 항목이라도 조건을 만족하면 true를 반환한다.<br>배열.some(function(항목) { 조건 }) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyBaPPd' data-pen-title='배열-배열.every(), 배열.some()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyBaPPd'>    배열-배열.every(), 배열.some()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Array.isArray()",
+        "explain" : "Array 객체 자체의 static 메소드이다.<br><mark class='gray'>인자값이 배열인지 아닌지 확인해준다.<br>Array.isArray(값) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwzPmY' data-pen-title='배열-Array.isArray()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwzPmY'>    배열-Array.isArray()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Window 객체의 메소드 및 속성",
+        "title" : "Window 객체란",
+        "explain" : "Window 객체란 브라우저의 요소들과 자바스크립트 엔진, 그리고 모든 변수를 담고 있는 객체이다.<br><mark class='gray'>브라우저 전체를 담당하는 게 Window 객체이고, 웹사이트만 담당하는게 Document 객체이다.<br>당연히 브라우저 안에 웹사이트가 있으니, windoe객체 안에 document객체가 들어있다.<br>window객체는 모든 객체의 조상이므로 전역객체이다.<br>모든 객체를 포함하고 있으므로 window라는 문구는 생략 가능하다.</mark><br>또한 지역변수가 아닌 전역변수로서 선언한 모든 변수들은 window객체 안에 등록된다.<br>※window.document.write()등을 document.write()로 바꿔쓸 수 있다.<br>※전역변수로 선언한 모든 변수들은 window객체 안에 등록되므로 만약 asd라는 전역변수를 선언했다면 window.asd로 호출해도 asd로 호출해도 된다. " ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.close()",
+        "explain" : "<mark class='gray'>현재 창을 닫을때 사용한다.</mark><br>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='XJrjVNR' data-pen-title='window.close()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/XJrjVNR'>    window.close()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "window.open()",
+        "explain" : "<mark class='gray'>새 창을 열 때 사용한다.<br>첫 번째 인자로 주소를 받고, 두 번째 인자로 새 탭으로 열지, 현재 탭에 열지를 설정할 수 있다. 세 번째 인자로 새 창에 대한 각종 설정을 전달할 수 있다.<br>또한 window.open()을 변수에 저장하여 부모창에서 자식창을 컨트롤 할 수 있다.<br부모창 -> 자식창 컨트롤 : 변수.document.write(내용)<br>자식창 -> 부모창 컨트롤 : window.opener.document.write(내용)</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbwaKd' data-pen-title='window.open()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbwaKd'>    window.open()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.encodeURI(), window.decodeURI()",
+        "explain" : "<mark class='gray'>window.encodeURI() = url을 인코딩한다.<br>window.encodeURI(uri값) 로 사용한다.<br>window.decodeURI() = 인코딩 된 url을 디코딩 한다.<br>window.decodeURI(uri값) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbBbVe' data-pen-title='window.encodeURI(), window.decodeURI()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbBbVe'>    window.encodeURI(), window.decodeURI()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.setTimeout(), window.clearTimeout(), window.setInterval(), window.clearInterval()",
+        "explain" : "<mark class='gray'>setTimeout() = 지정한 시간 뒤에 실행된다.<br>window.setTimeout(function() {}, 밀리초) 로 사용한다.<br>clearTimeout() = setTimeout을 정지시킨다.<br>window.clearTimeout(setTimeout함수) 로 사용한다.<br>setInterval() = 지정한 시간마다 반복 실행된다.<br>window.setInterval(function() {}, 밀리초) 로 사용한다.<br>clearInterval() = setInterval을 중지시킨다.<br>window.clearInterval(setInterval함수) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLGLgg' data-pen-title='window.setTimeout(), window.ClearTimeout(), window.setInterval(), window.ClearInterval()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLGLgg'>    window.setTimeout(), window.ClearTimeout(), window.setInterval(), window.ClearInterval()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "window.getComputedStyle()",
+        "explain" : "<mark class='gray'>태그에 적용된 CSS속성 값을 알 수 있다.<br>window.getComputedStyle(태그) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOoOJe' data-pen-title='window.getComputedStyle()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOoOJe'>    window.getComputedStyle()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Window 객체",
+        "title" : "BOM이란",
+        "explain" : "Browser object model의 줄임말.<br><mark class='gray'>브라우저에 대한 정보를 나타낸다.</mark><br>※메서드나 함수가 아닌 객체인데도 나름의 로직이 실행되는 이유는 예를 들어 screen의 경우 screen객체 내에 get width(){}, get height(){} 이런식으로 설정되어 있을것으로 추측된다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "navigator",
+        "explain" : "<mark class='gray'>브라우저나, 운영체제(OS) 대한 정보를 알 수 있다.</mark><br>여러가지 속성이 있으니 필요시 마다 찾아볼 필요가 있어 보인다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzBGvo' data-pen-title='BOM-navigator' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzBGvo'>    BOM-navigator</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "screen",
+        "explain" : "화면에 대한 정보를 알려주며,<mark class='gray'>화면 크기에 따라 다른 동작을 하고 싶을 때 사용한다.<br>속성에는 너비(width), 높이(height), 픽셀(pixelDepth), 컬러(colorDepth), 화면 방향(orientation), 작업표시줄을 제외한 너비와 높이(availWidth, availHeight) 등이 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWqdMz' data-pen-title='BOM-screen' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWqdMz'>    BOM-screen</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "location",
+        "explain" : "<mark class='gray'>protocol, host, hostname, pathname, href, port, search, hash 속성은 주소에 대한 정보를 알려준다.<br>location.reload() = 새로고침을 한다.<br>location.replace() = 현재 주소를 다른 주소로 교체한다.<br>(다른 페이지로 이동하지만 이전 페이지의 기록을 남기지 않는다.)</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoBvRN' data-pen-title='BOM-location' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoBvRN'>    BOM-location</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "history",
+        "explain" : "<mark class='gray'>웹페이지 이동 시 사용된다.<br>history.forward() 또는 history.go(1) = 앞으로가기<br>history.back() 또는 history.go(-1) = 뒤로가기<br>history.go(페이지수) = 히스토리 간의 이동<br>history.length = 뒤로가기 할 수 있는 페이지의 개수<br>history.pushState(객체, 제목, 주소), history.replaceState(객체, 제목, 주소) = 페이지 깜빡임 없이 주소를 바꾸고, 바뀐 주소에 따른 액션을 취할 때 사용된다.<br>※파라미터의 객체부분에 페이지에 대한 정보를 추가할 수 있다.</mark><br>pushState는 뭔가 실행될 때마다 스택이 쌓이므로 이전으로 돌아갈 수 있는데, replaceState는 pushState와 같이 실행 시 새로운 스택이 쌓이는게 아닌, 현재의 것이 바뀌는 것이기 때문에 replaceState를 실행하기 이전, 이전의 페이지로 이동하게 될 것이다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Document",
+        "title" : "선택자를 지정하는 여러 방법",
+        "explain" : "document.getElementById(아이디) = html에서 해당 아이디를 가진 태그를 선택한다.<br><br>document.getElementsByClassName(클래스), = html에서 해당 클래스를 가진 태그를 선택한다.<br>document.getElementsByName(이름) = html에서 해당 이름을 가진 태그를 선택한다.<br>document.getElementsByTagName(태그) = html에서 해당 태그명을 가진 태그를 선택한다.<br>※getElementById()와는 달리 여러개 선택되기 때문에 항상 배열이다. 메소드이름도 getElement가 아닌 getElements 이다.<br><mark class='gray'>document.querySelector(선택자) = 지정한 선택자를 지닌 태그를 가장 먼저 조회된 것 하나만 선택한다.<br>document.querySelectorAll(선택자) = 지정한 선택자를 지닌 태그들을 전부 선택한다.<br>※선택자는 CSS선택자를 쓰면 된다. 이러한 선택자의 유형에는 아이디는 #, 클래스는 .(점), 태그명[속성명=속성값], 부모 > 자식, 부모 자손 등이 있다.<br>※getElement 시리즈 보단 querySelector 시리즈를 더 많이 쓴다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbBmOW' data-pen-title='선택자를 지정하는 여러 방법' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbBmOW'>    선택자를 지정하는 여러 방법</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "document 태그 및 텍스트 생성 관련",
+        "explain" : "<mark class='gray'>document.createElement(태그명) = document에 새로운 태그를 만들 때 사용한다.<br>※해당 메소드를 실행시킨다 해서 바로 생기는게 아닌 변수를 통해 메모리에 저장된다.<br>document.createTextNode(텍스트) = document에 텍스트를 만들 떄 사용한다.<br>※createElement()와 마찬가지로 변수를 통해 메모리에 저장된다.<br>document.createDocumentFragment() = 가짜 document를 만들어 추가할 태그들을 담은 후 한번에 document에 추가할 때 사용한다.<br>※이렇게 하면 document는 한 번만 조작되서 성능에 부담이 덜하게 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbeoaBZ' data-pen-title='document 태그 및 텍스트 생성 관련' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbeoaBZ'>    document 태그 및 텍스트 생성 관련</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },    
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "각종 태그에 접근하는 방법",
+        "explain" : "<mark class='gray'>document.head = html의 head에 접근.<br>document.body = html의 body에 접근.<br>document.anchors = html의 anchors에 접근.<br>document.links = html의 links에 접근.<br>document.forms = html의 forms에 접근.<br>document.images = html의 images에 접근.<br>document.scripts = html의 scripts에 접근.<br>document.title = html의 title에 접근.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgbPMB' data-pen-title='각종 태그에 접근하는 방법' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgbPMB'>    각종 태그에 접근하는 방법</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "DOM",
+        "title" : "DOM",
+        "explain" : "Document Object Model의 줄임말.<br>document를 객체로 구현한 것이라 보면 된다.<br>html은 계층적 구조로 되어 있기에 객체로 표현이 가능하다.<br>이렇게 <mark class='gray'>HTML구조를 객체로서 표현한 것이 DOM</mark>이다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Node와 Element",
+        "explain" : "<mark class='gray'>Node =  태그 노드와 텍스트 노드 전체를 가리킨다.<br>Element = 태그 노드만 가리킨다.</mark><br>※예를 들어 document.get'Element'ById 와 같이 태그만 검색하는 것은 Element가 붙은 메소드를 쓴다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.nodeType",
+        "explain" : "<mark class='gray'>선택한 태그의 종류를 알고 싶을때 사용한다.<br><br>종류는 다음과 같다.<br>1 = Node.ELEMENT_NODE (Element를 의미)<br>3 = Node.TEXT_NODE (텍스트를 의미)<br>8 = Node.COMMENT_NODE (주석을 의미)<br>9 = Node.DOCUMENT_NODE (Document를 의미)<br>10 = Node.DOCUMENT_TYPE_NODE (DOCTYPE를 의미)<br>11 = Node.DOCUMENT_FRAGMENT_NODE (Document Fragment를 의미)</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLGYjE' data-pen-title='태그.nodeType' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLGYjE'>    태그.nodeType</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.children, 태그.childNodes",
+        "explain" : "<mark class='gray'>자식을 선택할 때 사용한다.<br>childNodes = 자식에 해당하는 태그 노드와 텍스트 노드 전체 선택 가능<br>children = 자식에 해당하는 태그 노드만 선택 가능<br>document.body.children[1] 내지는 document.querySelector('body').children[1] 같은 방식으로 사용할 수 있다.</mark><br>특정 태그의 자식들을 찾아야 하는 경우에 사용한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgbLvO' data-pen-title='태그.children, 태그.childNodes' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgbLvO'>    태그.children, 태그.childNodes</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild",
+        "explain" : "<mark class='gray'>태그.firstChild = 첫번째 자식에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.firstElementChild = 첫번째 자식에 해당하는 태그 노드만 선택 가능.<br>태그.lastChild = 마지막 자식에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.lastElementChild = 마지막 자식에 해당하는 태그 노드만 선택 가능.</mark><br>children, childNodes와는 달리 첫번째, 마지막 자식은 하나뿐이므로 s가 안붙는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPawQw' data-pen-title='태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPawQw'>    태그.firstChild, 태그.firstElementChild, 태그.lastChild, 태그.lastElementChild</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.parentNode, 태그.parentElement",
+        "explain" : "<mark class='gray'>부모를 선택할 때 사용한다.<br>태그.parentNode = 부모에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.parentElement = 부모에 해당하는 태그 노드만 선택 가능.</mark><br>firstChild 등과 마찬가지로 부모는 하나뿐이기에 s가 안붙는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPxEBe' data-pen-title='태그.parentNode, 태그.parentElement' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPxEBe'>    태그.parentNode, 태그.parentElement</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling",
+        "explain" : "<mark class='gray'>형제 태그를 선택할 때 사용한다.<br>태그.previousSibling = 이전 형제에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.nextSibling = 다음 형제에 해당하는 태그 노드 또는 텍스트 노드 선택 가능.<br>태그.previousElementSibling = 이전 형제에 해당하는 태그 노드만 선택 가능.<br>태그.nextElementSibling = 다음 형제에 해당하는 태그만 선택 가능.</mark><br>마찬가지로 자신 기준 형제는 하나씩이므로 s가 안붙는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLdwzw' data-pen-title='태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLdwzw'>    태그.previousSibling, 태그.nextSibling, 태그.previousElementSibling, 태그.nextElementSibling</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "태그.innerHTML, 태그.outerHTML",
+        "explain" : "<mark class='gray'>선택한 태그의 내용물을 얻어오거나 바꿀 때 사용한다.<br>태그.innerHTML = 자기자신을 제외한 안쪽 태그, 텍스트만 가져온다.<br>태그.outerHTML = 자기자신을 포함한 안쪽 태그, 텍스트만 가져온다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENyERb' data-pen-title='태그.innerHTML, 태그.outerHTML' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENyERb'>    태그.innerHTML, 태그.outerHTML</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.attributes 및 속성 선택 조회",
+        "explain" : "<mark class='gray'>태그.attributes = 선택한 태그가 가진 모든 속성을 조회할 때 사용한다.<br><br>속성에 접근할 수 있는 방법은 다음과 같다.<br>1. DOM프로퍼티 : 태그.속성으로 속성에 접근할 수 있다.<br>※속성에 접근하면 해당 속성을 조회할 수 있으며, 태그.속성 = '변경할 값' 으로 변경할 수도 있다.<br>※DOM프로퍼티는 여러 종류가 있으며 예를 들어 id, className, innerHTML, textContent, style 등이 있다.<br><br>2. getAttribute() : 태그.getAttribute('속성명') 으로 속성에 접근할 수 있다.<br>※속성을 변경하기 위해선 setAttribute()를 쓰면 된다.<br>※태그.setAttribute('속성명', '변경할 속성 값'); 으로 사용하면 된다.<br><br>※DOM 프로퍼티와 getAttribute() 는 기능의 차이가 있다.<br>DOM은 속성의 현재 상태를 반영하지만, getAttribute() 는 HTML에 적힌 속성의 원래값을 반영한다. 다만 DOM이 업데이트 되면 속성의 현재 상태를 반영한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwgBLw' data-pen-title='태그.attributes 및 속성 선택 조회' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwgBLw'>    태그.attributes 및 속성 선택 조회</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "높이와 너비에 관한 것들",
+        "explain" : "<mark class='gray'>태그.clientHeight = 태그의 margin, border, scrollbar을 제외한 높이를 반환한다.<br>태그.clientWidth = 태그의 margin, border, scrollbar을 제외한 너비를 반환한다.<br>태그.offsetHeight = 태그의 margin만 제외한 높이를 반환한다.<br>태그.offsetWidth = 태그의 margin만 제외한 너비를 반환한다.<br>태그.scrollHeight = 스크롤 가능한 범위까지 포함한 태그의 높이를 반환한다.<br>태그.scrollWidth = 스크롤 가능한 범위까지 포함한 태그의 너비를 반환</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgJwjo' data-pen-title='Untitled' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgJwjo'>    Untitled</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.appendChild()",
+        "explain" : "<mark class='gray'>createElement() 함수로 생성한 태그를 선택한 태그의 자식으로 추가할 때 사용한다.<br>마지막 순서의 자식 태그로 추가된다.</mark><br>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbgdyW' data-pen-title='태그.appendChild' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbgdyW'>    태그.appendChild</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.removeChild()",
+        "explain" : "<mark class='gray'>선택한 자식 태그를 삭제할 때 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybReeE' data-pen-title='태그.removeChild()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybReeE'>    태그.removeChild()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.insertBefore()",
+        "explain" : "<mark class='gray'>createElement() 함수로 생성한 태그를 선택한 태그의 이전 형제로 추가할 때 사용한다.<br>부모.insertBefore(넣을 태그, 기준 태그) 로 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybRemR' data-pen-title='태그.insertBefore' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybRemR'>    태그.insertBefore</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },   
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "태그.cloneNode()",
+        "explain" : "<mark class='gray'>자신을 복사할 떄 사용한다.</mark><br>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZPvdm' data-pen-title='태그.cloneNode()' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZPvdm'>    태그.cloneNode()</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Date",
+        "explain" : "<mark class='gray'>날짜를 표현할 때 사용한다.<br>날짜.getFullYear() = 연도를 가져온다.<br>날짜.setFullYear(연도) = 연도를 설정한다.<br>날짜.getMonth() = 달을 가져온다.<br>날짜.setMonth(달) = 달을 설정한다.<br>#Month()시리즈는 0부터 시작한다.<br>그래서 날짜.getMonth() + 1 을<br>해야 설정한 혹은 현재의 달이 정상적으로 나온다.<br>날짜.getDate() = 일을 가져온다.<br>날짜.setDate() = 일을 설정한다<br>날짜.getDay() = 요일을 가져온다.<br>#일요일이 0이다. 즉, 화요일이면 2고, 토요일이면 6이다.<br>날짜.getHours() = 시를 가져온다.<br>날짜.getMinutes() = 분을 가져온다.<br>날짜.getSeconds() = 초를 가져온다.<br>날짜.setHours() = 시를 설정한다.<br>날짜.setMinutes() = 분을 설정한다.<br>날짜.setSeconds() = 초를 설정한다.<br>날짜.toString() = 날짜를 문자로 바꿔 표현한다.</mark><br>날짜.toLocaleString() = 보기좋은 날짜정보로 바꿔 표현한다.<br>날짜.toUTCString() = 세계시 기준 정보를 보여준다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='YPKZexJ' data-pen-title='Date' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/YPKZexJ'>    Date</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "RegExp",
+        "explain" : "<mark class='gray'>정규 표현식을 나타낼 때 사용한다.<br>정규식은 특정한 규칙을 가진 문자열의 집합을 표현 할 때 사용한다.</mark><br>#이건 공부하려면 꽤나 오랜 시간이 걸리므로 필요시마다 찾아서 하는게 좋을 듯 하다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "this",
+        "explain" : "<mark class='gray'>※변수는 어떤 데이터가 담겨있냐에 따라 값을 참조하기도 하고, 그냥 값 자체를 지니고 있기도 한다.<br>예를 들어 원시값이 변수에 담겨있을 경우 값 자체를 지니고 있지만<br>객체, 함수가 변수에 담겨있다면 값을 참조하게 된다.</mark><br><br>this는 함수가 호출될 때 그 함수의 실행 컨텍스트를 참조하는 특별한 키워드다.<br><mark class='gray'>this의 값은 함수가 어떻게 호출되었는지에 따라 달라진다.<br><br>============================<br>●전역 컨텍스트에서의 this : window 객체를 참조<br>============================<br><br><br>============================<br>●객체의 메서드에서의 this : 메서드를 호출한 객체를 참조<br>const person = {<br>&nbsp;&nbsp; name: 'Alice',<br>&nbsp;&nbsp; greet: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp; console.log('Hello, ' + this.name);<br>&nbsp;&nbsp; }<br>};<br>person.greet(); // 'Hello, Alice'가 출력됨<br><br>위 코드의 경우 메서드를 호출한 객체는<br>{<br>&nbsp;&nbsp; name: 'Alice',<br>&nbsp;&nbsp; greet: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp; console.log('Hello, ' + this.name);<br>&nbsp;&nbsp; }<br>};<br>이다.<br><br>만약 객체 안에서 객체의 메서드가 있는 경우는 다음과 같다.<br>const person = {<br>&nbsp;&nbsp; name: 'Alice',<br>&nbsp;&nbsp; greetM : {<br>&nbsp;&nbsp;&nbsp;&nbsp; greetS : function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log('Hello, ' + this.name);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp; }<br>};<br>person.greetM.greetS(); // 출력: Hello, undefined<br>============================<br><br><br>============================<br>●생성자 함수에서의 this : 새로 생성된 객체를 참조<br>function Person(name) {<br>&nbsp;&nbsp; this.name = name;<br>}<br>const alice = new Person('Alice');<br>console.log(alice.name); // 'Alice'가 출력됨<br><br>위 코드에서 새로 생성된 객체라면 new키워드를 통해 생성된 빈 객체에 Person('Alice')를 통해 반환된 객체를 뜻한다.<br>const alice = new Person('Alice'); 를 하게된다면 Person 생성자 내에는 객체가 없으므로 const alice = {}; 와 같은 의미가 된다.<br>변수의 데이터타입에 따라 참조 및 값 자체를 지님 -> 변수 alice는 객체를 데이터 타입으로서 지니게 되었으므로 변수 alice는 객체를 참조하고 있는 것이 된다.<br>============================<br><br><br>============================<br>●화살표 함수에서의 this : <br>함수가 정의된 위치의 this로 바인딩한다. <br>즉, 화살표 함수는 자신의 this를 가지지 않고, 외부 함수의 this를 사용한다.<br><br>const person = {<br>&nbsp;&nbsp; name: 'Alice',<br>&nbsp;&nbsp; greet: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp; const arrowFunc = () => {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log('Hello, ' + this.name);<br>&nbsp;&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp;&nbsp; arrowFunc();<br>&nbsp;&nbsp; }<br>};<br>person.greet(); // 'Hello, Alice'가 출력됨<br><br>위 코드의 경우<br>화살표 함수는 자신의 this를 가지지 않고, 외부 함수의 this를 사용 -> arrowFunc은 화살표 함수이고, 이는 greet메서드 안에 선언되어 있다. 즉, this.name은 greet.name이라고 볼 수 있다.<br>객체의 메서드에서의 this -> greet는 객체의 메서드를 지닌 속성이다. 객체의 메서드에서의 this는 메서드를 호출한 객체를 참조한다.<br>{<br>&nbsp;&nbsp; name: 'Alice',<br>&nbsp;&nbsp; greet: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp; const arrowFunc = () => {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log('Hello, ' + this.name);<br>&nbsp;&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp;&nbsp; arrowFunc();<br>&nbsp;&nbsp; }<br>};<br>이 부분을 참조하게 된다. <br>변수의 데이터타입에 따라 참조 및 값 자체를 지님 -> person 변수의 데이터타입은 객체이기에 값을 참조하고 있으므로, greet.name은 person.name이라고 볼 수 있다.<br><br>※바인딩 (Binding): 특정한 값이나 객체를 함수의 this와 연결하는 과정을 의미한다. 예를 들어, 함수가 호출될 때 this가 어떤 객체를 가리키도록 설정하는 것을 바인딩이라고 한다.<br><br>※객체의 속성으로서 메서드를 만들 때 화살표 함수를 사용하는 것은 문제가 있을 수 있다.<br>이유는 화살표 함수는 자신만의 this 바인딩을 가지지 않기 때문에, 객체의 메서드로 사용할 경우 this가 객체를 가리키지 않게 되기 떄문이다.<br>아래는 그 예시이다.<br><br>올바르지 않은 예시<br>const obj = {<br>&nbsp;&nbsp; value: 42,<br>&nbsp;&nbsp; method: () => {<br>&nbsp;&nbsp;&nbsp;&nbsp; console.log(this.value); // undefined<br>&nbsp;&nbsp; }<br>};<br>============================</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPXvZr' data-pen-title='this' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPXvZr'>  this</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "객체 지향 프로그래밍",
+        "title" : "생성자 함수",
+        "explain" : "<mark class='gray'>생성자는 함수의 한 종류이다.<br>이유는 생성자와 함수의 코드가 함수선언식으로 표현하자면 function 함수명() {} 으로 동일하기 때문이다.<br>그래서 생성자가 호출되기 전에는 일반 함수와 마찬가지로 this는 window(전역객체)를 가리키게 된다.<br><br>이러한 함수와 생성자의 차이는 크게 2가지가 있는데<br>1. 함수는 명칭이 소문자이지만, 생성자의 경우 명칭의 앞글자가 대문자로 시작한다.<br>(ex : 함수 => function asd() {} / 생성자 => function Asd() {})<br>2. 호출 방식이 다르다.<br>(ex : 함수 => asd() / 생성자 => new Asd())<br><br>여기에서 1번 대문자 명칭의 경우 암묵적인 룰이기 떄문에 생성자 함수가 일반 함수처럼 소문자로 시작해도 코드상의 문제는 전혀 없다.<br><br>2번의 경우를 상세히 살펴보면 new키워드 Asd생성자호출로 나눌 수 있다.<br>new 키워드 = 새로운 객체를 생성한다.<br>Asd 생성자 호출 = 생성자 역시 함수이므로 함수컨텍스트가 실행된다.<br>생성자의 함수컨텍스트가 실행됨에 따라 생성자의 this는 더이상 window가 아닌 새로 생성된 객체를 가리키게 된다.<br>이후 생성자의 로직이 끝나는 시점에 생성자 내부에 return으로 객체가 있으면 해당 객체를 반환하지만<br>반환할 객체가 없다면 새로운 객체를 반환한다.<br>※return으로 객체가 아닌 원시값(String, Number)이 반환되면 무시되고, 새로운 객체가 반환된다.<br>※여기서 반환한다라는 것이 중요하다. 생성이 아닌 반환이라 값이 덮어씌워진다라고 보면 된다.<br><br>만약 var a = new Asd() 이 실행되었을때 변수 a = {} 상태가 되는 것이다.<br><br>이러한 생성자 호출에 따른 this의 바인딩은 매 호출시마다 이뤄지게 된다.<br>즉, 변수 a, 변수 b 각각에 생성자를 호출하게 되면 a, b 변수가 참조하고 있는 객체의 this는 각각 독립적으로 움직이게 된다.<br><br>또한 생성자의 prototype.constructor는 생성자 자신이며<br>새로운 객체의 __proto__는 생성자의 prototype을 참조하기 때문에 __proto__.constructor 역시 생성자를 가리킨다.<br><br>설명이 길었는데 결국 생성자는 객체를 생성하는 함수라고 보면 된다.<br><br>간단한 사용법은 아래와 같다.<br>생성자 함수 호출 = new 생성자함수명(인자);<br>this =  생성자 함수가 호출될 때 생성된 새로운 객체<br>※생성자 함수가 호출되지 않았으면 window(전역객체)를 가리킴<br>this.속성으로 사용한다.<br>this에 저장된 것들은 new를 통해 객체를 만들 때 그 객체에 적용된다.<br></mark><br>※생성자 함수 역시 함수의 일종이기에 함수표현식으로 선언할 수 있다. ( var 생성자명 = function() {} )" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgpQOJ' data-pen-title='생성자 함수' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgpQOJ'>    생성자 함수</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "인스턴스",
+        "explain" : "<mark class='gray'>특정 클래스(또는 생성자 함수)로부터 생성된 객체를 의미한다. 클래스는 객체의 설계도와 같고, 인스턴스는 그 설계도를 바탕으로 실제로 만들어진 객체다.<br>예를 들어 var asd = new Job();<br>new 키워드를 통해 새로운 객체가 생성되고, Job생성자 호출을 통해 객체가 반환이 되었으니 new Job()에 의해 생성된 객체는 인스턴스이다.<br>하지만 변수 asd도 인스턴스라고 부르는데 이는 변수 asd가 new Job()에 의해 생성된 객체(인스턴스)를 참조하고 있기 떄문이다.</mark><br>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "prototype",
+        "explain" : "<mark class='gray'><br>같은 생성자로 부터 만들어진 객체(인스턴스)들은 전부 프로토타입 객체를 공유한다.<br>즉, Person의 prototype 객체에 sayHello라는 메소드를 넣으면 Person 생성자로 만든 모든 객체는 이 메소드 사용이 가능하다.<br>생성자함수명.prototype.속성으로 사용한다.<br>※this.속성 보다 this.prototype.속성이 더 효율적이다.<br>※이유는 prototype은 모든 객체가 공유하고 있어서 한 번만 만들어지지만, this에 넣은 것은 객체 하나를 만들 때마다 메소드도 하나씩 만들어지기 때문에 불필요한 메모리 낭비가 발생한다.<br>※어떤 디자인 패턴의 경우 메소드뿐만 아니라 속성까지 전부 prototype에 넣기도 한다.<br></mark><br><br>아래는 테스트를 해보면서 알게 된 내용이다. 틀린 내용이 있을 수도 있으니 이 점 감안하길 바란다.<br><mark class='gray'><br>생성자1.prototype.속성명A=값A 은 생성자1에 속한 prototype 중 속성명A라는 것의 값을 값A로 설정하겠다는 의미이다.<br>만약 생성자1.prototype = new 생성자2() 로 하게 된다면 생성자1의 prototype 전부를 생성자2로 덮어씌우겠다는 의미가 된다.<br>생성자1에 생성자2의 모든 속성과 prototype을 상속시키고, 생성자1만의 prototype을 추가하고자 한다면<br>생성자1.prototype = new 생성자2();<br>생성자1.prototype.속성명A=값A<br>생성자1.prototype.constructor = 생성자1<br>이라고 선언해줘야 할 것이다.<br>※생성자1.prototype = new 생성자2() 를 통해 생성자1의 모든 prototype이 생성자2의 것으로 바뀌었으니 당연히 생성자1.prototype.constructor 또한 생성자2를 바라보게 된다.<br>그러므로 생성자1.prototype.constructor = 생성자1 를 해줘야 한다.<br><br>사실상 this를 제대로 사용하기 위해서는 파라미터(매개변수)를 이용해야 한다.<br>예를 들어 <br><br>function Asd() {<br>    this.aKey = 7;<br>}<br>Asd.prototype.bKey = 7;<br><br>var www = new Asd();<br><br>이런 코드가 있을때 prototype은 Asd상속자를 사용하는 모든 객체에 공유되기에 변수명.bKey를 하면 7이라는 고정된 값이 나온다.<br>또한 Asd생성자 내부의 this.aKey의 경우 고정값인 7을 지니기 떄문에 변수명.aKey를 하면 7이라는 고정된 값이 나온다.<br>결국 위와 같은 코드에서는 this를 쓰는 의미가 없다.<br><br>이를 제대로 사용하기 위해선 아래와 같이 써야 한다.<br><br>function Asd(aVal) {<br>    this.aKey = aVal;<br>}<br>Asd.prototype.bKey = 7;<br><br>var www = new Asd(7);<br><br>위와 같은 코드에서 www.aKey를 하게된다면 위 코드와 같이 똑같이 7이 나오게 되지만<br>인자값에 따라 그 결과가 다르게 노출되기 떄문에<br>Asd생성자를 사용하는 모든 객체들이 공유하는 prototype과는 달리<br>Asd생성자를 모든 객체들이 독립적인 값을 지닌 this를 갖게 된다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyBMvwX' data-pen-title='prototype' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyBMvwX'>    prototype</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "__proto__",
+        "explain" : "<mark class='gray'>생성자 호출을 통해 객체가 생성될 때 생성자의 prototype이 참조된 것.<br> 구현된 객체의 prototype을 확인할 때 사용한다.<br>prototype을 참조하기 때문에 prototype과 __proto__는 같다.</mark><br>다음은 단순 참고사항이다.<br>constructor는 생성자 함수 그 자체를 가리킨다.<br>prototype은 생성자 함수에 정의한 모든 객체가 공유할 원형이다.<br>__proto__는 생성자 함수를 new로 호출할 때, 정의해두었던 prototype을 참조한 객체이다.<br>prototype은 생성자 함수에 사용자가 직접 넣는 거고, __proto__는 new를 호출할 때 prototype을 참조하여 자동으로 만들어진다.<br>생성자에는 prototype, 생성자로부터 만들어진 객체에는 __proto__ 이다.<br>따라서 사용자는 prototype만 신경쓰면 된다.<br> __proto__는 prototype이 제대로 구현되었는지 확인용으로 사용한다." ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "prototype, __proto__와 constructor의 관계",
+        "explain" : "prototype과 constructor는 부모자식 관계라고 생각하면 된다.<br>아래와 같은 관계이다.<br><mark class='gray'>Person.prototype.constructor === Person;<br>Person.prototype === (Person생성자로 만들어진 객체).__proto__;<br>(Person생성자로 만들어진 객체).__proto__.constructor === Person;</mark>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "상속",
+        "explain" : "<mark class='gray'>상속 = 조상생성자의 속성(this), 인자(argument), prototype을 후손생성자가 사용할 수 있게 하는 것.<br>상속방법은 아래와 같다.<br><br><br>function 후손생성자 () {<br>조상생성자.apply(this, arguments);<br>}<br>후손생성자.prototype = Object.create(조상생성자.prototype);<br>후손생성자.prototype.constructor = 후손생성자;<br><br>각각의 설명은 다음과 같다.<br><br>function 후손생성자 () {<br>조상생성자.apply(this, arguments);<br>}<br>->위 코드의 의미는 조상생성자에 apply메소드를 이용하여 조상생성자의 this(조상생성자를 기반으로 새로 만들어진 객체들이 참조하고 있는 것)와 arguments(조상생성자의 매개변수)를 후손생성자에게 적용시키라는 의미다.<br><br>후손생성자.prototype = Object.create(조상생성자.prototype);<br>-> 조상생성자의 prototype을 후손생성자의 prototype이 상속받는다.<br>※즉, 후손생성자는 조상생성자의 prototype을 전부 사용할 수 있게 된다.<br>※위의 코드 중 Object.create는 조상생성자명.prototype을 상속하는 새로운 객체를 만드는 메소드이다.<br>※Object.create(조상생성자명.prototype) 과 new 조상생성자명()은 차이가 있다.<br>※Object.create(조상생성자명.prototype)은 새로운 객체를 만들되 생성자는 실행하지 않는데, new 조상생성자명()은 객체를 만들고 생성자를 실행한다.<br>※위와 같이 후손생성자가 조상생성자로부터 상속을 받게되면 후손생성자명.prototype.constructor 는 조상생성자가 되어 버린다.<br>※이는 JavaScript자체의 문제이므로 이를 해결하기 위해선 아래와 같이 후손생성자명.prototype.constructor = 후손생성자명 라고 명시를 해줘야 한다.<br><br>후손생성자.prototype.constructor = 후손생성자;<br>-> 조상생성자의 prototype을 상속받았기 때문에 후손생성자.prototype.constructor = 조상생성자 상태이다. 이를 후손생성자를 다시 바라보게 하기 위하여 설정해준다.<br><br><br>또 다른 상속방법은 아래와 같다.<br>후손생성자.prototype = new 조상생성자();<br>후손생성자.prototype.constructor = 후손생성자;<br><br>각각의 설명은 다음과 같다.<br><br>후손생성자.prototype = new 조상생성자();<br>-> 후손생성자의 prototype에 조상생성자의 인스턴스를 넣는다.<br>※결국 기존의 조상생성자에 선언된 this는 prototype으로 작동하며, 후손생성자를 사용하는 모든 객체가 공유하게 된다. (prototype뿐만아니라 조상생성자의 this까지도 후손생성자의 prototype에 추가되게 되므로 비효율적인 코드가 된다.)<br><br>후손생성자.prototype.constructor = 후손생성자;<br>-> 조상생성자의 인스턴스를 상속받았기 때문에 후손생성자.prototype.constructor = 조상생성자 상태이다. 이를 후손생성자를 다시 바라보게 하기 위하여 설정해준다.<br><br><br>조금은 햇갈리는 예시도 있다.<br>후손생성자 = new 조상생성자();<br>후손생성자.prototype.constructor = 후손생성자;<br><br>위 코드는 상속이 아닌 후손생성자가 조상생성자를 참조하고 있는 것이라고 볼 수 있다.<br>이유는 다음과 같다.<br><br>후손생성자 = new 조상생성자();<br>-> 후손생성자에 조상생성자 인스턴스를 대입. 후손생성자의 this 및 prototype 전부 조상생성자의 값을 바라보게 된다.<br><br>후손생성자.prototype.constructor = 후손생성자;<br>-> constructor만 후손생성자로 변경될 뿐, 후손생성자의 this 및 constructor를 제외한 나머지 prototype전부 조상생성자의 값을 바라보게 된다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvZqZr' data-pen-title='상속' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvZqZr'>    상속</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "자판기 게임",
+        "explain" : "자판기 게임을 만들어봤다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoJYxe' data-pen-title='자판기 게임' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoJYxe'>    자판기 게임</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "Object",
+        "title" : "Object 객체란",
+        "explain" : "<mark class='gray'>Object는 모든 객체의 최종 prototype 이다.</mark>생성자를 생성 후 prototype을 추가한 뒤, 객체.__proto__를 하게 되면 추가한 prototype의 정보가 나오게 된다.<br>여기에서 만약 객체.__proto__.__proto__ 를 하게 된다면 Object가 나오게 된다.<br><mark class='gray'>즉, 생성자를 통해 만든 객체는 prototype의 prototype도 Object 객체이다.<br>Object 객체 자체의 prototype은 null이다.<br>이유는 위에서 언급했듯 Object는 모든 객체의 최종 prototype이기 떄문이다.<br>Object 객체의 생성자는 window객체에 저장되어 있다.<br>모든 객체가 Object 객체로부터 상속받기 떄문에 모든 객체는 Object 객체의 메소드들을 사용할 수 있다.</mark>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.hasOwnProperty(속성명)",
+        "explain" : "<mark class='gray'>객체의 속성이 상속받지 않은 속성인지 알려준다.<br>자신의 속성이면 true, 부모의 속성이거나 아예 속성이 아니면 false를 반환한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzPrMM' data-pen-title='객체.hasOwnProperty(속성명)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzPrMM'>    객체.hasOwnProperty(속성명)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.isPrototypeOf(대상), 객체 instanceof 대상",
+        "explain" : "<mark class='gray'>객체.isPrototypeOf(대상) = 객체가 대상의 조상인지 확인 할 수 있다.<br>instanceof = 객체가 대상의 자식인지 확인 할 수 있다.</mark><br>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='dPbWgqK' data-pen-title='객체.isPrototypeOf(대상)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/dPbWgqK'>    객체.isPrototypeOf(대상)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.getPrototypeOf(객체), Object.setPrototypeOf(객체, prototype)",
+        "explain" : "<mark class='gray'>Object.getPrototypeOf(객체) = 객체의 prototype을 조회한다.<br>※객체가 참조하고 있는 생성자.prototype으로도 동일한 경과가 나온다.<br>Object.setPrototypeOf(객체, prototype) = 객체의 prototype을 설정한다.※객체가 어떤 프로토타입을 상속받도록 변경할 떄 사용하는 것이다.<br>※생성자.prototype.속성명 = 속성값 과의 차이는 Object.setPrototypeOf(객체, prototype)는 참조하는 프로토타입을 변경하는 것이고, 생성자.prototype.속성명 = 속성값는 prototype에 속성을 추가 및 수정하는 것이다.<br>※Object.setPrototypeOf(객체, prototype) 는 성능에 부정적인 영향을 미칠 수 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='bNbRGwE' data-pen-title='Object.getPrototypeOf(객체), Object.setPrototypeOf(객체, prototype)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/bNbRGwE'>    Object.getPrototypeOf(객체), Object.setPrototypeOf(객체, prototype)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.propertyIsEnumerable(속성)",
+        "explain" : "<mark class='gray'>해당 속성이 열거 가능한 속성인지 알려준다.<br>※열거 가능이란 for-in과 같은 반복문 안에서 쓸 수 있는지를 말한다.<br>상속받은 속성과 해당 객체의 속성이 아닌 것은 기본적으로 제외된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emOGoeV' data-pen-title='객체.propertyIsEnumerable(속성)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/emOGoeV'>  객체.propertyIsEnumerable(속성)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.create(prototype, 속성들)",
+        "explain" : "<mark class='gray'>객체를 생성하는 방법 중 하나이다.<br>쓰임새는 크게 2개 정도로 볼 수 있을 것 같다.<br>1. Object.create(객체): 객체를 프로토타입으로 하는 새로운 객체를 생성한다.<br>2. Object.create(생성자.prototype): 생성자의 prototype 객체를 프로토타입으로 하는 새로운 객체를 생성한다.<br>속성은 writable, configurable, enumerable, get, set ,value의 옵션이 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENGPqv' data-pen-title='Object.create(prototype, 속성들)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENGPqv'>  Object.create(prototype, 속성들)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)",
+        "explain" : "<mark class='gray'>객체의 속성을 자세하게 정의할 때 사용한다.<br><br>속성에 대한 설명은 다음과 같다.<br>writable = 속성값을 변경할 수 있는지 여부<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못한다.<br>enumerable = for ... in 반복문 안에서 사용할 수 있는지 여부<br>configurable = 각 속성(writable , enumerable...)의 true, false을 바꿀 수 있는지 여부<br>configurable = true<br>-> 각 속성(writable , enumerable...)의 true, false를 변경 가능.<br>configurable = false<br>-> 각 속성(writable , enumerable...)의 true, false를 변경 불가능.<br>※false인 경우 delete 동작도 불가능하다.<br>※Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)을 사용할떄 writable, enumerable, configurable의 기본값은 false이다.<br>※다만 객체 리터럴을 사용할 때 writable, enumerable, configurable의 기본값은 true이다.<br>※객체 리터럴은 중괄호 {}를 사용하여 속성과 값을 쌍으로 정의하는 방식이다.<br>value = 속성의 값<br>get = 속성의 값을 가져올 때<br>set은 속성의 값을 설정할 때<br>※get, set 키값은 writable, value 키값과 함께 선언될 수 없다.<br>※configurable이 false여도 writable이 true라면 속성 값을 변경할 수 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbLPZg' data-pen-title='Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbLPZg'>  Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.freeze, Object.seal, Object.preventExtensions, Object.isFrozen, Object.isSealed, Object.isExtensible",
+        "explain" : "<mark class='gray'>Object.freeze = 객체 전체를 바꾸지 못하게 고정할 수 있다.<br>값도 못 바꿀뿐더러, 속성을 추가 또는 제거할 수도 없고, 속성의 설명을 바꿀 수도 없다.<br>※writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못하지만 Object.freeze를 쓰면 바꾸지 못하게 할 수 있다.<br>Object.seal = 속성의 추가, 제거를 막고, configurable을 false로 바꾼다.<br>대신 속성의 값은 writable이 true이기만 하면 바꿀 수 있다.<br>Object.preventExtensions = 속성의 추가만 막을 때 사용한다.<br>그 외의 속성 제거, 값 변경, 설정 변경은 가능하다.</mark><br><br><mark class='gray'>Object.isFrozen = 객체가 freeze 되었는지 여부<br>Object.isSealed = 객체가 sealed 되었는지 여부<br>Object.isExtensible = 객체가 preventExtension 되었는지 여부</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='vEBeMbO' data-pen-title='Object.freeze, Object.seal, Object.preventExtensions' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/vEBeMbO'>  Object.freeze, Object.seal, Object.preventExtensions</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.getOwnPropertyDescriptor(객체, 속성)",
+        "explain" : "<mark class='gray'>속성의 설명 값을 불러올 때 사용한다.<br><br>※Object.defineProperties(객체, 속성들), Object.defineProperty(객체, 속성, 설명)을 사용할떄 writable, enumerable, configurable의 기본값은 false이다.<br>※다만 객체 리터럴을 사용할 때 writable, enumerable, configurable의 기본값은 true이다.<br>※객체 리터럴은 중괄호 {}를 사용하여 속성과 값을 쌍으로 정의하는 방식이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybBZXz' data-pen-title='Object.getOwnPropertyDescriptor(객체, 속성)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybBZXz'>  Object.getOwnPropertyDescriptor(객체, 속성)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.toString",
+        "explain" : "객체를 alert하거나 console.log할 때 원하는 결과는 안 나오고, [object Object] 이런 게 나올 때가 있다. 이는 내부적으로 toString 메소드가 호출된 결과이다.<br><mark class='gray'>객체.toString = 객체의 종류를 알려준다.<br>toString은 사용자가 임의로 바꿀수 있으며 일반적으로 문자열끼리 더할 때 사용된다.<br>※[object Object]를 노출시키고 싶다면 JSON.stringify(노출시킬 대상) 을 쓰면 된다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybqPLm' data-pen-title='객체.toString' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybqPLm'>  객체.toString</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체.valueOf",
+        "explain" : "<mark class='gray'>객체.valueOf = 객체가 지닌 키와 값을 나타낸다.<br>toString과 마찬가지로 사용자가 임의로 변경이 가능하며, 일반적으로 숫자 계산을 할 때 사용한다.</mark><br>toString처럼 내부적으로 호출된다" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENaqpe' data-pen-title='객체.valueOf' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENaqpe'>  객체.valueOf</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Object.keys",
+        "explain" : "<mark class='gray'>객체의 속성명 만을 모두 가져와 배열로 만든다.<br>enumerable이 false인 것은 빠진다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOPqXx' data-pen-title='Object.keys' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOPqXx'>  Object.keys</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "typeof",
+        "explain" : "<mark class='gray'>변수에 할당된 값의 데이터 타입을 알고 싶을 떄 사용한다.<br>※배열과 null도 object로 표시되기 때문에 배열을 구분하려면 Array.isArray 메소드를 사용하고, null을 구분하려면 따로 처리해야한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPOXqK' data-pen-title='typeof' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPOXqK'>  typeof</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "delete",
+        "explain" : "<mark class='gray'>객체 내의 속성을 지울 수 있다.<br>성공하면 true를 실패하면 false를 반환한다. configurable이 false거나 freeze된 상태면 실패한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybqPgB' data-pen-title='delete' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybqPgB'>  delete</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "전역변수와 지역변수",
+        "title" : "전역변수와 지역변수",
+        "explain" : "<mark class='gray'>전역변수 = 자바스크립트에서 제일 바깥 범위(함수 안에 포함되지 않은)에 변수를 만드는 것.<br>※window 객체에 변수를 만드는 것이다.<br>지역 변수 = 함수 안에 들어있는 변수</mark><br>※전역(global)변수를 만드는 일은 최대한 지양해야 한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzpJba' data-pen-title='전역 변수와 지역 변수' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzpJba'>  전역 변수와 지역 변수</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "스코프(Scope)",
+        "explain" : "<mark class='gray'>지역변수는 아무리 해도 전역변수에 영향을 끼칠 수 없다. 이유는 함수 스코프 떄문이다.<br>함수 스코프로 인해 함수 안에서 선언된 변수는 해당 함수 안에서만 사용할 수 있다.<br>즉, 스코프는 변수가 영향을 미치는 범위라고 말할 수 있을 것 같다.<br>※스코프는 함수를 호출할 때가 아니라 선언할 때 생긴다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKyJEj' data-pen-title='스코프(Scope)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKyJEj'>  스코프(Scope)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "스코프 체인",
+        "explain" : "<mark class='gray'>내부 함수에서는 외부 함수의 변수에 접근 가능하지만 외부 함수에서는 내부 함수의 변수에 접근할 수 없다.<br>또한 모든 함수들은 전역 객체에 접근할 수 있다.<br>함수 내에서 변수를 사용할 때 변수가 해당 함수 내에 선언되어 있었다면 괜찮지만,<br>전역 변수로 선언되어 있었다면 함수 외부로 변수가 선언된 지점까지 찾게 된다.<br>이렇게 내부 -> 외부로 점차 범위를 넓혀 변수의 출처를 찾는것을 스코프 체인이라고 한다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYopog' data-pen-title='스코프 체인(scope chain)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYopog'>    스코프 체인(scope chain)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "렉시컬 스코핑(lexical scoping)",
+        "explain" : "<mark class='gray'>함수를 처음 선언하는 순간, 함수 내부의 변수는 자기 스코프로부터 가장 가까운 곳(상위 범위에서)에 있는 변수를 계속 참조하게 되는 것.</mark><br><span class='du'>렉시컬 스코핑은 함수 내부의 변수가 자신이 선언된 곳의 스코프를 참고하는 것이고,<br>스코프 체인은 변수가 자신이 선언된 곳을 찾아 상위 범위로 점차 범위를 넓혀가는 개념이라면<br>애초에 렉시컬 스코프는 변수가 자기 자신이 있는 곳을 참조하고 있으니 스코프 체인이 필요없는게 아닐까?<br>+ 렉시컬 스코핑에 따라 스코프 체인이 어떤 식으로 이루어질 수 있는지가 결정되는 듯 하다.</span>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='dPbJGPe' data-pen-title='렉시컬 스코핑(lexical scoping)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>    <span>See the Pen <a href='https://codepen.io/scrimer/pen/dPbJGPe'>    렉시컬 스코핑(lexical scoping)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)    on <a href='https://codepen.io'>CodePen</a>.</span>  </p>  <script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "네임스페이스",
+        "explain" : "<mark class='gray'>함수 안에 지역변수를 만들거나, 객체 안의 속성으로 만들어 변수를 리턴하는 것.<br></mark><br>※네임스페이스를 사용하는 이유는 무분별한 전역변수 사용으로 인한 변수명 겹침을 방지하기 위함으로 보인다.<br><mark class='gray'><br>※네임스페이스의 단점은 네임스페이스의 변수를 초기화함으로서 그 값을 바꿀 수 있다는 것이다.<br>이를 방지하기 위해 아래에 소개할 비공개 변수를 사용해야 한다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByBPGoX' data-pen-title='네임스페이스' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByBPGoX'>  네임스페이스</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "전역변수, 공개변수, 비공개 변수",
+        "explain" : "<mark class='gray'>전역변수 = 프로그램의 모든 부분에서 접근할 수 있는 변수<br>공개변수 = 객체의 속성으로 정의된 변수로, 객체 외부에서 접근할 수 있는 변수<br>비공개 변수 = 특정 스코프 내에서만 접근할 수 있는 변수로, 외부에서 직접 접근하거나 수정할 수 없는 변수.<br>일반적으로 함수 내에서 선언되거나, 클래스 내에서 # 기호를 사용하여 정의된다.<br>외부에서는 해당 변수에 직접 접근할 수 없고, 접근을 위해서는 메서드를 통해야 한다.<br>비공개 변수를 사용하는 이유는 다른 사람들이 악의적 조작을 막기 위해서이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzjmXJ' data-pen-title='비공개 변수' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzjmXJ'>  비공개 변수</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "IIFE(즉시 호출 함수 표현식)",
+        "explain" : "<mark class='gray'>IIFE(즉시 호출 함수 표현식)는 모듈 패턴이라고 하기도 하며<br>함수를 선언하자마자 바로 실행시켜버린다.<br>var 변수명 = (function() { 내용물 })(); 로 사용한다.<br>함수를 function() {}로 선언하면서 동시에 ()를 붙이니까 즉시 실행되는 것이다.<br></mark><br>※즉시 호출 함수 표현식은 라이브러리를 만들 때 기본적으로 쓰이며, 많은 라이브러리가 이 구문을 활용하고 있다.<br>※비공개 변수가 없는 자바스크립트에 비공개 변수 기능을 만들어주기 때문이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybGdLN' data-pen-title='IIFE(즉시 호출 함수 표현식)' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybGdLN'>  IIFE(즉시 호출 함수 표현식)</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "실행 컨텍스트",
+        "title" : "실행 컨텍스트",
+        "explain" : "<mark class='gray'>실행 컨텐스트란 코드의 실행 흐름이라고 생각하면 된다.<br>전역 컨텍스트 = 처음 코드를 실행(여기서 실행은 브라우저가 스크립트를 로딩해서 실행하는 걸 말한다)하는 순간 모든 것을 포함한 전역 컨텍스트가 생긴다.<br>함수 컨텍스트 = 함수를 호출할 때마다 함수 컨텍스트가 하나씩 더 생긴다.<br><br>컨텍스트의 원칙은 아래과 같다.<br>먼저 전역 컨텍스트 하나 생성 후, 함수 호출 시마다 컨텍스트가 생긴다.<br>컨텍스트 생성 시(전역, 함수 컨테스트 둘 다 포함) 컨텍스트 안에 변수객체(arguments, variable), scope chain, this가 생성된다.<br>컨텍스트 생성 후 함수가 실행되는데, 사용되는 변수들은 변수 객체 안에서 값을 찾고, 없다면 스코프 체인을 따라 올라가며 찾는다.<br>함수 실행이 마무리되면 해당 컨텍스트는 사라진다.(클로저 제외) 페이지가 종료되면 전역 컨텍스트가 사라진다.<br></mark>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "전역 컨텍스트",
+        "explain" : "<mark class='gray'>전역 컨텍스트가 생성된 후 두 번째 원칙에 따라 변수객체, scope chain, this가 들어온다. <br>전역 컨텍스트는 arguments(함수의 인자)가 없다.<br>variable은 해당 스코프의 변수들이다.<br>scope chain은 자기 자신인 전역 변수객체이다.<br>this는 따로 설정되어 있지 않으면 window다. <br>※this를 바꾸는 방법은 new를 호출하거나 함수에 다른 this 값을 bind 하는 것이다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBZaeZ' data-pen-title='전역 컨텍스트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBZaeZ'>  전역 컨텍스트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "함수 컨텍스트",
+        "explain" : "함수가 호출될 시 실행되는 컨텍스트이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKXgqZ' data-pen-title='함수 컨텍스트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKXgqZ'>  함수 컨텍스트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "호이스팅",
+        "explain" : "<mark class='gray'>변수를 선언하고 초기화했을 때 선언 부분이 최상단으로 끌어올려지는 현상.<br>※초기화 또는 대입 부분은 그대로 남아있다.<br>※함수 표현식(var 변수명 = function (){})이 아니라 함수 선언식(function 변수명(){})일 때는 식 자체가 통째로 끌어올려진다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLVwEq' data-pen-title='호이스팅' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLVwEq'>  호이스팅</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클로저",
+        "explain" : "<mark class='gray'>클로저 자체는 함수가 아니다.<br>클로저는 내부 함수가 외부 함수의 변수에 접근할 수 있도록 해주는 개념이다.<br>즉, 내부 함수에서 외부 함수의 변수를 사용하고 있지 않다고 해도 내부 함수는 외부 함수의 변수에 접근할 수 있으므로 클로저 기능을 포함하고 있다.<br>즉, 클로저는 내부함수가 있을때 무조건 존재한다.<br>※잘못 사용했을 시 성능 문제와 메모리 문제가 발생할 수 있다. closure의 비공개 변수는 자바스크립트에서 언제 메모리 관리를 해야할 지 모르기 때문에 자칫 메모리 낭비로 이어질 수 있다.<br>또한 scope chain을 거슬러 올라가는 행동을 하기 때문에 조금 느리다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOJxBM' data-pen-title='클로저' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOJxBM'>  클로저</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클로저 예시1",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLVOOy' data-pen-title='클로저 예시1' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLVOOy'>  클로저 예시1</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클로저 예시2",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPxyyM' data-pen-title='클로저 예시2' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPxyyM'>  클로저 예시2</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JSON",
+        "explain" : "<mark class='gray'>JSON(JavaScript Object Notation)은 자바스크립트 문법을 빌린 데이터 교환 형식이다.<br>JSON은 객체를 사용해서 데이터를 표현한다.<br>허용되는 데이터타입은 문자열, 숫자, 불린, 배열, 객체이다. 다만, 함수 허용되지 않는다.<br>일반 객체와 다른 점은 작은따옴표 대신 큰따옴표로 감싸져야 한다.<br>또한 키(Key)도 반드시 쌍따옴표로 감싸져야 한다. <br>※일반 객체에서는 키를 따옴표 없이 쓸 수 있다.<br><br>자바스크립트에서는 JSON을 활용할 수 있게 JSON 객체를 제공한다.<br>※이 말은 JSON은 전역 객체인 window의 속성으로 존재한다는 것이다.<br>JSON 객체에는 stringify와 parse 메서드가 있다.<br><br>stringify = JSON을 문자열로 만든다.<br>※JSON 데이터를 서버를 통해서 전송할 때, 객체를 이해하지 못하는 서버가 있기에 이를 위해 문자열로 바꾸기 위해 사용한다.<br>parse = 문자열을 JSON으로 변경한다.<br>※JSON.parse를 할 때 인자가 undefined이거나 객체 혹은 JSON 형태가 아닌 문자열이면 Uncaught SyntaxError: Unexpected token 에러가 뜨게된다.<br>※JSON.stringify와 JSON.parse를 한 번에 사용하면 객체를 복사할 수 있다. (참조가 아닌 복사다.)<br> (객체는 원래 서로 참조를 하기 때문에 하나의 값을 바꾸면 다른 것들의 값도 따라서 바뀌지만, 복사를 하게되면 독립적으로 움직이게 된다.)<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvPdWK' data-pen-title='JSON' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvPdWK'>  JSON</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "이벤트 리스너와 콜백",
+        "title" : "이벤트 리스너",
+        "explain" : "<mark class='gray'>이벤트를 붙이는 방법은 크게 2가지가 있다.<br><br>1. on + '이벤트명' 으로 이벤트를 건다.<br>2. addEventListener 으로 이벤트를 건다.<br>※2번의 방식은 하나의 이벤트에 여러 이벤트리스너를 걸 수 있기도 하고, 특정 이벤트를 제거할 수도 있다.<br>※공통적으로 이벤트가 발생했을 때 등록했던 이벤트 리스너가 실행된다.<br>※이벤트 = 웹 페이지에서 발생하는 특정한 행동이나 상태 변화.<br>※이벤트 리스너 = 특정 이벤트가 발생했을 때 실행되는 함수. 이벤트가 발생할 때 호출되는 콜백 함수.<br><br>이벤트는 removeEventListener 를 사용해 제거할 수 있다.<br><br>※아래는 자수 쓰이는 이벤트 목록이다.<br>blur = 객체가 focus를 잃었을 때.<br>change = 객체의 내용이 바뀌고 focus를 잃었을 때.<br>click = 객체를 클릭했을 때.<br>dblclick = 더블클릭할 때.<br>error = 에러가 발생했을 때.<br>focus = 객체에 focus가 되었을 때.<br>keydown = 키를 눌렀을 때.<br>keypress = 키를 누르고 있을 때.<br>keyup = 키를 눌렀다 뗐을 때.<br>load = 문서나 객체가 로딩되었을 때.<br>mouseover = 마우스가 객체 위에 올라왔을 때.<br>mouseout = 마우스가 객체 바깥으로 나갔을 때.<br>reset = Reset 버튼을 눌렀을 때.<br>resize = 객체의 크기가 바뀌었을 때.<br>scroll = 스크롤바를 조작할 때.<br>submit = 폼이 전송될 때.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbeaNwV' data-pen-title='이벤트 리스너' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbeaNwV'>  이벤트 리스너</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "콜백",
+        "explain" : "<mark class='gray'>콜백이란 특정 작업이 완료된 후에 호출되는 함수를 의미한다.<br>즉, 함수 그 자체가 다른 함수의 인자로서 전달이 되어야 하는거다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENeOrO' data-pen-title='콜백' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENeOrO'>  콜백</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "이벤트 버블링, 이벤트 캡처링",
+        "explain" : "<mark class='gray'>이벤트 버블링 = 자식의 이벤트가 부모에게도 전달되는 것이다.<br>이벤트 캡처링 = 부모의 이벤트가 자식에게도 전달되는 것이다.<br>※이벤트 버블링을 주로 쓴다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzxobJ' data-pen-title='이벤트 버블링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzxobJ'>  이벤트 버블링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "이벤트 객체",
+        "explain" : "<mark class='gray'>DOM에 대한 이벤트에 연결한 함수는 이벤트 객체를 매개변수로 사용할 수 있다.<br>이벤트 객체에는 이벤트에 대한 정보들과 이벤트를 조작하는 메소드들이 있다.<br><br>대표적인 메소드로 preventDefault, stopPropagation, stopImmediatePropagation이 있다.<br>preventDefault = 태그의 기본 동작(예를 들면, a 태그는 클릭 시 링크이동, form 태그은 폼 내용 전송)을 하지 않게 막아주는 역할을 한다.<br>stopPropagation = 이벤트 발생 시 상위 요소에게 이벤트가 전달(버블링)되지 않도록 한다.<br>※이벤트 버블링을 막는 거지 이벤트 캡처링을 막지는 못한다.<br>stopImmediatePropagation = 버블링을 막음과 동시에 같은 이벤트의 다른 리스너도 실행되지 않게 한다.<br>※같은 종류의 이벤트의 리스너들을 막는거지 다른 종류의 이벤트를 막을 수는 없다.<br><br>이벤트 정보의 종류 중엔 아래와 같은 것도 있다.<br>event.target = 이벤트가 발생한 태그의 정보를 알 수 있다.<br>event.pageX, event.pageY = 클릭한 좌표를 알 수 있다.<br>event.key = 어떤 키를 쳤는지 알 수 있다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPmjKr' data-pen-title='이벤트 객체' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPmjKr'>  이벤트 객체</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "주의사항",
+        "explain" : "<mark class='gray'>html 자체에 이벤트 리스너를 연결하는 것보다는 html과 javascript를 분리시키는게 유지보수가 쉬워지므로 가급적 나누는게 좋다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ogvaNLE' data-pen-title='주의사항' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ogvaNLE'>  주의사항</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "함수의 메소드",
+        "explain" : "<mark class='gray'>함수의 메소드 중 중요한 건 call, apply, bind 등이 있다.<br>call() = 함수를 호출하면서 this 값을 지정할 수 있게 해준다. 첫 번째 인자로 this로 사용할 객체를 전달하고, 그 뒤에 함수에 전달할 인자를 나열한다.<br><br>apply() = 함수를 호출하면서 this 값을 지정할 수 있게 해준다. 첫 번째 인자로 this로 사용할 객체를 전달하고, 두 번째 인자로 인자 배열을 전달한다. apply() 메서드는 이 배열의 각 요소를 호출하는 함수의 파라미터 각각에 매핑한다.<br><br>bind() = 함수를 호출하지 않고, 새로운 함수를 반환한다. 이 새로운 함수는 this 값을 지정한 객체로 고정한다. 또한 bind는 인자값을 미리 세팅해 놓을 수 있다.<br>※call()과 apply()는 인자값을 어떻게 주냐의 차이만 있을 뿐 기능적으로는 같다.<br>※인자값을 나열할 것(call)이냐 유사 배열형식으로 인자값을 넘길것이냐(apply)의 차이만 있으므로 아마 call이 더 많이 쓰이지 않을까 싶다.<br></mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByBqrLM' data-pen-title='함수의 메소드' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByBqrLM'>  함수의 메소드</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "arguments, 유사배열",
+        "explain" : "<mark class='gray'>arguments = 각 컨텍스트에 디폴트로 존재하는 객체.<br>유사배열 = 배열처럼 인덱스를 가지고 있고 length 속성을 가지지만, 배열 메서드를 사용할 수 없다.<br>※arguments 객체나 DOM 메서드에서 반환되는 NodeList가 유사 배열이다.<br>NodeList는 기본적으로 forEach메서드만 제공되며, length 속성을 가지고 있어 요소의 개수를 확인할 수 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLZmKe' data-pen-title='arguments, 유사배열' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLZmKe'>  arguments, 유사배열</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "객체의 복사",
+        "explain" : "<mark class='gray'>문자열, 숫자, 불린은 값을 복사한다.<br>객체, 함수는 값을 복사하는 게 아니라 참조(메모리의 주소)를 복사한다.<br>값을 참조중인 것이기 떄문에 만약 참조 중인 변수가 2개라고 할 때 하나의 값이 바뀌면 다른 하나의 값도 바뀌게 된다.<br><br>복사에는 shallow copy(얕은 복사)와 deep copy(깊은 복사)가 있다.<br>shallow copy = 가장 상위 객체만 새로 생성되고 내부 객체들은 참조 관계인 경우.<br>deep copy = 내부 객체까지 모두 새로 생성된 것.<br>※shallow copy와 deep copy 둘 다 객체, 함수와 같은 참조 타입에 적용되는 개념이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='XJrxEGe' data-pen-title='객체의 복사' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/XJrxEGe'>  객체의 복사</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },    
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "재귀와 메모이제이션",
+        "title" : "재귀",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='EaYOMBX' data-pen-title='재귀' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/EaYOMBX'>  재귀</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "메모이제이션",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPezQO' data-pen-title='메모이제이션' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPezQO'>  메모이제이션</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Syntactic Sugar",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoQxzL' data-pen-title='Syntactic Sugar' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoQxzL'>  Syntactic Sugar</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "호출 스택과 이벤트루프",
+        "title" : "호출 스택",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzmZGL' data-pen-title='호출 스택' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzmZGL'>  호출 스택</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "이벤트루프",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='EaYOJjw' data-pen-title='이벤트루프' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/EaYOJjw'>  이벤트루프</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "디바운싱과 쓰로틀링",
+        "title" : "디바운싱",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwQZKw' data-pen-title='디바운싱' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwQZKw'>  디바운싱</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "쓰로틀링",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLJPjj' data-pen-title='쓰로틀링' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLJPjj'>  쓰로틀링</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "변수 변경 탐지하기",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybQgev' data-pen-title='변수 변경 탐지하기' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybQgev'>  변수 변경 탐지하기</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "CSS와 관련된 자바스크립트",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKwLZL' data-pen-title='CSS와 관련된 자바스크립트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKwLZL'>  CSS와 관련된 자바스크립트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "map, reduce",
+        "title" : "map",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENQRrq' data-pen-title='map' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENQRrq'>  map</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "reduce",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzmZOe' data-pen-title='reduce' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzmZOe'>  reduce</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "배열과 유사배열",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBQbLw' data-pen-title='배열과 유사배열' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBQbLw'>  배열과 유사배열</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "console.log",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='vEBQMKv' data-pen-title='console.log' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/vEBQMKv'>  console.log</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Lazy evaluation",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='azoQxmE' data-pen-title='Lazy evaluation' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/azoQxmE'>  Lazy evaluation</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "Error 객체",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='vEBQMXv' data-pen-title='Error 객체' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/vEBQMXv'>  Error 객체</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "ES2015 이후의 실행 컨텍스트",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKwLjL' data-pen-title='ES2015 이후의 실행 컨텍스트' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKwLjL'>  ES2015 이후의 실행 컨텍스트</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "async 함수 내부에서 에러가 throw된 경우 catch 방법",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyBQrVV' data-pen-title='async 함수 내부에서 에러가 throw된 경우 catch 방법' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyBQrVV'>  async 함수 내부에서 에러가 throw된 경우 catch 방법</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클래스 static 메서드의 this",
+        "explain" : "" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBQbWz' data-pen-title='클래스 static 메서드의 this' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBQbWz'>  클래스 static 메서드의 this</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+
+
+
+
+
+
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "자바스크립트에서 this는 객체의 컨텍스트를 참조하는 중요한 개념입니다. ",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "strict mode",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "메서드 체이닝",
+        "explain" : "" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "원시 래퍼",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "옵셔널 체이닝",
+        "explain" : "" ,
+        "howUse" : ""       
+    },    
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "JavaScript의 템플릿 리터럴",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "익명 함수",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "이벤트 위임(Event delegation)",
+        "explain" : "이벤트 위임(Event delegation)이란? HTML DOM에서 부모 요소에 이벤트 핸들러를 할당하고, 하위 요소들의 이벤트를 부모 요소에서 처리하는 기술이다. 이를 통해 성능 개선, 동적 요소 처리, 코드 간결성 등의 이점을 얻을 수 있다. 이벤트 위임을 구현하려면 부모 요소를 선택하고, 해당 요소에 이벤트 핸들러를 할당하면 된다.<br>다음은 jQuery에서 on() 메서드로 이벤트 위임을 사용하는 예시이다.<br><br>$(document).ready(function() {<br>// 이벤트 핸들러를 상위 요소에 연결한다.<br>$(document).on('click', '.itemCheckBox', function() {<br>// 이벤트 처리 코드// ...<br>});<br>});<br>위 코드에서 $(document).on('click', '.itemCheckBox', ...)는 클릭 이벤트 핸들러를 문서에 연결하지만, 실제 이벤트 처리 코드는 .itemCheckBox 요소가 클릭되었을 때에만 실행된다. 이 접근 방식을 통해 동적으로 추가된 요소에 대해 올바르게 이벤트 처리가 되도록 할 수 있다.<br>'.itemCheckBox'를 동적으로 추가된 요소에 해당하는 적절한 선택자로 대체해야 한다. 문서 준비 시에 이미 실행된 $(document).ready() 이벤트를 고려하여 성능을 향상시키기 위해 $(document) 대신 문서 준비 시에 존재하는 다른 상위 요소를 사용할 수도 있다" ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "화살표 함수",
+        "explain" : "<mark class='gray'></mark><br>" ,
+        "howUse" : ""       
+    }
+]

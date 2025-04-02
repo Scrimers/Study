@@ -1,0 +1,49 @@
+@media (pointer: coarse) {
+    /* 디폴트 body제어 */
+    body {
+        font-size: calc(1.5vw + 0.3vh);
+        /* font-size: 12px; */
+    }
+    /* 네비게이션 영역 */
+    #navi {
+        padding: 0vh 3.5vh;
+    }
+    /* 메인 영역 */
+    main {
+        padding: 0vh 2.5vh;
+        font-size: 12px;
+    }
+    /* 네비게이션 텍스트 영역 */
+    .nav_cate_text {
+        padding: 8% 4% 4% 4%;
+        /* position: relative;
+        align-items: center; */
+    }
+    /* 드롭다운 컨텐츠 영역 */
+    .dropdown-content {
+        top: 100%;
+    }
+    /* 드롭다운 컨텐츠 영역 - a태그 */
+    .dropdown-content a {
+        padding: 10% 0;
+        margin: 0 3%;
+    }
+    /* 드롭다운 이미지 */
+    .dropdown img {        
+        top: -10%;
+        padding-right: 3%;
+        margin-left: -20%;
+    }
+    /* 사이드바 너비의 50%만큼 왼쪽으로 이동 */
+    #sidebarMain, #sidebarSub {
+        transform: translate(calc(var(--side-bar-width) * -0.5), 0);
+    }
+    #sidebarMain > ul > li > a {
+        font-size: 8px;
+    }
+
+
+    .subTextHowUse {
+        padding: 1px;
+    }
+}

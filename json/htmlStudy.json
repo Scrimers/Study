@@ -1,0 +1,458 @@
+[
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "HTML이란",
+        "explain" : "Hypertext Markup Language의 줄임말.<br><mark class='gray'>웹페이지를 구성하는 요소</mark>로서 쓰인다.<br>HTML은 JavaScript와 같이 순차적으로 동작하질 않으므로 프로그래밍 언어라고 하지는 않는다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "올바른 태그를 사용하는게 중요한 이유",
+        "explain" : "<mark class='gray'>HTML5에서 부터는 브라우저가 태그를 통해 HTML에서 어떤 부분이 무슨 역할을 하는지 인식</mark>하기 때문에 적절한 태그를 이용하는 것이 중요하다.<br>이 의미는 아마 검색과 같은 기능에서도 중요하게 작동한다라는 뜻인 것 같다.",
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "한글이 깨지는 것에 대하여.",
+        "explain" : "한글이 깨지는 경우는 <mark class='gray'>웹페이지가 저장한 문자표현 방식과 웹페이지를 불러올때의 문자표현 방식이 다르기 때문</mark>이다.<br>웹페이지를 저장할 때 UTF-8로 저장되었했다면<br>웹페이지를 불러올 때도 UTF-8로 불러와야 한다.<br>아래와 같이 UTF-8로 불러오도록 설정할 수 있다. <span class='du'><br>웹페이지가 저장을 한것과 웹페이지에서 불러온다는 것은 정확히 어떤 과정으로 이뤄지는 걸까?</span>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='VYZwBew' data-pen-title='한글이 깨질때' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'> <span>See the Pen <a href='https://codepen.io/scrimer/pen/VYZwBew'> 한글이 깨질때</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>) on <a href='https://codepen.io'>CodePen</a>.</span> </p> <script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "작성규칙에 대하여",
+        "explain" : "태그는 소문자로, 속성은 큰따옴표(\"\") 안에 쓰는 것이 좋다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "element에 대하여",
+        "explain" : "element(엘리먼트) = tag(태그) 라고 이해하면 된다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "주석",
+        "explain" : "사용자에겐 노출시키지 않고, 코드의 부가설명을 달기 위해 쓴다.<br>웹페이지에서는 보이지 않지만, 소스상에서는 보인다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='zxOYaNP' data-pen-title='주석' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/zxOYaNP'>  주석</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "기본적인 html 구성",
+        "explain" : "<mark class='gray'>doctype html은 이 웹페이지가 HTML5로 만들어졌다는 것을 표현하는 것</mark>이다.<br><mark class='gray'>html태그는 html 문서를 감싸는 태그이다. 하나만 존재해야 한다. HTML태그 밖에 doctype을 제외한 다른 태그가 있으면 안된다.</mark><br><mark class='gray'>head태그는 본문 설명 태그이다. 하나만 존재해야 하며, html 태그 바로 아래 있어야 한다.</mark><br><mark class='gray'>body태그 본문 태그이다. 하나만 존재해야 하며 head 태그 바로 아래 있어야 한다.</mark>" ,
+        "howUse" : "<xmp><!doctype html></xmp><xmp><html></xmp><xmp><head></head></xmp><xmp><body></body></xmp><xmp></html></xmp>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "title태그",
+        "explain" : "<mark class='gray'>title태그는 제목표시줄의 내용을 나타낼 때 사용</mark>한다.<br><mark class='gray'>head 태그 안에 들어간다.</mark><br>검색엔진이 웹페이지를 분석할때 title을 바라본다고도 한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLwNKb' data-pen-title='title' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLwNKb'>  title</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "h1 ~ h6태그",
+        "explain" : "header의 줄임말.<br><mark class='gray'>제목을 표현하는 태그</mark>이다.<br><mark class='gray'>h1 ~ h6까지 있으며 숫자가 커질수록 중요도가 떨어지는 제목</mark>이다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbKxJgN' data-pen-title='제목' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/xbKxJgN'>  제목</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "p태그",
+        "explain" : "Paragraph의 줄임말.<br><mark class='gray'>문단을 표현할 때 쓴다.</mark><br>p태그를 쓰면 자동 줄바꿈이 되기에 아래에 소개 할 br태그와 같은 기능을 제공하지만 일반적으로 <mark class='gray'>p태그는 br태그보다는 적게 쓰인다.</mark><br>하지만 <mark class='gray'>p태그는 css적용이 가능하지만 br태그는 css적용이 불가능</mark>하기에 용도에 따라 쓸 필요가 있다.<br>아래에서 쓰일 style과 같은 것을 CSS라고 하며, 그 중에서도 inline-style이라고 부른다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='WbeNKgJ' data-pen-title='문단' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/WbeNKgJ'>  문단</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "줄 관련",
+        "title" : "br태그",
+        "explain" : "br태그. Break의 줄임말.<br><mark class='gray'>줄바꿈 시에 사용</mark>된다.<br><mark class='gray'>※br, img, input, hr, meta 등은 컨텐츠에 적용시킨다는 개념이 아니기에 닫는 태그가 없다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENOpjQ' data-pen-title='br' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENOpjQ'>  br</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "hr태그",
+        "explain" : "Horizontal Rule의 줄임말.<br><mark class='gray'>콘테츠 내용 중 주제가 바뀔 때 사용</mark>한다.<br><mark class='gray'>줄바꿈과 동시에 가로줄이 생긴다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwvEMx' data-pen-title='hr' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwvEMx'>  hr</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://public.codepenassets.com/embed/index.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "a태그",
+        "explain" : "a = Anchor의 줄임말.<br><mark class='gray'>a태그는 클릭 시 다른 페이지로 이동</mark>시켜준다.<br><mark class='gray'>속성은 href, target, title이 있다.</mark><br>href = Hypertext Refernce의 줄임말. <mark class='gray'>href 속성은 이동하고자 하는 경로 및 주소를 지정할 때 사용</mark>한다.<br><mark class='gray'>target 속성은 새 창을 어디에 띄울건지 지정할 떄 사용</mark>한다. (ex: target='_blank'는 새창에서 웹 페이지 불러오기.)<br><mark class='gray'>title 속성은 툴팁이다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENEWmJ' data-pen-title='a' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENEWmJ'>  a</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "이미지 관련",
+        "title" : "img태그",
+        "explain" : "img = Image의 줄임말.<br><mark class='gray'>img태그는 이미지를 표시할 때 사용</mark>한다.<br><mark class='gray'>속성은 src, alt, width, height가 있다.</mark><br>src = source의 줄임말.<mark class='gray'>src속성은 이미지 파일의 경로를 지정할 때 사용</mark>한다.<br>alt = Alterate의 줄임말. <mark class='gray'>alt 속성은 이미지 경로가 잘못되었거나 파일이 깨졌을 때 나오는 대체 메세지를 지정할 때 사용</mark>한다.<br><mark class='gray'>width 속성은 이미지의 너비를 지정할 때 사용</mark>한다.<br><mark class='gray'>height 속성은 이미지의 높이를 지정할 때 사용</mark>한다.<br>src와 같은 것을 속성(attribute) 라고 한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='RNbNrgj' data-pen-title='img' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/RNbNrgj'>  img</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "map태그, area태그",
+        "explain" : "<mark class='gray'>map태그는 클릭할 수 있는 영역을 가지는 영역 그룹을 지정할 때 사용</mark>한다.<br><mark class='gray'>area태그는 이미지 맵을 클릭할 수 있는 영역을 지정할 떄 사용</mark>한다.<br><mark class='gray'>※map태그를 사용하려면 img태그에 usemap = map태그의 name 을 명시해줘야 한다.</mark><br><mark class='gray'>area태그는 map태그 안에서 쓰이며, 여러개 사용 가능</mark>하다.<br><mark class='gray'>area태그의 속성은 shape, coords, href, alt 등</mark>이 있으며 이 중 shape, coords만 적을 것이다.<br><mark class='gray'>shape속성은 영역의 모양을 지정할 때 사용한다. default, rect, circle, poly 등이 있다.</mark><br><mark class='gray'>coords속성은 영역의 좌표를 지정할 때 사용한다. shape에 따라서 그 양식이 달라진다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='EaYaPvP' data-pen-title='이미지 맵' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/EaYaPvP'>  이미지 맵</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "figure태그, figcaption태그",
+        "explain" : "<mark class='gray'>figure태그는 일러스트, 다이어그램, 사진, 코드등에 주석을 달기 위해 태그들을 감싸는 용도로 사용</mark>한다.<br><mark class='gray'>figcaption태그는 컨텐츠를 참고할 수 있는 설명을 적을 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emOmJGm' data-pen-title='figure, figcaption' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/emOmJGm'>  figure, figcaption</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "테이블(table태그, caption태그, thead태그, tbody태그, tfoot태그, tr태그, th태그, td태그)",
+        "explain" : "<mark class='gray'>table태그는 테이블 관련 태그 전체를 감쌀 때 사용</mark>한다.<br><mark class='gray'>caption태그는 테이블의 제목을 적을 때 사용</mark>한다.<br><mark class='gray'>thead태그는 테이블의 첫 줄을 적을 때 사용</mark>한다.<br><mark class='gray'>tbody태그는 테이블의 중간 부분을 적을 떄 사용</mark>한다.<br><mark class='gray'>tfoot태그는 테이블의 마지막 줄을 적을 때 사용</mark>한다.<br><mark class='gray'>tr태는 가로 한 줄을 삽일할 때 사용</mark>한다.<br><mark class='gray'>th태그는 tr태그 안에 쓰이며, 제목(?)칸을 삽일 할 때 사용</mark>한다.<br><mark class='gray'>td태그 역시 tr태그 안에 쓰이며, 칸 하나를 삽입할 때 사용</mark>한다.<br><mark class='gray'>colspan 속성은 가로 병합을 할 때 사용한다. th태그, td태그에서만 사용 가능하다.</mark><br><mark class='gray'>rowspan 속성은 세로 병합을 할 때 사용한다. th태그, td태그에서만 사용 가능하다.</mark><br>※기본적으로 테두리(border)는 지원하지 않는 듯 하다.<br><mark class='gray'>※그냥 쓰게되면 border CSS를 걸었을때 이상하게 노출된다. table 태그에 border-collapse : collapse; 가 필요</mark>하다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='yyByeKB' data-pen-title='테이블' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/yyByeKB'>  테이블</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "리스트",
+        "title" : "순서가 없는 리스트(ul태그, li태그)",
+        "explain" : "ul = Unordered Lists의 줄임말. li = Listed Item의 줄임말.<br><mark class='gray'>ul태그는 순서가 없는 리스트를 만들때 사용</mark>한다.<br><mark class='gray'>ul태그는 li태그들을 그룹짓게 하며 li는 각 항목을 나타내게</mark> 되므로<br>가급적 <mark class='gray'>부모(ul)-자식(li)관계로 쓰여야 한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='qEWEbYr' data-pen-title='ul' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/qEWEbYr'>  ul</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "순서가 있는 리스트(ol태그, li태그)",
+        "explain" : "ol = Ordered List의 줄임말.<br><mark class='gray'>ol태그는 순서가 있는 리스트를 만들때 사용</mark>한다.<br><mark class='gray'>ol태그는 li태그에 순번을 노출시킬수 있게 해주므로.</mark><br>가급적 <mark class='gray'>부모(ol)-자식(li)관계로 쓰여야 한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='jENEWxo' data-pen-title='ol' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/jENEWxo'>  ol</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "옹어 줄임말(dl태그, dt태그, dd태그)",
+        "explain" : "※줄임말에 대해서는 description이라는 의견도 있고, definition이라는 의견도 있다.<br>dl = description list의 줄임말. <mark class='gray'>dl태그는 용어를 설명할 목록을 나타낼 때 사용</mark>한다.<br>dt = description term의 줄임말. <mark class='gray'>dt태그는 용어를 설명할 내용의 제목을 나타낼 때 사용</mark>한다.<br>dd = description details 줄임말. <mark class='gray'>dd태그는 용어 설명을 나타낼 때 사용한다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='dPbPGKV' data-pen-title='용어' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/dPbPGKV'>  용어</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "시맨틱 태그(header태그, footer태그, main태그, nav태그, section태그, article태그, aside태그)",
+        "explain" : "시맨틱 태그는 div와 비슷하게 공간을 의미하는 태그이다.<br>일반적으로 div가 많이 쓰이는데, 문제는 div가 너무 많아지다 보니 각각의 div가 무슨 역할을 하는지 알기 힘들어지게 되었다.<br>그래서 <mark class='gray'>각 영역이 어떠한 역할을 지녔는지 보다 명확하게 나누기 위해 시맨틱 태그가 생겨나게 되었다.</mark><br><br><mark class='gray'>아래에 소개하는 부분들은 전부 body태그 안에 쓰인다.</mark><br>body태그 안에서 각각의 영역을 지정해준다는 개념으로 생각하면 될 듯 하다.<br><mark class='gray'>header태그는 페이지 소개, 제목을 적는 영역</mark>이다.<br><mark class='gray'>footer태그는 페이지 하단의 저작권 정보, 사이트 제공자 정보를 넣는 영역</mark>이다.<br><mark class='gray'>main태그는 몸통 부분이며 한 페이지 당 하나만 써야하고, 다른 페이지와 겹치면 안된다.</mark><br><mark class='gray'>nav태그는 내비게이션 영역</mark>이다.<br><br><mark class='gray'>section태그는 공지사항 부분, 포스트 부분, 댓글 부분 등의 영역</mark>이다.<br><mark class='gray'>article태그는 article 태그 포함, 안의 컨텐츠를 다른 페이지나 다른 사이트에 붙여도 내용이 말이 되야 하는 하나의 완전한 영역</mark>이다.<br><mark class='gray'>aside태그는 메인 내용과 간접적인 연관성이 있는 부분을 따로 분리한 영역이다.(이전글, 다음글 영역)</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbKbZJg' data-pen-title='시맨틱 태그' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/xbKbZJg'>  시맨틱 태그</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "form태그",
+        "explain" : "<mark class='gray'>form태그는 클라이언트에서 서버로 정보를 보낼때 사용</mark>한다.<br><mark class='gray'>속성은 action, actocomplete, enctype, method, name, target, accept-charset</mark>가 있다.<br><mark class='gray'>action속성은 정보를 보낼 서버 주소를 입력하는 부분</mark>이다.<br>actocomplete속성은 양식의 자동완성을 지정하는 기능이다. on, off 두 가지 값만 허용한다. 디폴트는 on 이다.<br>전체에 적용하고 싶다면 form태그에 걸면되겠지만, input등 특정 요소에만 적용하는 것도 가능하다.<br><mark class='gray'>enctype속성은 컨텐츠 타입을 지정할 때 사용</mark>한다.<br>지정하지 않아도 <mark class='gray'>기본값으로 application/x-www-form-urlencoded</mark> 를 쓴다. 이는 모든 문자들은 서버로 보내기 전에 인코딩 됨을 명시한다.<br><mark class='gray'>파일, 이미지를 보낼때는 multipart/form-data라고 명시</mark>해줘야 한다.<br>또한 반드시 아래에서 서술할 <mark class='gray'>method = post로 설정해야한다.</mark><br><mark class='gray'>method속성은 데이터를 보내는 방식을 정할 때 사용</mark>한다.<br>get과 post가 있으며 자세한 내용은 아래와 같다.<br><mark class='gray'>get방식은 url뒤에 input박스의 내용이 key=value 형태로 변환되어 전송된다.</mark><br>ex: htmlStudy.html?id=asd&pw=ddd<br>위처럼 <mark class='gray'>get방식은 form에서 전송하는 데이터가 주소창에 그대로 노출되므로 보안에 취약</mark>하다.<br>딱히 보안이 필요없는 그런 데이터를 전달할때 쓴다.<br><mark class='gray'>post방식은 get방식과는 다르게 서버에 전달한 데이터가 사용자에게 노출되지 않는다.</mark><br>실무에서 굉장히 많이 쓰이는 방식이다.<br><mark class='gray'>name속성은 form을 식별하기 위한 이름을 지정할 때 사용</mark>한다.<br><mark class='gray'>target속성은 데이터를 서버로 전달 후 받는 응답이 열릴 위치를 명시</mark>한다.<br>_blank, _self, _parent, _top, 프레임 이름이 있으며 자세한 내용은 아래와 같다.<br><mark class='gray'>_blank타입은 응답을 새로운 탭에서 보여준다.</mark><br>_self = 기본값으로 생략이 가능하다. 응답을 링크가 현재 프레임에서 보여준다.<br>_parent = 응답을 링크가 현재 프레임의 부모 프레임에서 보여준다.<br>_top = 응답을 현재 윈도우 전체에서 보여준다.<br>프레임 이름 = 응답을 명시된 프레임에서 보여준다.<br><mark class='gray'>accept-charset속성은 데이터를 전송할 때 문자셋을 지정할 때 사용</mark>한다.<br>만약 브라우저 문자셋과 서버의 문자셋이 틀리면 글자가 깨지게 된다.<br>예를 들어 웹 페이지는 EUC-KR 이고 서버는 UTF-8이라 문제가 생긴다면 accept-charset으로 UTF-8을 세팅한 후 보내면 된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPwVBO' data-pen-title='form' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPwVBO'>  form</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "fieldset태그, legend태그",
+        "explain" : "<mark class='gray'>fieldset태그는 form태그 안의 여러 input태그 및 label태그를 그룹으로 묶을 때 사용</mark>한다.<br><mark class='gray'>fieldset태그를 쓰면 input태그 그룹을 감싸는 경계선이 생긴다.</mark><br><mark class='gray'>legend태그는 form태그 안의 인풋 그룹에 대한 설명을 적을 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='EaYaPeg' data-pen-title='fieldset, legend' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/EaYaPeg'>  fieldset, legend</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "input 관련",
+        "title" : "input태그",
+        "explain" : "<mark class='gray'>input태그는 form에 전송한 정보를 입력할 때 사용</mark>한다.<br><mark class='gray'>속성은 type, placeholder, name, value, id</mark>가 있다.<br><mark class='gray'>type속성은 input이 어떤 형식의 정보를 받을지 정하는 부분</mark>이다. <mark class='gray'>디폴트 값은 text</mark>이다.<br><mark class='gray'>type은 그 종류가 굉장히 많다. 대표적으로 쓰이는 것은 text, radio, checkbox, password가 있다.</mark><br>일단 알고있는 모든 종류를 나열해보겠다.<br>text, email, date, time, datetime, password, number, range, search, url, week, month 가 있다.<br>이 중 <mark class='gray'>radio의 경우 같이 사용할 radio 타입의 name은 서로 같아야 한다.</mark><br><mark class='gray'>placeholder속성은 inupt에 아무 값도 입력되지 않았을 때 노출되는 글을 입력할 때 사용</mark>한다.<br><mark class='gray'>name속성은 form을 전송했을 때 서버에서 받을 이름(Key)을 입력할 때 사용</mark>한다.<br><mark class='gray'>value속성은 form을 전송했을 때 서버에서 받을 값(value)을 입력할 때 사용</mark>한다.<br><mark class='gray'>id속성은 input의 유니크한 이름이다. 추후에 언급할 label과 연결할 값을 입력할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='wBwBMER' data-pen-title='input' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/wBwBMER'>  input</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "datalist태그",
+        "explain" : "<mark class='gray'>datalist태그는 input태그에 사용자가 쉽게 옵션을 선택할 수 있도록 권장하는 선택지를 제공할 때 사용</mark>한다.<br>※datalist 태그를 쓴다고 해서 사용자가 입력을 못하지는 않는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ZYzYQqb' data-pen-title='datalist' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ZYzYQqb'>  datalist</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "select태그, option태그, optgroup태그",
+        "explain" : "<mark class='gray'>select태그는 옵션으로 구성된 드롭다운 형식의 선택란을 제공할 때 사용</mark>한다.<br><mark class='gray'>속성은 id, name, required, multiple, disabled 등이 있다.</mark><br>※autofocus, size 등의 속성도 있으나 호환성 문제도 있고 해서 따로 적지는 않겠다.<br><mark class='gray'>id속성은 select태그의 유니크한 값을 입력할 때 사용한다. label태그와 연결할 때 사용하기도 한다.</mark><br><mark class='gray'>name속성은 form을 통해 데이터 전송 시 전달할 key값을 입력할 때 사용</mark>한다.<br><mark class='gray'>required속성은 필수로 옵션을 선택해야 함을 명시할 때 사용</mark>한다.<br><mark class='gray'>multiple속성은 옵션태그를 다중 선택할 수 있게 할 때 사용</mark>한다.<br><mark class='gray'>disabled속성은 select태그 자체를 비활성화 시킨다.</mark><br><br><mark class='gray'>option태그는 select태그에 노출될 옵션을 추가할 때 사용</mark>한다.<br><mark class='gray'>속성은 value, selected, disabled</mark>이 있다.<br><mark class='gray'>value속성은 form을 통해 데이터 전송 시 전달 할 value값을 적을때 사용</mark>한다.<br><mark class='gray'>selected속성은 페이지가 처음 로드될때 selected속성이 있는 옵션을 기본으로 선택되도록 할 때 사용</mark>한다.<br><mark class='gray'>disabled속성은 사용 시 해당 옵션의 색상이 회색으로 변하며, 사용자가 선택 자체를 못하도록 비활성화 처리된다.</mark><br><br><mark class='gray'>optgroup태그는 option태그를 감싸 하나의 그룹으로 만들 때 사용</mark>한다.<br>속성은 label이 있다.<br><mark class='gray'>label속성은 옵션 그룹의 이름을 지정할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='PwYwZyy' data-pen-title='select' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/PwYwZyy'>  select</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "label태그",
+        "explain" : "<mark class='gray'>label태그는 연결할 태그가 어떤 역할을 하는지 알려주기 위해 사용하는 이름표 태그</mark>이다.<br>다른 태그와 연결하지 않고 개별으로 쓰일 수도 있다.<br><mark class='gray'>다른 태그와 연결을 하려면 다른 태그의 id속성 값과 label태그의 for속성의 값이 일치해야 한다.</mark><br><mark class='gray'>label태그를 쓰는 이유는 가독성과 웹 접근성(스크린리더) 향상을 위해</mark>서 이다.<br><mark class='gray'>label과 함께 사용할 수 있는 태그들은 input, textarea, select, meter, progress, output 등이 있다.</mark><br>반면 <mark class='gray'>label과 함께 사용해선 안되는 태그들은 input(hidden, button, reset, submit), button 등이 있다.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emOmJxZ' data-pen-title='label' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/emOmJxZ'>  label</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "button태그",
+        "explain" : "<mark class='gray'>button태그는 버튼을 사용해야할 때 사용</mark>한다.<br><mark class='gray'>속성은 type, disabled, autofocus, formnovalidate</mark>가 있다.<br>이 중 autofocus는 ios호환성문제, formnovalidate는 현재로선 필요성을 못느껴 다루지 않을 것이다.<br><mark class='gray'>type속성은 button태그를 어떤 형식으로 사용할지를 정할 수 있다.</mark><br><mark class='gray'>type속성엔 submit, reset, button</mark>이 있으며 자세한 설명은 다음과 같다.<br><mark class='gray'>submit타입은 form태그 안에서 쓰이며, 서버로 데이터를 전송할 때 사용한다. type속성의 디폴트 값이다.</mark><br><mark class='gray'>reset타입은 보통 form태그 안에서 쓰이며, 클릭 시 input태그 등에 쓴 값들이 최초의 상태로 초기화</mark> 된다.<br><mark class='gray'>button타입은 기본 동작이 없다. 이 속성을 사용하기 위해선 JavaScript와 함께 사용해야 한다.</mark> 가장 많이 쓰이는 type이기도 하다.<br><mark class='gray'>※type을 입력안하고 form태그 안에 있다면 작동하겠지만,form태그 밖에 있다면 작동하지 않는다.</mark><br><mark class='gray'>disabled속성은 버튼을 비활성화 시킬 때 사용한다. 사용자가 클릭하는 것을 막는다.</mark><br><br>한가지 이상한 점이 있다. input태그에도 type=submit이 있다는 것이다. button의 submit과 어떤 차이가 있는 것일까?<br>사실 input과 button의 submit은 기능적으로는 아무런 차이가 없다.<br>다만 button이 디자인적인 관점에서 input에 비해 매우 자유롭다고 하니 가급적 button을 쓰는게 어떨까 싶다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='raBaxRL' data-pen-title='button' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/raBaxRL'>  button</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "textarea태그",
+        "explain" : "<mark class='gray'>textarea태그는 텍스트 입력 및 노출을 할 때 사용</mark>한다.<br><mark class='gray'>장점 : 쉽게 여러줄의 일반 텍스트를 입력할 수 있다. 또한 html문법 또한 그대로 노출이된다.</mark><br><mark class='gray'>단점 : 텍스트의 서식등을 수정할 수 없다. 예를 들어 textarea안에 strong태그 등을 쓸 수 없다는 것이다.</mark><br>textarea는 value 속성이 없다. textarea에 초깃값을 입력하려면 textarea 안에 직접 입력하면 된다.<br><mark class='gray'>속성은 rows, cols, placeholder, readonly, disabled, minlength, maxlength, required</mark>이 있다.<br><mark class='gray'>rows속성은 노출될 textarea의 높이를 지정할 때 사용한다. 기본값은 2이다.</mark><br><mark class='gray'>cols속성은 textarea의 너비를 지정할 때 사용한다. 기본값은 20이다.</mark><br><mark class='gray'>placeholder속성은 textarea안에 아무 글도 적히지 않았을 때 노출되야 하는 글을 입력할 때 사용</mark>한다.<br><mark class='gray'>readonly속성은 수정이 불가능한 읽기상태로 만들 때 사용</mark>한다. <mark class='gray'>form 데이터 전송 시 값이 전달된다.</mark><br><mark class='gray'>disabled속성은 수정이 불가능한 비활성화 상태로 만들 때 사용</mark>한다. <mark class='gray'>form데이터 전송 시 값이 전달되지 않는다.</mark><br>minlength = 사용자가 입력해야하는 최소한의 문자열 길이<br>maxlength = 사용자가 입력할 수 있는 최대한의 문자열 길이. 이 속성을 사용 안하면 문자를 무제한으로 입력할 수 있다.<br>required = textarea안에 무조건 값을 입력해야 데이터 전송이 가능해진다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='PwYwZxy' data-pen-title='textarea' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/PwYwZxy'>  textarea</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "contenteditable 속성",
+        "explain" : "textarea의 서식을 적용시킬 수 없다는 단점을 보완하기 위해 사용해도 좋을 속성.<br>보통 div태그에 contenteditable 속성을 쓴다.<br>contenteditable을 쓰면 콘텐츠 수정은 가능하나 textarea처럼 html문법이 텍스트로 노출되지는 않는다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='LEPEGMj' data-pen-title='contenteditable 속성' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/LEPEGMj'>  contenteditable 속성</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "meta",
+        "explain" : "문서에 대한 설명을 표시한다.<br>사람에게는 보이지 않고, 브라우저만 읽을 수 있다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "그리드(div태그, span태그)",
+        "explain" : "div : division의 줄임말.<br><mark class='gray'>div태그는 단순히 디자인의 용도로만 쓰인다.</mark><br>기본적으로 <mark class='gray'>block level element 이다.</mark><br><mark class='gray'>span태그는 단순히 디자인의 용도로만 쓰인다.</mark><br>기본적으로 <mark class='gray'>inline level element 이다.</mark><br>※CSS에서 굉장히 많이 쓰인다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgaqdR' data-pen-title='그리드' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgaqdR'>  그리드</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "link태그",
+        "explain" : "<mark class='gray'>link태그는 다른 파일의 내용을 적용하려는 페이지와 연결할 때 사용</mark>한다.<br>예를 들어 style.css라는 CSS관련 내용을 담은 페이지에 CSS 문구를 입력하고<br>head태그 밑에 아래와 같이 작성해주면 style.css 파일의 CSS가 적용되는 방식이다.<br><mark class='gray'>link태그를 쓰는 이유는 코드의 재사용성과 효율 때문</mark>이다.<br><br>여러 페이지에 긴 CSS문구를 일일이 적는 것보다 하나의 CSS파일에 정의해둔 CSS문구를 단 한줄만에 가져오게 되어 유지보수가 더욱 쉬워진다.<br>또한 한번 style.css라는 파일을 웹브라우저가 다운받으면<br>해당 파일에 변경점이 생기기 전까지는 웹브라우저는 해당 파일을 우리의 컴퓨터에 저장해 놨다가<br>style.css 파일을 요청할때 다운로드 없이 그대로 불러오기 때문에(네트워크 사용x)<br>보다 빠르고, 네트워크 적으로 이점을 볼 수 있다.<br>",
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='QwLwMZR' data-pen-title='link' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/QwLwMZR'>  link</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "iframe태그",
+        "explain" : "iframe = inline frame의 줄임말.<br><mark class='gray'>iframe태그는 웹 페이지 내에 독립적인 틀을 만들어 다른 문서를 삽입할 때 사용</mark>한다.<br>(문서는 단순히 텍스트 뿐만이 아닌 동영상, 지도, 이미지 등도 포함된다.)<br><mark class='gray'>속성은 src, srcdoc, width, height, allowfullscreen, sandbox</mark>이 있다.<br><mark class='gray'>src속성은 삽입할 외부 문서의 URL을 지정할 때 사용</mark>한다.<br>다른 웹 사이트의 페이지 주소이거나, 같은 웹 사이트 내의 다른 페이지 주소를 쓸 수도 있다.<br><mark class='gray'>src는 필수 속성은 아니지만, 사용하지 않으면 외부 문서를 삽입할 수 없다.</mark><br>srcdoc속성은 iframe 태그에 삽입할 HTML콘텐츠를 지정할 때 사용한다. src속성보다 우선적으로 적용된다.<br><mark class='gray'>width속성은 너비를 지정할 때 사용한다. 단위가 없는 정수로 지정한다.</mark><br><mark class='gray'>height속성은 높이를 지정할 떄 사용한다. 단위가 없는 정수로 지정한다.</mark><br>allowfullscreen속성은 전체 화면 모드를 허용할지 여부를 지정할 때 사용한다.<br>값을 별도로 지정하지 않고 속성만 작성한다.<br>sandbox속성은 iframe 태그안의 콘텐츠가 실행될 수 있는 권한을 제한한다. 즉, iframe 태그안의 콘텐츠가 특정 기능을 수행하지 못하게 할 수 있다.<br>sandbox속성에는 여러 값이 있으므로 필요할 때 마다 찾아보는 것이 좋을 듯 하다.",
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByBywLe' data-pen-title='iframe' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByBywLe'>  iframe</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "서식 관련",
+        "title" : "strong태그, b태그",
+        "explain" : "b = bold의 줄임말.<br><mark class='gray'>strong, b태그 둘 다 글을 강조</mark>할때 쓴다.<br><mark class='gray'>strong = 브라우저에서 진짜 강조 의미로 인식<br>b = 디자인적으로 글자 강조.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='pvzvzqw' data-pen-title='강조' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/pvzvzqw'>  강조</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "em태그, i태그",
+        "explain" : "em = emphasize의 줄임말.<br>i = italic의 줄임말.<br><mark class='gray'>em, i태그 둘 다 글을 기울인다.</mark><br><mark class='gray'>em = 브라우저에서 진짜 기울임 의미로 인식<br>i = 디자인적으로 기울임.</mark>" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYbYqb' data-pen-title='기울임' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYbYqb'>  기울임</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "ins태그, u태그",
+        "explain" : "ins = insert의 줄임말.<br><mark class='gray'>ins태그는 새로 추가된 내용을 의미</mark>한다.<br>u = Underline의 줄임말.<br><mark class='gray'>u태그는 단순히 밑줄을 그을 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgYgLE' data-pen-title='밑줄' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgYgLE'>  밑줄</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "del태그, s태그",
+        "explain" : "del = delete의 줄임말.<br><mark class='gray'>del태그는 삭제된 텍스트를 나타낼 때 사용</mark>한다.<br>s = strike의 줄임말.<br><mark class='gray'>s태그는 잘못된 텍스트를 강조하기 위해 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='mybybob' data-pen-title='삭제' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/mybybob'>  삭제</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "bdo태그, bdi태그",
+        "explain" : "bdo = Bi-Directional Override의 줄임말.<br><mark class='gray'>bdo태그는 텍스트가 어떤 방향으로 노출될지를 설정</mark>할 때 쓴다.<br><mark class='gray'>속성은 dir이 있으며, ltr=왼쪽->오른쪽, rtl=오른쪽->왼쪽으로 출력</mark>되게 된다.<br>bdi = Bi-Directional Isolation의 줄임말.<br><mark class='gray'>bdi태그는 bdo태그와 마찬가지로 텍스트가 어떤 방향으로 노출될지를 설정</mark>할 때 쓰지만 <mark class='gray'>bdi태그는 자동으로 텍스트 방향을 제어하기 때문에 어떤 변수가 생길지 모른다.</mark><br>정말 최후의 보루로써 사용해야 할 것 같다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "blockquote태그, q태그",
+        "explain" : "q = quote의 줄임말.<br><mark class='gray'>blockquote, q태그 둘 다 인용문을 쓸 때 쓰지만 q태그는 보통 누군가의 말을 인용할때 쓰는 듯 하다.</mark><br><mark class='gray'>blockquote태그는 자동으로 들여쓰기가 적용</mark>된다.<br><mark class='gray'>q태그는 자동으로 쌍따옴표(\"\")가 적용</mark>된다.(blockquote 안에 쓸 필요는 없다.)" ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='dPbPbrL' data-pen-title='인용' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/dPbPbrL'>  인용</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "cite태그",
+        "explain" : "<mark class='gray'>저작물의 출처를 표기할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='emOmJzq' data-pen-title='출처' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/emOmJzq'>  출처</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "sub태그, sup태그",
+        "explain" : "sub = subscript의 줄임말.<mark class='gray'>sub태그는 아래첨자를 나타낼때 사용</mark>한다.<br>sup = superscript의 줄임말.<mark class='gray'>sup태그는 위첨자를 나타낼때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='OPLPMRv' data-pen-title='첨자' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/OPLPMRv'>  첨자</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "기타",
+        "title" : "small태그",
+        "explain" : "<mark class='gray'>덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타낼 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKgoNy' data-pen-title='small' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKgoNy'>  small</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "mark태그",
+        "explain" : "<mark class='gray'>한 문서 내에서 관련성이 있는 특정 부분을 참조 목적으로 표시하거나 강조하는 텍스트 구간을 나타낼 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='KwPwVNE' data-pen-title='mark' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/KwPwVNE'>  mark</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "address태그",
+        "explain" : "<mark class='gray'>연락처 정보를 나타낼 때 사용</mark>한다.<br>추가적으로 가장 가까운 조상이 article 또는 body 태그일 경우 그 태그에 대한 연락처 정보를 나타내는데 사용하며<br>그 태그가 body인 경우 연락처 정보는 문서 전체에 적용된다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='JoPoGEK' data-pen-title='address' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/JoPoGEK'>  address</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "abbr태그",
+        "explain" : "abbr = abbreviation의 줄임말.<br><mark class='gray'>abbr태그는 줄임말을 나타낼 때 사용</mark>한다.<br>이 태그는 title속성과 사용하거나 dfn 태그와 사용하는게 좋을 것 같다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKgory' data-pen-title='abbr' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKgory'>  abbr</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "pre태그",
+        "explain" : "pre = preformatted의 줄임말.<mark class='gray'>pre태그는 텍스트에 사용된 여백, 줄바꿈이 모두 노출되야 할 때 사용</mark>한다.<br><mark class='gray'>xmp태그와는 달리 HTML코드를 텍스트로서 인식하지는 못한다.</mark><br>HTML코드를 pre안에서 쓰려면 code태그와 var태그, samp태그등을 써야한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='MYgYKJM' data-pen-title='pre' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/MYgYKJM'>  pre</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "xmp태그",
+        "explain" : "pre태그와 유사하지만 차이점은 <mark class='gray'>HTML코드 또한 텍스트로서 인식</mark>한다는 것이다.<br>(xmp태그 안에서 xmp태그 자체는 인식을 못하는 듯 하다.)<br><mark class='gray'>W3C는 xmp 코드 대신 pre 태그를 사용하라고 권했고 HTML 3.2에서 사용 중지를 예고한 태그</mark>이다.",
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='gbYbPmv' data-pen-title='xmp' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/gbYbPmv'>  xmp</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "kbd태그",
+        "explain" : "kbd = keyboard의 줄임말.<br><mark class='gray'>입력장치의 어떤 걸 눌러야 하는지 설명할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='xbKbZdO' data-pen-title='kbd' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/xbKbZdO'>  kbd</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "groupEnd",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "samp태그",
+        "explain" : "samp = sample의 줄임말.<br><mark class='gray'>어떤 기능의 결과물을 설명할 때 사용</mark>한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='GgKgomQ' data-pen-title='samp' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/GgKgomQ'>  samp</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "HTML 엔티티",
+        "explain" : "<mark class='gray'>HTML문서에서 특수기호(<xmp style='display: inline;'><</xmp>)를 입력하게 되면 인식을 못하는 문제</mark>가 있다.<br>이유는 이러한 <mark class='gray'>특수기호는 태그의 시작으로 여기거나 HTML문법의 요소로서 사용되기 때문</mark>이다.<br>이러한 <mark class='gray'>특수 문자를 표현하기 위한 것이 HTML 엔티티</mark>이다.<br>아래와 같은 문구를 입력해서 특수 문자를 표현할 수 있다.<br>이렇게 특정 문자를 HTML로 변환하는 행위를 Escape(이스케이프) 한다고 말한다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='ByByjEM' data-pen-title='HTML 엔티티' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/ByByjEM'>  HTML 엔티티</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "meter, progress",
+        "explain" : "meter = 어떠한 수치를 나타낼 때 사용한다.<br>progress = 진행 정도를 나타낼 때 사용한다.<br>meter 속성은 value, min, max, low, high, optimum이 있다.<br>value = 실제값이다.<br>min = 측정 범위의 최솟값이다.<br>max = 측정 범위의 최댓값이다.<br>low = 측정 범위의 낮음을 경계짓는 수치이다.<br>high = 측정 범위의 높음을 경계짓는 수치이다.<br>optimum이 = 최적의 지점을 나타내는 수치이다.<br>그런데 딱히 범위로서 값을 지정할 수 있는게 아니라서 필요성은 잘 모르겠다.<br><br>progress 속성은 value, max가 있다. 속성의 설명은 meter와 같다." ,
+        "howUse" : "<p class='codepen' data-height='300' data-default-tab='html,result' data-slug-hash='YPKPwga' data-pen-title='meter, progress' data-user='scrimer' style='height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;'>  <span>See the Pen <a href='https://codepen.io/scrimer/pen/YPKPwga'>  meter, progress</a> by lsj (<a href='https://codepen.io/scrimer'>@scrimer</a>)  on <a href='https://codepen.io'>CodePen</a>.</span></p><script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>"       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "클라이언트와 서버에 대하여",
+        "explain" : "사용자 = 클라이언트 = 웹 클라이언트 = 웹 브라우저<br>제공자 = 서버 = 웹 서버<br><img src='image/html/client_and_server.jpeg' style='width: 50%;'><br>작동원리<br>1. 사용자는 어떤 사이트를 들어가려고자 한다. (클라이언트)<br>2. 사용자의 컴퓨터는 들어가고자 하는 사이트의 파일에 해당하는 코드를 서버에 요청한다. (클라이언트 -> 서버)<br>3. 사용자의 요청을 전달받은 제공자의 컴퓨터는 요청한 코드를 찾는다. (서버)<br>4. 제공자의 컴퓨터는 사용자의 컴퓨터에게 요청한 코드를 제공한다. (서버 -> 클라이언트)<br>5. 사용자의 컴퓨터는 전달받은 코드를 읽어서 웹페이지를 화면에 출력하여 사용자에게 노출시킨다. (클라이언트)<br>지금까지 위에서 다룬 내용들은 전부 클라이언트에 해당하는 내용이었다.<br>웹 서버를 공부하기 위한 방법은 크게 2가지가 있다.<br>1. 웹호스팅 업체를 찾아 맛보기<br>2. 웹서버를 직접 설치 및 실행해보기",
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "웹 호스팅",
+        "explain" : "호스트 = 인터넷에 연결된 컴퓨터 하나 하나를 뜻 함.<br>호스트를 제공하는 업체를 웹호스팅 업체라고 함.<br>대표적인 업체로서 gitHub가 있다.<br><img src='image/html/webHosting1.jpeg' style='width: 50%;'><br><img src='image/html/webHosting2.jpeg' style='width: 50%;'><br>작동원리<br>1. 개발자는 자신이 생성한 파일을 웹호스팅 업체에 업로드 한다.<br>2. 웹호스팅 업체는 웹서버에서 전달받은 파일을 노출 시키며 이를 타 사용자가 볼 수 있도록 주소를 제공한다.<br>3. 사용자의 웹호스팅 업체에서 제공하는 주소를 통해 개발자가 생성한 작업물을 볼 수 있다.",
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "url에 대한 간단 정보",
+        "explain" : "<img src='image/html/urlInfo.png' style='width: 50%;'><br>http = 웹페이지를 주고받기 위한 통신 약속<br>IP Address = 0.0.0.0 ~ 255.255.255.255 까지 있으며 이 중 127.0.0.1은 내 컴퓨터를 가리킨다<br>Port = 컴퓨터에서 여러개의 서버가 동작하고 있을때 서버를 구분하는 정보",
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "obejct, embed",
+        "explain" : "추후 공부 예정",
+        "howUse" : ""       
+    },
+    {
+        "type" : "",
+        "reStudy" : "y",
+        "mainTitle" : "",
+        "title" : "video, audio",
+        "explain" : "추후 공부 예정",
+        "howUse" : ""       
+    }    
+]

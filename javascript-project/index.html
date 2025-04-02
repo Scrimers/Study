@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>더 나은 미래를 위해</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- 웹 페이지가 모바일 기기에서 올바르게 렌더링되게 할 수 있도록 선언 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- style.css 로드 후 mobileStyle.css가 로드되기에 같은 선택자의 속성은 mobileStyle.css 걸로 덮어씌워진다. -->		
+		<link id="styleCss" rel="stylesheet" href="./style.css">
+		<link id="mobileStyleCss" rel="stylesheet" href="./mobileStyle.css">
+		<!-- CSS 캐시 방지 (이걸 쓰면 바로 변경된 CSS가 적용되긴 하지만... 페이지 이동 시 마다 CSS입히기 전의 화면이 0.1초 정도 노출된다.) -->
+		<!-- <script src="./cachePreventionJS.js"></script> -->
+	</head>
+	<body>
+		<!-- header 시작 -->
+		<header></header>
+		<!-- header 끝 -->
+
+		<!-- 네비게이션 및 메인 시작 -->
+		<div class="indexTitleEmpty"></div>
+		<div id="navigationDiv"></div>
+		<!-- 네비게이션 및 메인 끝 -->
+
+		<!-- 푸터 시작 -->
+		<footer></footer>
+		<!-- 푸터 끝 -->
+
+		<!-- 기본 js 모음 -->
+		<script src="./baseJS.js" ></script>
+	</body>
+</html>

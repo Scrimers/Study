@@ -1,0 +1,335 @@
+/* 전체 변수 */
+:root {
+    --side-bar-width: 10vw;
+    --side-bar-height: 90vh;
+}
+/* 디폴트 body제어 */
+body {
+    margin: 0;
+    /* font-size: calc(0.4vw + 1vh); */
+    font-size: calc(0.8vw + 1vh);
+}
+/*공통 시작*/
+#navi, main {
+    padding: 0vh 10vh;
+}
+/* 배경 색상(하얀색) */
+.bg_white {
+    background: rgb(253, 253, 253);    
+}
+/* 배경 색상(검은색) */
+.bg_black {
+    background: rgb(58, 58, 58);
+}
+/* 테두리 색상 및 글자 색상(회색) */
+.b_c_gray {
+    border: 2px solid rgb(176, 176, 176);
+    color: rgb(176, 176, 176);
+}
+/* 테두리 색상 및 글자 색상(초록색) */
+.b_c_green {
+    border: 2px solid rgb(125, 159, 95);
+    color: rgb(125, 159, 95);
+}
+/* 우측 보더 설정(회색) */
+.rightB_gray {
+    border-right: 2px solid rgb(176, 176, 176);
+}
+/* 우측 보더 설정(초록) */
+.rightB_green {
+    border-right: 2px solid rgb(125, 159, 95);
+}
+/* 네비게이션-a태그 밑줄 제거 */
+.navA_gray, .navA_green {
+    text-decoration: none;
+}
+/* 네비게이션-카테고리-A태그 색상(회색) */
+.navA_gray:link, .navA_gray:visited {
+    color: rgb(176, 176, 176);
+}
+/* 네비게이션-카테고리-A태그 색상(초록색) */
+.navA_green:link, .navA_green:visited {
+    color: rgb(125, 159, 95);
+}
+.bL_gray {
+    border: 2px dashed rgb(176, 176, 176);
+}
+.bL_green {
+    border: 2px dashed rgb(125, 159, 95);
+}
+.aTagTarget {
+    text-decoration-line: underline;
+}
+/* 다시 공부해야할 것 */
+.du {
+    color: red;
+}
+.noDisplay {
+    display: none;
+}
+/* 중요 내용 색상(회색) */
+mark.gray {
+    background-color: rgb(176, 176, 176);
+    color: rgb(253, 253, 253);
+}
+/* 중요 내용 색상(초록색) */
+mark.green {
+    background-color: rgb(125, 159, 95);
+    color: rgb(58, 58, 58);
+}
+/*공통 끝*/
+
+/* 드롭다운 시작 ============================*/
+/* 드롭다운 영역 */
+.dropdown{
+    position : relative;
+    display : inline-block;
+}
+/* 드롭다운 하위 영역 */
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    width : 100%;
+    left : -1.5px;
+}
+/* 드롭다운 a태그 */
+.dropdown-content a{
+    display : block;
+    padding : 1% 0;
+    margin: 0 3%;
+    border-bottom: 1px dashed;
+}
+/* 드롭다운 a태그 커서 위치 시 */
+.dropdown-content a:hover{
+    background-color : #ececec
+}
+/* 드롭다운 커서 위치 시 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* 드롭다운 이미지 위치 설정 */
+.dropdown img {
+    height: 100%;
+    width: calc(0.5vw + 2vh);
+    float: inline-end;
+    padding-right: 3%;
+    margin-left: -6%;
+    position: relative;
+    top: 6%;
+}
+/* 드롭다운 끝 ============================*/
+
+/* 사이드바 시작 ============================ */
+/* 1depth 사이드바와 2dpeth 사이드바를 동일하게 맞춤 */
+#sidebarMain, #sidebarSub {
+    position: fixed;
+    width: var(--side-bar-width);
+    margin-top: calc((100vh - var(--side-bar-height)) / 2);     /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+    height: var(--side-bar-height);
+    overscroll-behavior: contain none;  /*스크롤 범위 끝에서 스크롤을 해도 타 영역이 스크롤 안되게*/
+}
+/* 1depth 사이드바를 border radius 조정 */
+#sidebarMain {
+    border-radius: 0 20px 20px 0;
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* 2depth 사이드바를 1depth 옆으로 이동 */
+#sidebarSub {
+    left: calc(var(--side-bar-width) + 0.2vw);
+    z-index: 1;
+    overflow : hidden;
+}
+/* 2depth 노출되었을때만 2depth영역 스크롤 가능 */
+body:has(#sidebarSub > ul > li:hover) #sidebarSub{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* 사이드바 너비의 70%만큼 왼쪽으로 이동 */
+#sidebarMain, #sidebarSub {
+    transform: translate(calc(var(--side-bar-width) * -0.7), 0);
+    transition: .5s;
+}
+/* 사이드바 스크롤 미노출 처리 */
+#sidebarMain::-webkit-scrollbar, #sidebarSub::-webkit-scrollbar {
+    display: none;
+}
+/* 1depth ul의 높이를 부모와 동일하게 설정 */
+#sidebarMain > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;        
+}
+/* 1depth li의 높이를 부모기준 특정 값으로 고정 */
+#sidebarMain > ul > li{
+    position: relative;
+    height: 8.2%;
+}
+/* 1depth a의 높이를 부모와 동일하게 설정하되 가운데로 위치 설정 */
+#sidebarMain > ul > li > a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: inherit;
+    padding: 0 14%;
+    text-align: center;
+}
+/* 1depth, 2depth li커서 올라갈 시 색상 변경 */
+#sidebarMain > ul > li:hover, #sidebarSub > ul > li:hover > a {
+    background-color: #555;
+}
+/* 1depth용 하단 border */
+.borderDiv {
+    margin: 0 15%;
+    border-bottom: 1px solid;
+}
+#sidebarSub > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+/* 2dpeth에서 on처리된 ul제외 나머지는 공간 설정 */
+#sidebarSub ul:not(.on) {
+    height : 8.2%;
+}
+#sidebarSub > ul > li > a {
+    /* display: flex; 는 스크립트 상에서 처리*/
+    display : none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    /* position: relative; */
+}
+/* 2dpeth시작 부분 상단 border 둥글게 */
+.groupStart {
+    border-radius: 20px 20px 0 0;
+}
+/* 2dpeth종료 부분 하단 border 둥글게 */
+.groupEnd {
+    border-radius:  0 0 20px 20px;
+}
+/* 사이드바 끝 ============================ */
+
+/* nav_Study 시작============================ */
+/* 인덱스 페이지 상단 빈 공간 */
+.indexTitleEmpty {
+    min-height: 30vh;
+}
+/* 카테고리 하위 페이지 상단 빈 공간 */
+.nav_study_emptySpace {
+    min-height: 5vh;
+}
+/* 카테고리 페이지 상단 sticky */
+.nav_sticky {
+    position: sticky;
+    top: 0;
+    /* opacity: 0.7; */
+}
+/* 카테고리 페이지 인덱스 버튼 영역  */
+.indexTitle {
+    display: grid;
+	grid-template-columns: 3fr 1fr;
+    border-bottom: none;
+    padding: 1vh 0vh;
+    font-size: calc(1vw + 1vh);
+    font-weight: bold;
+}
+.indexTitleText {
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+/* 네비게이션-카테고리 글자 정렬 */
+.nav_cate_text {
+    text-align: center;
+}
+/* 네비게이션-카테고리 그리드 */
+.nav_cate_Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.indexATag {
+    padding-left: 32%;
+}
+.indexTitleSubGrid {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.indexTitleColorGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid;
+    margin-right: 1vh;
+    width: 60%;
+    height: 75%;
+}
+.codePenReload {
+    color: rgb(253, 253, 253);
+    background: rgb(176, 176, 176);
+    float: inline-end;
+    margin-left: -10%;
+}
+/* nav_Study 끝============================ */
+
+/* Study 시작============================ */
+.subArticle {
+    margin: calc(2vw + 3vh) 0px;
+}
+.subGroup {
+    padding: calc(0.4vw + 0.4vh);
+}
+.subGroupC {
+    padding-top: 5.5vh;
+}
+.subGrid {
+    display: grid;
+    grid-template-columns: 5vh auto;
+}
+.subTitle {
+    margin: 0px;
+    padding: calc(0.45vw + 0.45vh);
+    align-content: center;
+    text-align: left;
+    border-bottom: 2px solid;
+}
+.subExplain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 10% 20%;
+    border-bottom: 2px solid;
+    border-right: none;
+}
+.subText {
+    padding: 5px 0px 5px 5px;
+    align-content: center;
+}
+.subTitleHowUse {
+    align-content: center;
+    text-align: center;
+    border-top: none;
+    padding: 0px;    
+}
+.subTextHowUse {
+    align-content: center;
+    text-align: center;
+    border-top: none;
+    /* padding: 1px; */
+    padding: 0vh 8vh;
+    background: #3d3d3e;
+}
+h3.subTitle {
+    border-bottom: none;
+}
+/* Study 끝============================ */
