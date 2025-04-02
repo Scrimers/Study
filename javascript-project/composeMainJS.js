@@ -1,5 +1,5 @@
 $.ajax({
-    url: "./json/"+studyType+".json",
+    url: "../json/"+studyType+".json",
     dataType: "json",
     async: false,
     method: "GET"
