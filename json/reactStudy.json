@@ -344,7 +344,23 @@
         "howUse" : ""       
     },
     {
-        "type" : "",
+        "type" : "groupStart",
+        "reStudy" : "",
+        "mainTitle" : "state 관련",
+        "title" : "여러 주의사항",
+        "explain" : "·State 변수가 객체인 경우엔 하나의 필드만 업데이트할 수 없다.<br>const [position, setPosition] = useState({ x: 0, y: 0 }); 가 있을 때<br>setPosition({ x: 100 }) 은 y 속성이 존재하지 않기 때문에 사용불가.<br>x만 설정하려면 setPosition({ ...position, x: 100 })을 하거나 두 개의 state 변수로 나누고 setX(100)을 해야 한다.<br><br><br>·function Message({ messageColor }) {<br>  const [color, setColor] = useState(messageColor);<br>여기서 color state 변수는 messageColor prop로 초기화된다.<br>문제는 부모 컴포넌트가 나중에 다른 값의 messageColor를 전달한다면 (예를 들어, 'blue' 대신 'red')<br>color state 변수 가 업데이트되지 않는다.<br>State는 첫 번째 렌더링 중에만 초기화되기 떄문이다.<br><br>이를 정상적으로 사용하기 위해선 messageColor prop을 상수에 대입하여 사용하면 된다.<br>function Message({ messageColor }) {<br>  const color = messageColor;<br><br>컴포넌트 함수를 중첩해서 정의하면 안되는 이유<br>export default function MyComponent() {<br>  const [counter, setCounter] = useState(0);<br><br>  function MyTextField() {<br>    const [text, setText] = useState('');<br><br>    return (<br>      &lt;input<br>        value={text}<br>        onChange={e =&gt; setText(e.target.value)}<br>      /&gt;<br>    );<br>  }<br><br>  return (<br>    &lt;&gt;<br>      &lt;MyTextField /&gt;<br>      &lt;button onClick={() =&gt; {<br>        setCounter(counter + 1)<br>      }}&gt;Clicked {counter} times&lt;/button&gt;<br>    &lt;/&gt;<br>  );<br><br>위 코드를 실행하면 인풋과 버튼이 있는데<br>인풋에 값을 입력 후 버튼을 누르는 순간 인풋의 값은 사라지고, 버튼의 counter는 하나 올라가게 된다.<br>버튼의 counter가 올라가는 이유는 갱신된 state의 값을 가져오기 때문이지만<br>인풋의 값이 사라지는 이유는 버튼을 누르는 순간 리렌더링이 이뤄지면서 <br>MyTextField 함수가 새로 생성되기 떄문이다.<br>즉, MyTextField 함수 내의 state 역시 새로 생성되는 것이기 때문에 이전의 값을 가져올 수 없다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
+        "reStudy" : "",
+        "mainTitle" : "",
+        "title" : "state 초기화 조건",
+        "explain" : "·컴포넌트가 지워질 경우 해당 컴포넌트가 가지고 있던 state 값은 초기화된다.<br>이 말은 반대로 컴포넌트가 유지되는 한 state 값은 초기화 되지 않음을 뜻한다.<br>export default function App() {<br>  const [isFancy, setIsFancy] = useState(false);<br>  return (<br>    &lt;div&gt;<br>      {isFancy ? (<br>        &lt;Counter isFancy={true} /&gt;<br>      ) : (<br>        &lt;Counter isFancy={false} /&gt;<br>      )}<br><br>위 코드의 경우 isFancy가 true이든 false이든 &lt;Counter /&gt;는 같은 자리에 있기에<br>state 값은 초기화 되지 않는다.<br><br>하지만 아래의 경우는 조금 다르다<br>&lt;div&gt;<br>      {isPlayerA &&<br>        &lt;Counter person='Taylor' /&gt;<br>      }<br>      {!isPlayerA &&<br>        &lt;Counter person='Sarah' /&gt;<br>      }<br>위 코드의 경우 isPlayerA의 여부에 따라 person의 값이 다른 Counter 컴포넌트를 호출하게 된다.<br>얼핏보면 같은 위치에서 선언된 컴포넌트이기 때문에 state값이 유지될것이라 생각할 수 있지만<br>이는 조건에 따라서 조건에 맞는 컴포넌트는 호출하고, 다른 컴포넌트는 호출하지 않는 것이다.<br>즉, 기존의 위치에서 유지되는 개념이 아닌 사라지는 개념이다.<br><br>이러한 차이는 삼항연산자와 분리된 조건문(if)의 서로 다른 개념에 의해 생긴다.<br>삼항 연산자: 하나의 논리적인 렌더링 위치, 동일한 컴포넌트 타입 → State 유지<br>분리된 조건문: 두 개의 논리적인 렌더링 브랜치, 조건 변화 시 한 브랜치 언마운트/다른 브랜치 마운트 → State 초기화<br><br>삼항 연산자는 기존의 state 값을 유지하고 있으니 연동되야 하는 기능을 다룰때<br>분리된 조건문은 적은 수의 코드로 각각의 기능을 만들 수 있으니 상황에 맞게 쓰면 된다.<br><br><br>·다른 예시로<br>export default function App() {<br>  const [isFancy, setIsFancy] = useState(false);<br>  if (isFancy) {<br>    return (<br>      &lt;div&gt;<br>        &lt;Counter isFancy={true} /&gt;<br>...<br>  }<br>  return (<br>    &lt;div&gt;<br>      &lt;Counter isFancy={false} /&gt;      <br><br>위 코드의 경우<br>if가 있는경우, 없는 경우 둘 다 컴포넌트의 첫 번째 자식으로 div를 반환 후 Counter컴포넌트를 호출한다.<br>결국 같은 위치에서 호출되고 있으므로 isFancy 조건문을 타던 안타던 state는 초기화 되지 않는다.<br><br><br>·또 다른 예시로<br>export default function App() {<br>  const [isFancy, setIsFancy] = useState(false);<br>  return (<br>    &lt;div&gt;<br>      {isFancy ? (<br>        &lt;div&gt;<br>          &lt;Counter isFancy={true} /&gt;<br>        &lt;/div&gt;<br>      ) : (<br>        &lt;section&gt;<br>          &lt;Counter isFancy={false} /&gt;<br>        &lt;/section&gt;<br>      )}<br><br>위 코드의 경우 App컴포넌트의 첫번째 자식은 div로 동일하나<br>조건에 따라 후손이 div 혹은 section이다.<br>즉 Counter컴포넌트가 조건에따라 다른 위치에서 호출되므로<br>이 경우엔 state가 초기화 된다.<br>즉 리렌더링할 때 state를 유지하고 싶다면 트리 구조가 같아야 한다.<br><br><br>·key를 사용해서 state 초기화 하는 방법<br>key는 React가 컴포넌트를 구별할 수 있도록 사용할 수도 있다.<br>가본적으로 React는 컴포넌트를 구별하기 위해 부모 안에서의 순서를 이용한다.<br>그러나 key를 이용하면 특정한 순서라고 말해줄 수 있다.<br>예를 들면 key='Taylor'와 같이 말이다.<br>이렇게 트리 어디에서 해당 컴포넌트는 Taylor의 것이라는 걸 알 수 있다.<br><br>{isPlayerA ? (<br>  &lt;Counter key='Taylor' person='Taylor' /&gt;<br>) : (<br>  &lt;Counter key='Sarah' person='Sarah' /&gt;<br>)}<br><br>위와 같이 key를 명시하면 React는 부모 내에서의 순서 대신에 key 자체를 위치의 일부로 사용한다.<br>이렇게 key를 사용하게 되면 상항연산자에 있는 같은 컴포넌트라고 해도 서로 state를 공유하지 않는다." ,
+        "howUse" : ""       
+    },
+    {
+        "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
@@ -352,23 +368,7 @@
         "howUse" : ""       
     },
     {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
-        "reStudy" : "",
-        "mainTitle" : "",
-        "title" : "",
-        "explain" : "" ,
-        "howUse" : ""       
-    },
-    {
-        "type" : "",
+        "type" : "groupIng",
         "reStudy" : "",
         "mainTitle" : "",
         "title" : "",
